@@ -39,19 +39,19 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Events",
-    url: "events",
+    title: "About",
+    url: "about",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "pricing",
+    title: "Events",
+    url: "events",
   },
-  {
-    id: "2",
-    title: "How to use",
-    url: "how-to-use",
-  },
+  // {
+  //   id: "2",
+  //   title: "Pricing",
+  //   url: "pricing",
+  // },
   {
     id: "3",
     title: "Roadmap",
