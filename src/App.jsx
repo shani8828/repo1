@@ -10,6 +10,8 @@ import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
 import Competitions from "./components/Competitions";
+import Spons from "./components/Spons";
+import Team from "./components/Team";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/events" element={<Benefits />} />
           {/* <Route path="/pricing" element={<Pricing />} /> */}
           <Route path="/competitions" element={<Competitions />} />
+          <Route path="/sponsors" element={<Spons />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
         <Footer />
       </div>

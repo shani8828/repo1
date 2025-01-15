@@ -58,7 +58,7 @@ const Header = () => {
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
-                } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                } lg:leading-5 lg:hover:text-n-1`} //removed padding
               >
                 {item.title}
               </a>

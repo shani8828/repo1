@@ -59,12 +59,22 @@ export const navigation = [
   },
   {
     id: "4",
+    title: "Sponsors",
+    url: "sponsors",
+  },
+  {
+    id: "5",
+    title: "Team",
+    url: "team",
+  },
+  {
+    id: "6",
     title: "New account",
     url: "signup",
     onlyMobile: true,
   },
   {
-    id: "5",
+    id: "7",
     title: "Sign in",
     url: "login",
     onlyMobile: true,
