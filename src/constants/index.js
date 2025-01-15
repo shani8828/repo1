@@ -44,18 +44,18 @@ export const navigation = [
   },
   {
     id: "1",
+    title: "Gallery",
+    url: "gallery",
+  },
+  {
+    id: "2",
     title: "Events",
     url: "events",
   },
-  // {
-  //   id: "2",
-  //   title: "Pricing",
-  //   url: "pricing",
-  // },
   {
     id: "3",
-    title: "Roadmap",
-    url: "roadmap",
+    title: "Competitions",
+    url: "competitions",
   },
   {
     id: "4",

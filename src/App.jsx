@@ -8,6 +8,8 @@ import Roadmap from "./components/Roadmap";
 import { Routes, Route } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Competitions from "./components/Competitions";
 
 const App = () => {
   return (
@@ -17,9 +19,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About/>} />
+          <Route path="/gallery" element={<Gallery/>} />
           <Route path="/events" element={<Benefits />} />
           {/* <Route path="/pricing" element={<Pricing />} /> */}
-          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/competitions" element={<Competitions />} />
         </Routes>
         <Footer />
       </div>
