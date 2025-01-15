@@ -1,11 +1,10 @@
-import { curve,  robot , heroBackground } from "../assets";
+import { curve, robot, heroBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { useRef } from "react";
-"use client";
-import CarouselComponent from "../components/design/Optima-carousal"
-
+("use client");
+import CarouselComponent from "../components/design/Optima-carousal";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -13,13 +12,11 @@ const Hero = () => {
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
-        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-[4.2rem] lg:mb-[4.8rem]">
           <h1 className="h1 mb-6">
             Welcome&nbsp;to&nbsp;
             {` `}
@@ -37,7 +34,7 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="body-1 max-w-5xl mx-auto mb-6 text-grey-500 lg:mb-8 font-semibold">
+          <p className="max-w-5xl mx-auto mb-6 text-gray-200 lg:mb-8">
             IIT Kharagpur's renowned Techno-Optimization Fest, Optima, is back
             from 6th-8th March 2025, proudly organized by the Department of
             Industrial&nbsp;and&nbsp;Systems Engineering.
@@ -48,38 +45,21 @@ const Hero = () => {
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
-
-
-          
-           {/* // carousal section */}
-          <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
-
-           
+          {/* // carousal section */}
+          {/* <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-[1rem]">
-              <div className="h-[1.4rem] bg-n-10 rounded-t-[0.9rem]" />
+              <div className="aspect-[33/40] rounded-t-[1rem] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
+                
 
-
-              <div className="aspect-[33/40] rounded-b-[0.9rem] overflow-hidden md:aspect-[688/490] lg:aspect-[1024/490]">
-                {/* <img
-                  src={robot}
-                  className="w-full scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[10%] lg:-translate-y-[23%]"
-                  width={1024}
-                  height={490}
-                  alt="Optima"
-                /> */}
-
-                <CarouselComponent/>
-                     
-
+                <CarouselComponent />
               </div>
             </div>
 
             <Gradient />
-          </div>
+          </div> */}
+          <CarouselComponent />
 
-
-
-           {/* background blue color  */}
+          {/* background blue color  */}
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
