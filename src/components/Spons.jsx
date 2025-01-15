@@ -128,7 +128,7 @@ const Spons = () => {
           key={spons}
         >
           {/* <GradientLight /> */}
-      <div className="h-[500px] w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
+      <div className="h-[300px] md:h-[500px] w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
       <img
         src={`/assets/spons/spons-23/${spons}`}
         alt="Sponsor"
@@ -154,7 +154,7 @@ const Spons = () => {
           key={spons}
           >
           <GradientLight />
-            <div className="h-72 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
+            <div className="h-56 md:h-72 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
       <img
         src={`/assets/spons/spons-23/${spons}`} 
         alt="Sponsor"
