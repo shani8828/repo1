@@ -67,18 +67,18 @@ export const navigation = [
     title: "Team",
     url: "team",
   },
-  {
-    id: "6",
-    title: "New account",
-    url: "signup",
-    onlyMobile: true,
-  },
-  {
-    id: "7",
-    title: "Sign in",
-    url: "login",
-    onlyMobile: true,
-  },
+  // {
+  //   id: "6",
+  //   title: "New account",
+  //   url: "signup",
+  //   onlyMobile: true,
+  // },
+  // {
+  //   id: "7",
+  //   title: "Sign in",
+  //   url: "login",
+  //   onlyMobile: true,
+  // },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
