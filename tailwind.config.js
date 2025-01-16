@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'custom-purple': '#6045ea',//Added for selection prop
         color: {
           1: "#AC6AFF",
           2: "#FFC876",
