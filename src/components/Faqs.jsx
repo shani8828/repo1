@@ -41,7 +41,7 @@ function FAQ() {
   return (
     <div className="container mx-auto pb-5 ">
       <h1 className="uppercase text-center text-4xl font-bold pt-2 pb-4">FAQs</h1>
-      <div className="h-fit border rounded-lg p-2 dark:bg-[#f6f5f5]">
+      <div className="h-fit border rounded-lg p-2">
         {tabs.map((tab, index) => (
           <motion.div
             key={index}
