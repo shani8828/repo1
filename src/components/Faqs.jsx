@@ -51,7 +51,7 @@ function FAQ() {
             <button
               aria-expanded={activeIndex === index}
               aria-controls={`faq-${index}`}
-              className="p-3 px-2 w-full cursor-pointer sm:text-base text-xs items-center transition-all font-semibold dark:text-white text-gray-100 flex gap-2">
+              className="p-3 px-2 w-full cursor-pointer sm:text-base text-xs items-center transition-all font-semibold  text-gray-100 flex gap-2">
               <Plus
                 className={`${
                   activeIndex === index ? 'rotate-45' : 'rotate-0'
@@ -69,7 +69,7 @@ function FAQ() {
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3, ease: 'easeInOut', delay: 0.14 }}>
-                  <p className=" text-grey-600 p-3 xl:text-base sm:text-sm text-xs pt-0 w-[90%]">
+                  <p className=" text-gray-300 p-3 xl:text-base sm:text-sm text-xs pt-0 pl-9 w-[95%]">
                     {tab.description}
                   </p>
                 </motion.div>
