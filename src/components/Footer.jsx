@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
-            <p className="p-0 opacity-80">
+            <p className="p-0 opacity-80 font-code">
               Optima, IIT Kharagpur's Techno-Optimization Fest, fosters
               innovation, problem-solving, and collaborations, organized by the
               Department of Industrial and Systems Engineering.
@@ -46,7 +46,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faSquareFacebook} />
                 </a>
               </div>
-              <div className ="optima-shani-instag">
+              <div className="optima-shani-instag">
                 <a
                   className="optima-shani-normal"
                   href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -80,10 +80,10 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="quick-ways-reach-us">
+          <div className="quick-ways-reach-us font-code">
             <div className="optima-shani-quick-ways">
               <h3 className="text-3xl mb-3 font-semibold">QUICK WAYS</h3>
-              <ul>
+              <ul className="text-gray-300">
                 <li>
                   <a href="/register">Register</a>
                 </li>
@@ -112,82 +112,85 @@ const Footer = () => {
             </div>
             <div className="optima-shani-reach-us">
               <h3 className="text-3xl mb-3 font-semibold">REACH US</h3>
-              <div className="optima-shani-location">
-                <a
-                  className="optima-shani-normal"
-                  href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLocationDot} /> Department of
-                  Industrial and Systems Engineering, IIT Kharagpur - 721302
-                </a>
-                <a
-                  className="optima-shani-hovered"
-                  href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLocationDot} bounce /> Department of
-                  Industrial and Systems Engineering, IIT Kharagpur - 721302
-                </a>
-              </div>
-              <div className="optima-shani-call">
-                <a
-                  className="optima-shani-normal"
-                  href={`tel:+917666381808`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faPhone} />
-                  +91 7666381808
-                </a>
-                <a
-                  className="optima-shani-hovered"
-                  href={`tel:+917666381808`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faPhone} shake />
-                  +91 7666381808
-                </a>
-              </div>
-              <div className="optima-shani-mail1">
-                <a
-                  className="optima-shani-normal"
-                  href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} />{" "}
-                  pranav.bhadane.iitkgp@gmail.com
-                </a>
-                <a
-                  className="optima-shani-hovered"
-                  href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} beat />{" "}
-                  pranav.bhadane.iitkgp@gmail.com
-                </a>
-              </div>
-              <div className="optima-shani-mail2">
-                <a
-                  className="optima-shani-normal"
-                  href={`mailto:saharshagrawal.iitkgp@gmail.com`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} />{" "}
-                  saharshagrawal.iitkgp@gmail.com
-                </a>
-                <a
-                  className="optima-shani-hovered"
-                  href={`mailto:saharshagrawal.iitkgp@gmail.com`}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faEnvelope} beat />{" "}
-                  saharshagrawal.iitkgp@gmail.com
-                </a>
+              <div className="font-code">
+                <div className="optima-shani-location ">
+                  <a
+                    className="optima-shani-normal"
+                    href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLocationDot} /> Department of
+                    Industrial and Systems Engineering, IIT Kharagpur - 721302
+                  </a>
+                  <a
+                    className="optima-shani-hovered"
+                    href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLocationDot} bounce /> Department
+                    of Industrial and Systems Engineering, IIT Kharagpur -
+                    721302
+                  </a>
+                </div>
+                <div className="optima-shani-call font-code">
+                  <a
+                    className="optima-shani-normal"
+                    href={`tel:+917666381808`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faPhone} />
+                    +91 7666381808
+                  </a>
+                  <a
+                    className="optima-shani-hovered"
+                    href={`tel:+917666381808`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faPhone} shake />
+                    +91 7666381808
+                  </a>
+                </div>
+                <div className="optima-shani-mail1 font-code">
+                  <a
+                    className="optima-shani-normal"
+                    href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} />{" "}
+                    pranav.bhadane.iitkgp@gmail.com
+                  </a>
+                  <a
+                    className="optima-shani-hovered"
+                    href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} beat />{" "}
+                    pranav.bhadane.iitkgp@gmail.com
+                  </a>
+                </div>
+                <div className="optima-shani-mail2 font-code">
+                  <a
+                    className="optima-shani-normal"
+                    href={`mailto:saharshagrawal.iitkgp@gmail.com`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} />{" "}
+                    saharshagrawal.iitkgp@gmail.com
+                  </a>
+                  <a
+                    className="optima-shani-hovered"
+                    href={`mailto:saharshagrawal.iitkgp@gmail.com`}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} beat />{" "}
+                    saharshagrawal.iitkgp@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="optima-shani-copyright-claim text-center">
+        <div className="optima-shani-copyright-claim text-center font-code">
           &copy; Optima 2025 | All Rights Reserved.
         </div>
       </footer>
