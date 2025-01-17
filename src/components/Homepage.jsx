@@ -1,11 +1,13 @@
 import Hero from "./Hero";
 import FAQs from "./Faqs";
+import HodMessage from "./HodMessage";
 import About_home from "./About_Home";
 
 const Homepage = () => {
     return (
       <>
          <div><Hero/></div>
+         <HodMessage/>
          <About_home/>
          <div className="relative z-10">
           <FAQs />
