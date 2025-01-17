@@ -41,9 +41,9 @@ const CarouselComponent = () => {
             className="absolute top-0 left-0 w-full h-full rounded-[1rem] transition-all duration-1000 ease-in-out"
             style={{
               backgroundImage: `url(${images[currentImageIndex]})`,
-              backgroundSize: "cover", // Ensures the image covers the entire container
-              backgroundPosition: "center", // Centers the image
-              backgroundRepeat: "no-repeat", // Prevents image repetition
+              backgroundSize: "cover", 
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat", 
             }}
           />
         </div>
