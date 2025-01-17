@@ -4,8 +4,9 @@ import FAQs from "./Faqs";
 const Homepage = () => {
     return (
       <>
-         <Hero/>
-         <div className="relative z-50">
+         <div><Hero/></div>
+         
+         <div className="relative z-10">
           <FAQs />
          </div>
          
