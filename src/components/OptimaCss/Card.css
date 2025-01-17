@@ -5,7 +5,7 @@
     box-sizing: border-box;
 
 }
-.optima-shani-card{
+.optima-card{
     background: none;
     position: relative;
     width: 280px;
@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
 }
-.optima-shani-card:hover {
+.optima-card:hover {
     transform: rotateY(180deg);
 }
 .optima-card-front {
@@ -72,7 +72,7 @@
     color: #F47621;
 }
 @media (max-width:332px) {
-    .optima-shani-card{
+    .optima-card{
         width: 265px;
         height: 375px;
     }

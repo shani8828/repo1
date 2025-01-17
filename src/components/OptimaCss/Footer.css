@@ -5,7 +5,7 @@
 } */
 
 /* #footer... */
-#optima-shani-footer {
+#optima-footer {
     margin-top: 20px;
     padding: 30px 60px;
     background: linear-gradient(25deg, #100430, #7e1c6f);
@@ -14,23 +14,23 @@
     justify-content: space-between;
 }
 
-.optima-shani-about-portion {
+.optima-footer-about-portion {
     width: 36%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.optima-shani-about-portion img {
+.optima-footer-about-portion img {
     width: 90px;
     margin-left: 10px;
 }
 
-.optima-shani-about-portion p {
+.optima-footer-about-portion p {
     margin: 10px;
 }
 
-.optima-shani-about-portion .optima-shani-social-handles {
+.optima-footer-about-portion .optima-footer-social-handles {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +46,11 @@
     align-items: start;
 }
 
-.optima-shani-quick-ways {
+.optima-footer-quick-ways {
     width: 40%;
 }
 
-.optima-shani-quick-ways li {
+.optima-footer-quick-ways li {
     margin: 5px;
     list-style-type: none;
     position: relative;
@@ -58,13 +58,13 @@
     padding-left: 4px;
 }
 
-.optima-shani-quick-ways li:hover {
+.optima-footer-quick-ways li:hover {
     color: #F47621;
     transform: scale(1.1, 1.1);
     transition: 0.3s;
 }
 
-.optima-shani-quick-ways li::before {
+.optima-footer-quick-ways li::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -75,7 +75,7 @@
     transform: translateX(50%);
 }
 
-.optima-shani-quick-ways li::after {
+.optima-footer-quick-ways li::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -86,69 +86,69 @@
     transform: translateY(50%);
 }
 
-.optima-shani-reach-us {
+.optima-footer-reach-us {
     width: 50%;
 }
 
-.optima-shani-reach-us div a {
+.optima-footer-reach-us div a {
     color: white;
     text-decoration: none;
 }
 
-.optima-shani-reach-us div {
+.optima-footer-reach-us div {
     margin: 5px;
 }
 
-.optima-shani-hovered {
+.optima-footer-hovered {
     display: none;
 }
 
-.optima-shani-hovered:hover {
+.optima-footer-hovered:hover {
     color: #F47621;
     transform: scale(1.1, 1.1);
     transition: 0.3s;
 }
 
-.optima-shani-location:hover .optima-shani-normal,
-.optima-shani-call:hover .optima-shani-normal,
-.optima-shani-mail1:hover .optima-shani-normal,
-.optima-shani-mail2:hover .optima-shani-normal,
-.optima-shani-faceb:hover .optima-shani-normal,
-.optima-shani-instag:hover .optima-shani-normal,
-.optima-shani-linkedi:hover .optima-shani-normal {
+.optima-footer-location:hover .optima-footer-normal,
+.optima-footer-call:hover .optima-footer-normal,
+.optima-footer-mail1:hover .optima-footer-normal,
+.optima-footer-mail2:hover .optima-footer-normal,
+.optima-footer-fb:hover .optima-footer-normal,
+.optima-footer-ig:hover .optima-footer-normal,
+.optima-footer-in:hover .optima-footer-normal {
     display: none;
 }
 
-.optima-shani-location:hover .optima-shani-hovered,
-.optima-shani-call:hover .optima-shani-hovered,
-.optima-shani-mail1:hover .optima-shani-hovered,
-.optima-shani-mail2:hover .optima-shani-hovered,
-.optima-shani-faceb:hover .optima-shani-hovered,
-.optima-shani-instag:hover .optima-shani-hovered,
-.optima-shani-linkedi:hover .optima-shani-hovered {
+.optima-footer-location:hover .optima-footer-hovered,
+.optima-footer-call:hover .optima-footer-hovered,
+.optima-footer-mail1:hover .optima-footer-hovered,
+.optima-footer-mail2:hover .optima-footer-hovered,
+.optima-footer-fb:hover .optima-footer-hovered,
+.optima-footer-ig:hover .optima-footer-hovered,
+.optima-footer-in:hover .optima-footer-hovered {
     display: block;
 }
 
-.optima-shani-copyright-claim {
+.optima-footer-copyright-claim {
     margin: 0px;
     padding: 0px;
     color: rgb(165, 164, 164);
 }
 
 @media (max-width: 970px) {
-    #optima-shani-footer {
+    #optima-footer {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 25px 50px;
     }
 
-    .optima-shani-about-portion {
+    .optima-footer-about-portion {
         width: 100%;
         /* padding: 10px; */
         box-sizing: border-box;
     }
-    .optima-shani-about-portion .optima-shani-social-handles {
+    .optima-footer-about-portion .optima-footer-social-handles {
         margin-bottom: 15px;
     }
     .quick-ways-reach-us {
@@ -157,12 +157,12 @@
         justify-content: space-between;
     }
 
-    .optima-shani-quick-ways {
+    .optima-footer-quick-ways {
         width: 40%;
         /* padding: 15px; */
     }
 
-    .optima-shani-reach-us {
+    .optima-footer-reach-us {
         width: 50%;
         /* padding: 15px; */
         /* margin-right: 10px; */
@@ -171,13 +171,13 @@
 }
 
 @media (max-width: 600px) {
-    #optima-shani-footer {
+    #optima-footer {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px 20px;
     }
-    .optima-shani-about-portion {
+    .optima-footer-about-portion {
         width: 100%;
         padding: 8px;
         box-sizing: border-box;
@@ -189,21 +189,21 @@
         justify-content: space-between;
     }
 
-    /* .optima-shani-quick-ways {
+    /* .optima-footer-quick-ways {
         width: 37%;
         padding: 15px;
     } */
-    .optima-shani-quick-ways{
+    .optima-footer-quick-ways{
         display: none;
     }
-    .optima-shani-reach-us {
+    .optima-footer-reach-us {
         width: 100%;
         padding: 15px;
         margin-right: 15px;
     }
 }
 @media (max-width:533px) {
-    #optima-shani-footer {
+    #optima-footer {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -211,14 +211,14 @@
     }
 }
 @media (max-width: 457px) {
-    #optima-shani-footer {
+    #optima-footer {
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 15px 30px;
     }
 
-    .optima-shani-about-portion {
+    .optima-footer-about-portion {
         width: 100%;
         /* padding: 8px; */
         box-sizing: border-box;
@@ -232,25 +232,25 @@
         /* justify-content: center; */
     }
 
-    .optima-shani-quick-ways {
+    .optima-footer-quick-ways {
         align-self: center;
         width: 100%;
         /* padding: 8px; */
     }
 
-    .optima-shani-reach-us {
+    .optima-footer-reach-us {
         align-self: center;
         width: 100%;
     }
 }
 @media (max-width: 332px) {
-    .optima-shani-about-portion{
+    .optima-footer-about-portion{
         font-size: small;
     }
-    .optima-shani-quick-ways{
+    .optima-footer-quick-ways{
         display: none;
     }
-    .optima-shani-reach-us{
+    .optima-footer-reach-us{
         font-size: small;
     }
 }
