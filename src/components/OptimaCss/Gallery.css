@@ -1,0 +1,74 @@
+/* Container for the entire slider */
+.gallery-slider-container {
+    padding: 10px;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    max-height: 450px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #47064d;
+    position: relative; /* Ensures proper alignment for dots */
+  }
+  
+  /* Individual slide item */
+  .gallery-slide-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  /* Images inside each slide */
+  .gallery-slide-image {
+    width: 100%;
+    height: 360px; /* Fixed height for uniformity */
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Dots styling */
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .slick-dots li button::before {
+    color: lightgray !important;
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button::before {
+    color: white !important;
+    opacity: 1;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .gallery-slider-container {
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+  
+    .gallery-slide-image {
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-slider-container {
+        padding: 5px;
+        padding-bottom: 25px;
+    }
+
+    .gallery-slide-image {
+      height: 190px;
+    }
+  
+    .slick-dots li button::before {
+      font-size: 10px;
+    }
+  }
+  

@@ -1,45 +1,56 @@
 import React from "react";
 import Slider from "react-slick";
+import "../OptimaCss/Gallery.css"; // Custom CSS file for styles
 
-function CustomPaging() {
-    const customImages = [
-        "mars1.jpg",
-        "nature.jpg",
-        "wall.jpg",
-      ];
-
+function TopCaraousal() {
   const settings = {
-    customPaging: function (i) {
-      return (
-        <a>
-          <img
-            src={customImages[i]}
-            alt={`Thumbnail ${i + 1}`}
-            style={{ width: "600px", height: "30px", objectFit: "cover" }}
-            className="rounded-md shadow-sm"
-          />
-        </a>
-      );
-    },
     dots: true,
-    dotsClass: "slick-dots slick-thumb",
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: true,
+    autoplay: true, // Enables auto-sliding
+    autoplaySpeed: 3000, // Auto-slide interval in milliseconds
+    arrows: false, // Hides navigation arrows
+    appendDots: dots => (
+      <div style={{ bottom: '-20px' }}>
+        <ul> {dots} </ul>
+      </div>
+    ), // Moves dots into slider parent
+    responsive: [
+      {
+        breakpoint: 768, // For tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // For mobile devices
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
+  const images = [
+    "mars1.jpg",
+    "nature.jpg",
+    "wall.jpg",
+    "nature.jpg",
+    "mars1.jpg",
+    "wall.jpg",
+  ];
+
   return (
-    <div className="slider-container">
+    <div className="gallery-slider-container">
       <Slider {...settings}>
-        {customImages.map((image, index) => (
-          <div key={index} className="slide-item">
+        {images.map((image, index) => (
+          <div key={index} className="gallery-slide-item">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              style={{ width: "100%", height: "400px", objectFit: "cover" }}
-              className="rounded-md shadow-lg"
+              className="gallery-slide-image"
             />
           </div>
         ))}
@@ -48,4 +59,4 @@ function CustomPaging() {
   );
 }
 
-export default CustomPaging;
+export default TopCaraousal;
