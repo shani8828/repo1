@@ -1,6 +1,9 @@
 import { curve , heroBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
+
+import FAQs from "./Faqs";
+
 import { BackgroundCircles, BottomLine} from "./design/Hero";
 import { useRef } from "react";
 ("use client");
@@ -16,6 +19,8 @@ const Hero = () => {
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
+
+
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3rem] md:mb-[4rem] lg:mb-[4.8rem]">
           <h1 className="h1 mb-6">
             Welcome&nbsp;to&nbsp;
@@ -51,6 +56,7 @@ const Hero = () => {
           
 
           {/* background blue color  */}
+
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
@@ -62,8 +68,9 @@ const Hero = () => {
           </div>
           
           <BackgroundCircles />
-          
+
         </div> 
+          
       </div>
       
 
