@@ -21,10 +21,10 @@ const Footer = () => {
       <footer className="selection:text-custom-purple">
         <section id="optima-shani-footer">
           <div className="optima-shani-about-portion">
-            <a href="#">
+            <a href="/">
               <img src={logo} alt="logo" />
             </a>
-            <p className="p-0">
+            <p className="p-0 opacity-80">
               Optima, IIT Kharagpur's Techno-Optimization Fest, fosters
               innovation, problem-solving, and collaborations, organized by the
               Department of Industrial and Systems Engineering.
@@ -189,7 +189,6 @@ const Footer = () => {
         </section>
         <div className="optima-shani-copyright-claim text-center">
           &copy; Optima 2025 | All Rights Reserved.
-         
         </div>
       </footer>
     </div>
