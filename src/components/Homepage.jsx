@@ -7,9 +7,8 @@ import Section from "./Section";
 const Homepage = () => {
     return (
       <>
-         <Section className="pt-[12rem] -mt-[5.25rem]"
-           customPaddings
-           id="hero">
+         <Section className="pt-[5rem] -mt-[5.25rem]"
+         id="hero">
          <div><Hero/></div>
          <HodMessage/>
          <About_home/>

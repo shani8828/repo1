@@ -43,9 +43,9 @@ const Hero = () => {
             Industrial&nbsp;and&nbsp;Systems Engineering.
           </p>
 
-          <Button href="/" white>
+          {/* <Button href="/" white>
             Register
-          </Button>
+          </Button> */}
 
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-3xl xl:mb-11">
