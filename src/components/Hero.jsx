@@ -1,9 +1,6 @@
 import { curve , heroBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-
-import FAQs from "./Faqs";
-
 import { BackgroundCircles, BottomLine} from "./design/Hero";
 import { useRef } from "react";
 ("use client");

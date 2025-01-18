@@ -1,6 +1,6 @@
 import Benefits from "./components/Events";
 import Collaboration from "./components/Collaboration";
-import ShaniFooter from "./components/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import Pricing from "./components/Pricing";
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
         </Routes>
-        <ShaniFooter />
+        <Footer />
       </div>
 
       <ButtonGradient />

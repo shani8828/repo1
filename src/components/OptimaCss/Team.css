@@ -13,11 +13,11 @@
     row-gap: 50px;
     column-gap: 20px;
     color: white;
+    background: #6b6ea4;
 }
 
 .optima-team-executives,
 .optima-team-core-heads {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
 .optima-team-core-heads h1 {
     width: 290px;
     /* height: 50px; */
-    background: linear-gradient(-45deg, #9a4eff, #24ff72);
+    /* background: linear-gradient(-45deg, #9a4eff, #24ff72); */
     padding: 10px;
     text-align: center;
     border-radius: 10px;
