@@ -1,3 +1,4 @@
+
 import {
   benefitIcon1,
   benefitIcon2,
@@ -43,7 +44,10 @@ import {
   NLP,
   Operheimer,
   OptiSim,
+  unstop,
 } from "../assets";
+
+// import unstop from "../assets/unstop-icon-800x800";
 
 export const navigation = [
   {
@@ -56,11 +60,11 @@ export const navigation = [
     title: "Gallery",
     url: "gallery",
   },
-  {
-    id: "2",
-    title: "Events",
-    url: "events",
-  },
+  // {
+  //   id: "2",
+  //   title: "Events",
+  //   url: "events",
+  // },
   {
     id: "3",
     title: "Competitions",
@@ -243,55 +247,107 @@ export const events = [
   },
 ];
 
+
+
 export const competitions = [
   {
     id: "0",
-    title: "Ask anything",
+    title: "Ask Anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "1",
-    title: "Improve everyday",
+    title: "Improve Every Day",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
     light: true,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "2",
-    title: "Connect everywhere",
+    title: "Connect Everywhere",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "3",
-    title: "Fast responding",
+    title: "Fast Responding",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
     light: true,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "4",
-    title: "Ask anything",
+    title: "Ask Anything Again",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "5",
-    title: "Improve everyday",
+    title: "Improve Every Day Again",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
     imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  
   },
-];
+  {
+    id: "6",
+    title: "Improve Every Day Again",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
+    imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  
+  },
+  {
+    id: "6",
+    title: "Improve Every Day Again",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
+    imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  
+  },
+  {
+    id: "6",
+    title: "Improve Every Day Again",
+    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon:unstop, // Unstop logo
+    imageUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  
+  }]
