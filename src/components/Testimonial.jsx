@@ -3,7 +3,7 @@ import {BottomLine} from "./design/Hero";
 const Testimonial = () => {
   return (
     <section className="pt-[1rem] -mt-[2rem] mb-2 ml-4">
-      <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div className="mx-auto max-w-screen-2xl px-3 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex flex-col items-center">
           <h2 className="text-4xl font-bold tracking-tight text-gray-150 sm:text-4xl text-center">
             Testimonial
@@ -23,21 +23,21 @@ const Testimonial = () => {
 
 const ReviewBlock = ({ review }) => {
   return (
-    <blockquote className="flex h-full flex-col justify-between p-6 shadow-sm sm:p-8">
+    <blockquote className="flex h-full flex-col justify-between p-4 shadow-sm sm:p-8">
       <div>
-        <div className="flex gap-0.5 text-purple-500">
+        <div className="flex  text-purple-500">
           {Array.from({ length: 5 }).map((_, i) => (
             <StarIcon key={i} />
           ))}
         </div>
-        <div className="mt-4">
-          <p className="text-2xl font-bold bg-gradient-to-r from-orange-500 to-red-200 bg-clip-text text-transparent sm:text-3xl">
+        <div className="mt-3">
+          <p className="text-1xl font-bold bg-gradient-to-r from-orange-400 to-red-200 bg-clip-text text-transparent sm:text-2xl">
             {review.title}
           </p>
-          <p className="mt-4 leading-relaxed text-gray-150">{review.content}</p>
+          <p className="mt-2 leading-relaxed text-gray-150">{review.content}</p>
         </div>
       </div>
-      <footer className="mt-4 text-sm font-medium text-gray-500 sm:mt-6">
+      <footer className="mt-2 text-sm font-medium text-gray-400 sm:mt-3">
         &mdash; {review.author}
       </footer>
       <BottomLine/>
