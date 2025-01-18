@@ -4,7 +4,7 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
-import TopCaraousal from "./design/CustomPaging";
+import TopCaraousal from "./design/TopCaraousal";
 import GallerySlot1 from "./design/GallerySlot1";
 import GallerySlot2 from "./design/GallerySlot2";
 

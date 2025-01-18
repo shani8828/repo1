@@ -34,12 +34,18 @@ function TopCaraousal() {
   };
 
   const images = [
-    "mars1.jpg",
-    "nature.jpg",
-    "wall.jpg",
-    "nature.jpg",
-    "mars1.jpg",
-    "wall.jpg",
+    "/GalleryPhotos/day0-images/4.png",
+    "/GalleryPhotos/day0-images/6.png",
+    "/GalleryPhotos/day0-images/8.png",
+    "/GalleryPhotos/day0-images/9.png",
+    "/GalleryPhotos/day0-images/10.png",
+    "/GalleryPhotos/day0-images/11.png",
+    "/GalleryPhotos/day0-images/12.png",
+    "/GalleryPhotos/day0-images/13.png",
+    "/GalleryPhotos/day0-images/14.png",
+    "/GalleryPhotos/day0-images/IMG_2518.jpg",
+    "/GalleryPhotos/day0-images/IMG_6807.png",
+    "/GalleryPhotos/day0-images/IMG_7018.jpg",
   ];
 
   return (
