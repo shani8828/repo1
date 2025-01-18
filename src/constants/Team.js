@@ -1,4 +1,8 @@
 import img from "../assets/Team/demo.jpg";
+import core10 from "../assets/Team/mehran.jpeg"
+import core9 from "../assets/Team/Mayank.jpeg"
+import core8 from "../assets/Team/Manasvi.jpeg"
+import core7 from "../assets/Team/debdulal.jpeg"
 import core6 from "../assets/Team/Suranjan.jpeg"
 import core5 from "../assets/Team/Nishant.jpeg";
 import core4 from "../assets/Team/Swetank.jpeg";
@@ -72,9 +76,9 @@ export const CoreHeads = [
     name: "Swetank Shandilya",
     positionName: "Sponsorship",
     socialLinks: {
-      facebook: "https://www.linkedin.com/in/swetank-shandilya-368592269/",
+      facebook: "https://www.facebook.com/profile.php?id=100087193197560",
       linkedin: "https://www.linkedin.com/in/swetank-shandilya-368592269/",
-      instagram: "https://www.linkedin.com/in/swetank-shandilya-368592269/",
+      instagram: "https://www.instagram.com/swetankshandilya_16/",
     },
   },
   {
@@ -101,46 +105,46 @@ export const CoreHeads = [
   },
   {
     id: 7,
-    imageUrl: img,
+    imageUrl: core7,
     name: "Debdulal De",
     positionName: "Design & Media",
     socialLinks: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=100087670770698",
+      linkedin: "https://www.linkedin.com/in/debdulal08de/",
+      instagram: "https://www.instagram.com/debdulal.de/",
     },
   },
   {
     id: 8,
-    imageUrl: img1,
-    name: "Demo Name",
+    imageUrl: core8,
+    name: "Manasvi Shekhar",
     positionName: "Demo Position",
     socialLinks: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=100087888134515",
+      linkedin: "https://www.linkedin.com/in/manasvi-shekhar-1a193a257/",
+      instagram: "https://www.instagram.com/manasvi_sn/",
     },
   },
   {
     id: 9,
-    imageUrl: img,
-    name: "Demo Name",
+    imageUrl: core9,
+    name: "Mayank Sethia",
     positionName: "Demo Position",
     socialLinks: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/mayank.sethia.3958",
+      linkedin: "https://www.linkedin.com/in/mayank-sethia-757820271/",
+      instagram: "https://www.instagram.com/mayanksethia_/",
     },
   },
   {
     id: 10,
-    imageUrl: img1,
-    name: "Demo Name",
+    imageUrl: core10,
+    name: "Mehran Shah",
     positionName: "Demo Position",
     socialLinks: {
       facebook: "#",
-      linkedin: "#",
-      instagram: "#",
+      linkedin: "https://www.linkedin.com/in/mehran-shah1/",
+      instagram: "https://www.instagram.com/mehran_.shah/",
     },
   },
 ];

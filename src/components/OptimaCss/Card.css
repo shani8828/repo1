@@ -30,6 +30,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(25deg, #19064d, #a72693);
 }
 .optima-card-front img {
     height: 220px;
@@ -51,6 +52,7 @@
     border: 1px solid #000;
     border-radius: 10px;
     transform: rotateY(180deg);
+    background: linear-gradient(25deg, #19064d, #a72693);
     /*one extra thing as compare to front*/
 }
 .optima-card-back-contact {

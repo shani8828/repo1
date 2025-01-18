@@ -14,7 +14,7 @@
     column-gap: 20px;
     color: white;
     /* background: #6b6ea4; */
-    background: linear-gradient(25deg, #19064d, #a72693);
+    /* background: linear-gradient(25deg, #19064d, #a72693); */
 }
 
 .optima-team-executives,
@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .optima-team-executives .optima-team-members,
@@ -43,6 +44,7 @@
     width: 290px;
     /* height: 50px; */
     /* background: linear-gradient(-45deg, #9a4eff, #24ff72); */
+    background: linear-gradient(25deg, #19064d, #a72693);
     padding: 10px;
     text-align: center;
     border-radius: 10px;

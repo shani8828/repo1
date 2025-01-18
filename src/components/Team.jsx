@@ -39,7 +39,6 @@ const Team = () => {
         </div>
       </div>
       <Gradient />
-      <BackgroundCircles />
     </Section>
   );
 };
