@@ -5,7 +5,7 @@ const Testimonial = () => {
     <section className="pt-[1rem] -mt-[2rem] mb-2 ml-4">
       <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="flex flex-col items-center">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-150 sm:text-5xl text-center">
+          <h2 className="text-4xl font-bold tracking-tight text-gray-150 sm:text-4xl text-center">
             Testimonial
           </h2>
         </div>
