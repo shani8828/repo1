@@ -1,6 +1,7 @@
 import React from "react";
 import '../OptimaCss/Gallery.css'; // Custom CSS file for styles
 import { GradientLight } from "./Benefits";
+import CollageGallery from "./CollageGallery";
 
 const GallerySlot2 = () => {
   const images = [
@@ -15,24 +16,7 @@ const GallerySlot2 = () => {
   ];
 
   return (
-    <div className="CollageGallery-container">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className="CollageGallery-item"
-          role="img"
-          aria-label={`Gallery image ${index + 1}`}
-        >
-          <img
-            src={image}
-            alt={`Gallery image ${index + 1}`}
-            className="CollageGallery-img"
-            loading="lazy"
-          />
-          <div className="CollageGallery-shine"></div>
-        </div>
-      ))}
-    </div>
+    <CollageGallery images={images}/>
   );
 };
 
