@@ -15,15 +15,21 @@ const GallerySlot2 = () => {
   ];
 
   return (
-    <div className="GallerySlot1-container">
+    <div className="CollageGallery-container">
       {images.map((image, index) => (
-        <div key={index} className="GallerySlot1-item">
+        <div
+          key={index}
+          className="CollageGallery-item"
+          role="img"
+          aria-label={`Gallery image ${index + 1}`}
+        >
           <img
             src={image}
             alt={`Gallery image ${index + 1}`}
-            className="GallerySlot1-img"
+            className="CollageGallery-img"
+            loading="lazy"
           />
-          <div className="GallerySlot1-shine"></div>
+          <div className="CollageGallery-shine"></div>
         </div>
       ))}
     </div>
