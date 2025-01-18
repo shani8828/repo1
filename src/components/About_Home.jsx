@@ -1,48 +1,47 @@
 import { check } from "../assets";
 import { collabApps, collabContent } from "../constants";
 import Button from "./Button";
-import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/About_Home";
+import { useNavigate } from "react-router-dom";
 
 const About_home = () => {
+  const navigate = useNavigate();
   return (
-    <Section crosses> {/* Set background color to white */}
-      <div className="container mx-auto px-4 lg:flex flex-col lg:flex-row items-center">
-        
+    <div className="my-20 mx-3 md:mx-6">
+      <div className="container mx-auto lg:px-12 flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 lg:space-x-16">
         {/* Left Section */}
-        <div className="w-full max-w-[25rem] text-center lg:text-left">
-          <h2 className="h2 mb-4 md:mb-8">
-            Optima 2025 , Industrial and Systems Engineering
-          </h2>
+        <div className="w-full lg:w-1/2 max-w-[28rem] text-center lg:text-left space-y-6">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold">Optima 2025</h2>
+            <h3 className="text-xl mt-1 md:text-xl font-semibold">
+              Industrial and Systems Engineering
+            </h3>
+          </div>
 
-          <ul className="max-w-[22rem] mb-4 md:mb-5 mx-auto lg:mx-0">
+          <ul className="space-y-4 mx-auto lg:mx-0">
             {collabContent.map((item) => (
-              <li className="mb-2 py-1" key={item.id}>
-                <div className="flex items-center justify-center lg:justify-start">
-                  <img src={check} width={24} height={24} alt="check" />
-                  <h6 className="body-2 ml-4">{item.title}</h6>
-                </div>
+              <li className="flex items-center space-x-4" key={item.id}>
+                <img src={check} width={24} height={24} alt="check" />
+                <h6 className="text-lg">{item.title}</h6>
               </li>
             ))}
           </ul>
 
-          <Button>About Us</Button>
+          <Button onClick={()=>{navigate("/about")}}>About Us</Button>
         </div>
 
         {/* Right Section */}
-        <div className="relative lg:ml-auto xl:w-[38rem] mt-8 lg:mt-0">
-          <div className="relative left-1/2 flex w-[12rem] sm:w-[14rem] md:w-[18rem] lg:w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale-75 sm:scale-85 md:scale-90 lg:scale-100">
-            <div className="flex w-[6rem] sm:w-[8rem] md:w-60 aspect-square m-auto border border-n-6 rounded-full">
-              <div className="w-[3rem] sm:w-[4rem] md:w-[6rem] aspect-square m-auto p-[0.2rem] rounded-full">
-                <div className="flex items-center justify-center w-full h-full  rounded-full"> {/* Image background color set to gray-200 */}
-                  <img
-                    src="/logo-optima.png"
-                    width={70}
-                    height={70}
-                    alt="logo-optima"
-                    className=" p-1"  // Added white background for logo
-                  />
-                </div>
+        <div className="w-full lg:w-1/3 flex justify-center">
+          <div className="relative flex items-center justify-center w-[12rem] sm:w-[14rem] md:w-[18rem] lg:w-[22rem] aspect-square border border-gray-300 rounded-full">
+            <div className="flex items-center justify-center w-[6rem] sm:w-[8rem] md:w-60 aspect-square border border-gray-300 rounded-full">
+              <div className="w-[3rem] sm:w-[4rem] md:w-[6rem] aspect-square bg-gray-100 flex items-center justify-center rounded-full">
+                <img
+                  src="/logo-optima.png"
+                  width={70}
+                  height={70}
+                  alt="logo-optima"
+                  className="p-1"
+                />
               </div>
             </div>
 
@@ -52,21 +51,19 @@ const About_home = () => {
                 <li
                   key={app.id}
                   className="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom"
-                  style={{ transform: `rotate(${index * 45}deg)` }}  // Added transform inline style for rotation
+                  style={{ transform: `rotate(${index * 45}deg)` }}
                 >
                   <div
-                    className="relative -top-[1.6rem] flex w-[2.4rem] sm:w-[2.8rem] md:w-[3.2rem] h-[2.4rem] sm:h-[2.8rem] md:h-[3.2rem]  rounded-xl"
-                    style={{ transform: `rotate(-${index * 45}deg)` }}  // Added reverse rotation to keep content upright
+                    className="relative -top-[1.6rem] flex w-[2.4rem] sm:w-[2.8rem] md:w-[3.2rem] h-[2.4rem] sm:h-[2.8rem] md:h-[3.2rem] rounded-full bg-gray-200 items-center justify-center"
+                    style={{ transform: `rotate(-${index * 45}deg)` }}
                   >
-                    <div className="flex items-center justify-center w-full h-full bg-gray-200 rounded-full"> {/* Background color for image container */}
-                      <img
-                        className="m-auto"
-                        width={app.width}
-                        height={app.height}
-                        alt={app.title}
-                        src={app.icon}
-                      />
-                    </div>
+                    <img
+                      className="m-auto"
+                      width={app.width}
+                      height={app.height}
+                      alt={app.title}
+                      src={app.icon}
+                    />
                   </div>
                 </li>
               ))}
@@ -77,11 +74,8 @@ const About_home = () => {
           </div>
         </div>
       </div>
-    </Section>
+    </div>
   );
 };
 
 export default About_home;
-
-
-
