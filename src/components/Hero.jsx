@@ -45,19 +45,19 @@ const Hero = () => {
             Industrial&nbsp;and&nbsp;Systems Engineering.
           </p>
 
-          <Button href="/" white>
+          {/* <Button href="/" white>
             Register
-          </Button>
+          </Button> */}
 
         </div>
-        <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
+        <div className="relative max-w-[23rem] mx-auto md:max-w-3xl xl:mb-11">
           
           <CarouselComponent />
           
 
           {/* background blue color  */}
 
-          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[102%]">
             <img
               src={heroBackground}
               className="w-full"
