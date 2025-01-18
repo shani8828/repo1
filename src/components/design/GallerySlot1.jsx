@@ -1,6 +1,5 @@
 import React from "react";
 import '../OptimaCss/Gallery.css'; // Custom CSS file for styles
-import { GradientLight } from "./Benefits";
 
 const GallerySlot1 = () => {
   const images = [
