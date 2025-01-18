@@ -14,6 +14,7 @@ const Team = () => {
     <Section id="team">
       <div className="container relative z-2 rounded-3xl" ref={parallaxRef}>
         <Heading className="md:max-w-md lg:max-w-2xl" title="Our Team" />
+        <BackgroundCircles />
         <div className="optima-team-container max-w-[1280px] mx-auto p-8 text-center selection:text-custom-purple mt-0 rounded-3xl">
           <div className="optima-team-executives mt-0">
             <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-white mt-0 border border-black">
@@ -25,7 +26,6 @@ const Team = () => {
               ))}
             </div>
           </div>
-
           <div className="optima-team-core-heads">
             <h1 className="text-3xl lg:text-4xl md:text-4xl font-semibold text-white text-center border border-black">
               Core Heads
