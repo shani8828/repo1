@@ -47,7 +47,6 @@ import {
   unstop,
 } from "../assets";
 
-// import unstop from "../assets/unstop-icon-800x800";
 
 export const navigation = [
   {
@@ -350,4 +349,5 @@ export const competitions = [
     imageUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
     unstopLink: "https://unstop.com",  
-  }]
+  }
+]

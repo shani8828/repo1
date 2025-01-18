@@ -1,13 +1,11 @@
 import { curve , heroBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-
-import FAQs from "./Faqs";
-
-import { BackgroundCircles, BottomLine} from "./design/Hero";
+import { BackgroundCircles} from "./design/Hero";
 import { useRef } from "react";
 ("use client");
 import CarouselComponent from "../components/design/Optima-carousal";
+
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -45,9 +43,9 @@ const Hero = () => {
             Industrial&nbsp;and&nbsp;Systems Engineering.
           </p>
 
-          {/* <Button href="/" white>
+          <Button href="/" white>
             Register
-          </Button> */}
+          </Button>
 
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-3xl xl:mb-11">
@@ -72,10 +70,7 @@ const Hero = () => {
         </div> 
           
       </div>
-      
-
-      <BottomLine />
-      
+    
      
       
     </Section>
