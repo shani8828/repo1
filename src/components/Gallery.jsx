@@ -4,7 +4,9 @@ import Section from "./Section";
 import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
-import TopCaraousal from "./design/CustomPaging";
+import TopCaraousal from "./design/TopCaraousal";
+import GallerySlot1 from "./design/GallerySlot1";
+import GallerySlot2 from "./design/GallerySlot2";
 
 const Gallery = () => {
   return (
@@ -16,6 +18,14 @@ const Gallery = () => {
         />
         <div className="custom-slider-wrapper">
           <TopCaraousal />
+        </div>
+        <div className="mt-15">
+          <h1 className="flex items-center justify-center text-xl md:text-3xl lg:text-4xl my-5">Slot 1</h1>
+          <GallerySlot1/>
+        </div>
+        <div className="mt-15">
+          <h1 className="flex items-center justify-center text-xl md:text-3xl lg:text-4xl my-5">Slot 2</h1>
+          <GallerySlot2/>
         </div>
       </div>
     </section>

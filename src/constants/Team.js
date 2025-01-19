@@ -1,4 +1,6 @@
 import img from "../assets/Team/demo.jpg";
+import exec1 from "../assets/Team/saharsh.jpeg"
+import exec2 from "../assets/Team/shashwat.jpeg"
 import core10 from "../assets/Team/mehran.jpeg"
 import core9 from "../assets/Team/Mayank.jpeg"
 import core8 from "../assets/Team/Manasvi.jpeg"
@@ -9,28 +11,27 @@ import core4 from "../assets/Team/Swetank.jpeg";
 import core3 from "../assets/Team/Shreya.jpeg";
 import core2 from "../assets/Team/Sumanta.jpg";
 import core1 from "../assets/Team/Sanchay.jpeg";
-import img1 from "../assets/Team/demo1.png"; //This is here to show that removing bg can enhance the page.
 
 export const Executives = [
   {
     id: 1,
-    imageUrl: img,
-    name: "Demo Name",
+    imageUrl: exec1,
+    name: "Saharsh Agrawal",
     positionName: "Demo Position",
     socialLinks: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/saharsh.agrawal.in",
+      linkedin: "https://www.linkedin.com/in/saharshagrawal1/",
+      instagram: "https://www.instagram.com/saharshagrawal_/",
     },
   },
   {
     id: 2,
-    imageUrl: img1,
-    name: "Demo Name",
+    imageUrl: exec2,
+    name: "Shashwat Kushwaha",
     positionName: "Demo Position",
     socialLinks: {
-      facebook: "#",
-      linkedin: "#",
+      facebook: "https://www.facebook.com/profile.php?id=100075124463287",
+      linkedin: "https://www.linkedin.com/in/shashwat-kushwaha-7021a7231/",
       instagram: "#",
     },
   },

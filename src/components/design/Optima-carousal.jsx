@@ -6,9 +6,10 @@ import { Gradient } from "./Hero";
 const CarouselComponent = () => {
   // Array of image URLs (you can replace these with your own images)
   const images = [
-    "/nature.jpg", // Image 1
-    "/wall.jpg", // Image 2
-    "/mars1.jpg", // Image 3
+    "/homepagePhotos/4.png",
+    "/homepagePhotos/3.png",
+    "/homepagePhotos/2.png",
+    "/homepagePhotos/1.png",
   ];
 
   // State to track the current image index
@@ -34,7 +35,7 @@ const CarouselComponent = () => {
           className="relative w-full"
           style={{
             // Aspect ratio of 33/40 or 490/1024
-            paddingTop: "45.68%", // 490/1024 * 100
+            paddingTop: "60.68%", // 490/1024 * 100
           }}
         >
           <div

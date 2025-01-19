@@ -1,10 +1,7 @@
 import Benefits from "./components/Events";
-import Collaboration from "./components/Collaboration";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
-import Pricing from "./components/Pricing";
-import Roadmap from "./components/Roadmap";
 import { Routes, Route } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";

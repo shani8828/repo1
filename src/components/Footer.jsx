@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
-            <p className="p-0 opacity-80 font-code">
+            <p className="p-0 opacity-80">
               Optima, IIT Kharagpur's Techno-Optimization Fest, fosters
               innovation, problem-solving, and collaborations, organized by the
               Department of Industrial and Systems Engineering.
@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="quick-ways-reach-us font-code">
+          <div className="quick-ways-reach-us">
             <div className="optima-footer-quick-ways">
               <h3 className="text-3xl mb-3 font-semibold">QUICK WAYS</h3>
               <ul className="text-gray-300">
@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
             <div className="optima-footer-reach-us">
               <h3 className="text-3xl mb-3 font-semibold">REACH US</h3>
-              <div className="font-code">
+              <div>
                 <div className="optima-footer-location ">
                   <a
                     className="optima-footer-normal"
@@ -132,65 +132,65 @@ const Footer = () => {
                     721302
                   </a>
                 </div>
-                <div className="optima-footer-call font-code">
+                <div className="optima-footer-call">
                   <a
                     className="optima-footer-normal"
-                    href={`tel:+917666381808`}
+                    href={`tel:+916370708967`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faPhone} />
-                    +91 7666381808
+                    +91 6370708967
                   </a>
                   <a
                     className="optima-footer-hovered"
-                    href={`tel:+917666381808`}
+                    href={`tel:+916370708967`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faPhone} shake />
-                    +91 7666381808
+                    +91 6370708967
                   </a>
                 </div>
-                <div className="optima-footer-mail1 font-code">
+                <div className="optima-footer-mail1">
                   <a
                     className="optima-footer-normal"
-                    href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
+                    href={`mailto:sumanta@optima.org.in`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faEnvelope} />{" "}
-                    pranav.bhadane.iitkgp@gmail.com
+                    sumanta@optima.org.in
                   </a>
                   <a
                     className="optima-footer-hovered"
-                    href={`mailto:pranav.bhadane.iitkgp@gmail.com`}
+                    href={`mailto:sumanta@optima.org.in`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faEnvelope} beat />{" "}
-                    pranav.bhadane.iitkgp@gmail.com
+                    sumanta@optima.org.in
                   </a>
                 </div>
-                <div className="optima-footer-mail2 font-code">
+                <div className="optima-footer-mail2">
                   <a
                     className="optima-footer-normal"
-                    href={`mailto:saharshagrawal.iitkgp@gmail.com`}
+                    href={`mailto:suranjan.karmakar.iitkgp@gmail.com`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faEnvelope} />{" "}
-                    saharshagrawal.iitkgp@gmail.com
+                    suranjan.karmakar.iitkgp@gmail.com
                   </a>
                   <a
                     className="optima-footer-hovered"
-                    href={`mailto:saharshagrawal.iitkgp@gmail.com`}
+                    href={`mailto:suranjan.karmakar.iitkgp@gmail.com`}
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faEnvelope} beat />{" "}
-                    saharshagrawal.iitkgp@gmail.com
+                    suranjan.karmakar.iitkgp@gmail.com
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="optima-footer-copyright-claim text-center font-code">
+        <div className="optima-footer-copyright-claim text-center">
           &copy; Optima 2025 | All Rights Reserved.
         </div>
       </footer>
