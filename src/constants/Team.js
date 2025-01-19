@@ -1,11 +1,11 @@
 import img from "../assets/Team/demo.jpg";
-import exec1 from "../assets/Team/saharsh.jpeg"
-import exec2 from "../assets/Team/shashwat.jpeg"
-import core10 from "../assets/Team/mehran.jpeg"
-import core9 from "../assets/Team/Mayank.jpeg"
-import core8 from "../assets/Team/Manasvi.jpeg"
-import core7 from "../assets/Team/debdulal.jpeg"
-import core6 from "../assets/Team/Suranjan.jpeg"
+import exec1 from "../assets/Team/saharsh.jpeg";
+import exec2 from "../assets/Team/shashwat.jpeg";
+import core10 from "../assets/Team/Mehran.jpeg";
+import core9 from "../assets/Team/Mayank.jpeg";
+import core8 from "../assets/Team/Manasvi.jpeg";
+import core7 from "../assets/Team/Debdulal.jpeg";
+import core6 from "../assets/Team/Suranjan.jpeg";
 import core5 from "../assets/Team/Nishant.jpeg";
 import core4 from "../assets/Team/Swetank.jpeg";
 import core3 from "../assets/Team/Shreya.jpeg";
@@ -44,9 +44,11 @@ export const CoreHeads = [
     name: "Sanchay Baranwal",
     positionName: "Sponsorship and Marketing",
     socialLinks: {
-      facebook: "https://www.facebook.com/profile.php?id=100087744332005&mibextid=ZbWKwL",
+      facebook:
+        "https://www.facebook.com/profile.php?id=100087744332005&mibextid=ZbWKwL",
       linkedin: "http://www.linkedin.com/in/sanchay-baranwal",
-      instagram: "https://instagram.com/baranwalsanchay01?igshid=NGVhN2U2NjQ0Yg==",
+      instagram:
+        "https://instagram.com/baranwalsanchay01?igshid=NGVhN2U2NjQ0Yg==",
     },
   },
   {
@@ -67,8 +69,10 @@ export const CoreHeads = [
     positionName: "Events",
     socialLinks: {
       facebook: "https://www.facebook.com/share/18hRA7y8rK/",
-      linkedin: "https://www.linkedin.com/in/shreya-das-448281255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      instagram: "https://www.instagram.com/shreyadas_04?igsh=MWVlOGF3bHhrYmg1Yg==",
+      linkedin:
+        "https://www.linkedin.com/in/shreya-das-448281255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      instagram:
+        "https://www.instagram.com/shreyadas_04?igsh=MWVlOGF3bHhrYmg1Yg==",
     },
   },
   {
@@ -99,9 +103,11 @@ export const CoreHeads = [
     name: "Suranjan Karmakar",
     positionName: "Tech",
     socialLinks: {
-      facebook: "https://www.facebook.com/suranjan.karmakar.750?mibextid=ZbWKwL",
+      facebook:
+        "https://www.facebook.com/suranjan.karmakar.750?mibextid=ZbWKwL",
       linkedin: "https://www.linkedin.com/in/suranjan-karmakar1207",
-      instagram: "https://www.instagram.com/anti.colour.collections?igsh=ZW5rZHB1a3BnM2Vw",
+      instagram:
+        "https://www.instagram.com/anti.colour.collections?igsh=ZW5rZHB1a3BnM2Vw",
     },
   },
   {
