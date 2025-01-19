@@ -67,18 +67,18 @@ export const navigation = [
     title: "Team",
     url: "team",
   },
-  {
-    id: "6",
-    title: "New account",
-    url: "signup",
-    onlyMobile: true,
-  },
-  {
-    id: "7",
-    title: "Sign in",
-    url: "login",
-    onlyMobile: true,
-  },
+  // {
+  //   id: "6",
+  //   title: "New account",
+  //   url: "signup",
+  //   onlyMobile: true,
+  // },
+  // {
+  //   id: "7",
+  //   title: "Sign in",
+  //   url: "login",
+  //   onlyMobile: true,
+  // },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
@@ -354,38 +354,5 @@ export const competitions = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
-  },
-];
-
-export const socials = [
-  {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "Twitter",
-    iconUrl: twitter,
-    url: "#",
-  },
-  {
-    id: "2",
-    title: "Instagram",
-    iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
-  },
-  {
-    id: "4",
-    title: "Facebook",
-    iconUrl: facebook,
-    url: "#",
   },
 ];

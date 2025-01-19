@@ -1,0 +1,83 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.optima-shani-card{
+    background: none;
+    position: relative;
+    width: 280px;
+    height: 390px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optima-shani-card:hover {
+    transform: rotateY(180deg);
+}
+.optima-card-front {
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(-45deg, #9a4eff, #24ff72);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optima-card-front img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.optima-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: linear-gradient(45deg, #9a4eff, #24ff72);
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    /*one extra thing as compare to front*/
+}
+.optima-card-back-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.7em;
+}
+.optima-card-back-contact a:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0.3s;
+    color: #F47621;
+}
+@media (max-width:332px) {
+    .optima-shani-card{
+        width: 265px;
+        height: 375px;
+    }
+    .optima-card-front img {
+        height: 205px;
+        width: 205px;
+    }
+}

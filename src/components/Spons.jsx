@@ -122,58 +122,58 @@ const Spons = () => {
           </div>
         )}
 
-        {activeTab === "spons23" && (
-          <div className="space-y-10">
-            {/* Title Sponsor */}
-            <div className="text-center">
-              <h2 className="text-4xl font-bold mt-12 mb-8">Title Sponsor</h2>
-              <div className="flex justify-center">
-                {spons23.titleSponsor.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-4 rounded-lg shadow-2xl bg-white hover:scale-105 transition-transform duration-300 max-w-[56rem] group"
-                      key={spons}
-                    >
-                      {/* <GradientLight /> */}
-                      <div className="h-[500px] w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
-                        <img
-                          src={`/assets/spons/spons-23/${spons}`}
-                          alt="Sponsor"
-                          className="h-full w-auto object-contain p-4"
-                        />
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
+        {activeTab === 'spons23' && (
+<div className="space-y-10">
+  {/* Title Sponsor */}
+  <div className="text-center">
+    <h2 className="text-4xl font-bold mt-12 mb-8">Title Sponsor</h2>
+    <div className="flex justify-center">
+      {spons23.titleSponsor.map((spons) => (
+        <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
+        <div
+          className="relative p-4 rounded-lg shadow-2xl bg-white hover:scale-105 transition-transform duration-300 max-w-[56rem] group"
+          key={spons}
+        >
+          {/* <GradientLight /> */}
+      <div className="h-[300px] md:h-[500px] w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
+      <img
+        src={`/assets/spons/spons-23/${spons}`}
+        alt="Sponsor"
+        className="h-full w-auto object-contain p-4"
+      />
+    </div>
+         
+        </div>
+        </a>
+      ))}
+    </div>
+  </div>
 
-            {/* Major Sponsors */}
-            <div>
-              <h2 className="text-4xl font-bold mb-6 text-center">
-                Major Sponsors
-              </h2>
-              <div className="flex flex-wrap gap-8 justify-center">
-                {spons23.majorSponsors.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-6 rounded-lg shadow-xl bg-white hover:scale-105 transition-transform duration-300 max-w-[32rem] group"
-                      key={spons}
-                    >
-                      <GradientLight />
-                      <div className="h-72 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
-                        <img
-                          src={`/assets/spons/spons-23/${spons}`}
-                          alt="Sponsor"
-                          className="h-full w-auto object-contain p-4"
-                        />
-                      </div>
-                      {/* <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} /> */}
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
+  {/* Major Sponsors */}
+  <div>
+    <h2 className="text-4xl font-bold mb-6 text-center">Major Sponsors</h2>
+    <div className="flex flex-wrap gap-8 justify-center">
+      {spons23.majorSponsors.map((spons) => (
+        <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
+
+        <div
+          className="relative p-6 rounded-lg shadow-xl bg-white hover:scale-105 transition-transform duration-300 max-w-[32rem] group"
+          key={spons}
+          >
+          <GradientLight />
+            <div className="h-56 md:h-72 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
+      <img
+        src={`/assets/spons/spons-23/${spons}`} 
+        alt="Sponsor"
+        className="h-full w-auto object-contain p-4"
+        />
+    </div>
+          {/* <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} /> */}
+        </div>
+        </a>
+      ))}
+    </div>
+  </div>
 
             {/* Strategic Partners */}
             <div>

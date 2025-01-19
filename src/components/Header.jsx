@@ -54,7 +54,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-6 py-5 md:py-6 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } px-3 xl:px-6 py-5 md:py-6 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
@@ -68,7 +68,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
 
-        <a
+        {/* <a
           href="#signup"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
@@ -76,7 +76,7 @@ const Header = () => {
         </a>
         <Button className="hidden lg:flex" href="#login">
           Sign in
-        </Button>
+        </Button> */}
 
         <Button
           className="ml-auto lg:hidden"
