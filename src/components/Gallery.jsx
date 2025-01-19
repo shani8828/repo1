@@ -15,7 +15,7 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
       <Heading
           className="md:max-w-md lg:max-w-2xl text-center mb-6"
-          title="Explore Our Stunning Gallery"
+          title="Glimpses of Optima"
         />
         <div className="custom-slider-wrapper">
           <TopCaraousal />
