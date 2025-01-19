@@ -1,5 +1,5 @@
 import Benefits from "./components/Events";
-import ShaniFooter from "./components/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import { Routes, Route } from "react-router-dom";
@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
         </Routes>
-        <ShaniFooter />
+        <Footer />
       </div>
 
       <ButtonGradient />

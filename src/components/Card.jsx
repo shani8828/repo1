@@ -19,19 +19,19 @@ const Card = ({ profile }) => {
         <h2 className="text-3xl lg:text-4xl font-semibold">{profile.name}</h2>
         <h3 className="text-2xl lg:text-3xl">{profile.positionName}</h3>
         <p className="optima-card-back-contact">
-          <a href={profile.socialLinks.facebook}>
+          <a href={profile.socialLinks.facebook} target="_blank">
             <FontAwesomeIcon
               className="text-4xl lg:text-5xl"
               icon={faSquareFacebook}
             />
           </a>
-          <a href={profile.socialLinks.linkedin}>
+          <a href={profile.socialLinks.linkedin} target="_blank">
             <FontAwesomeIcon
               className="text-4xl lg:text-5xl"
               icon={faLinkedin}
             />
           </a>
-          <a href={profile.socialLinks.instagram}>
+          <a href={profile.socialLinks.instagram} target="_blank">
             <FontAwesomeIcon
               className="text-4xl lg:text-5xl"
               icon={faSquareInstagram}

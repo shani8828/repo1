@@ -1,7 +1,7 @@
 import { curve , heroBackground } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles} from "./design/Hero";
+import { BackgroundCircles, BottomLine} from "./design/Hero";
 import { useRef } from "react";
 ("use client");
 import CarouselComponent from "../components/design/Optima-carousal";

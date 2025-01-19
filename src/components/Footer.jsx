@@ -190,7 +190,7 @@ const Footer = () => {
             </div>
           </div>
         </section>
-        <div className="optima-footer-copyright-claim text-center font-code">
+        <div className="optima-footer-copyright-claim text-center">
           &copy; Optima 2025 | All Rights Reserved.
         </div>
       </footer>

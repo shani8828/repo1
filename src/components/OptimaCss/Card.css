@@ -1,9 +1,7 @@
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 .optima-card{
     background: none;
@@ -26,20 +24,19 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: linear-gradient(-45deg, #9a4eff, #24ff72);
+    border: 1px solid #000;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(25deg, #19064d, #a72693);
 }
-
 .optima-card-front img {
     height: 220px;
     width: 220px;
     border-radius: 20px;
 }
-
 .optima-card-back {
     display: flex;
     flex-direction: column;
@@ -52,9 +49,10 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: linear-gradient(45deg, #9a4eff, #24ff72);
+    border: 1px solid #000;
     border-radius: 10px;
     transform: rotateY(180deg);
+    background: linear-gradient(25deg, #19064d, #a72693);
     /*one extra thing as compare to front*/
 }
 .optima-card-back-contact {
@@ -72,7 +70,7 @@
     color: #F47621;
 }
 @media (max-width:332px) {
-    .optima-card{
+    .optima-card, .optima-card-front, .optima-card-back{
         width: 265px;
         height: 375px;
     }
