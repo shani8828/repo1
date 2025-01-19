@@ -86,6 +86,9 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+//unstop 
+import unstop from "./socials/unstop-icon-800x800.png"
+
 export {
   Degrees,
   CodeLand,
@@ -164,4 +167,5 @@ export {
   instagram,
   telegram,
   twitter,
+  unstop,
 };

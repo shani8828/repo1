@@ -5,6 +5,7 @@ import { BackgroundCircles, BottomLine} from "./design/Hero";
 import { useRef } from "react";
 ("use client");
 import CarouselComponent from "../components/design/Optima-carousal";
+
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -69,10 +70,7 @@ const Hero = () => {
         </div> 
           
       </div>
-      
-
-      <BottomLine />
-      
+    
      
       
     </Section>
