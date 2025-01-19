@@ -11,14 +11,14 @@ const guestLectures = [
   {
     id: 2,
     image: "/GalleryPhotos/guest-lecture-images/g2.jpg",
-    title: "Sustainability Practices",
-    description: "Ms. Johnson shared insights on green energy solutions.",
+    title: "Dr. Amit Kumar Das",
+    description: "Head of Operations Technology, Air India Digital and Tech",
   },
   {
     id: 3,
     image: "/GalleryPhotos/guest-lecture-images/g3.jpg",
-    title: "Business Strategy",
-    description: "Mr. Brown elaborated on modern business models.",
+    title: "Bala Srinivasan",
+    description: "Director, Operations Reasearch & Data Science at Sabre",
   },
 ];
 
