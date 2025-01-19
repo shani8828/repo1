@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
+import { GradientLight } from "./design/Benefits";
 
 const tabs = [
   {
@@ -41,6 +42,7 @@ function FAQ() {
   return (
     <div className="container mx-auto pb-5 ">
       <h1 className="uppercase text-center text-4xl font-bold pt-2 pb-4">FAQs</h1>
+      
       <div className="h-fit border rounded-lg p-2">
         {tabs.map((tab, index) => (
           <motion.div
@@ -59,7 +61,6 @@ function FAQ() {
               />
               {tab.title}
             </button>
-
             <AnimatePresence mode="sync">
               {activeIndex === index && (
                 <motion.div
@@ -75,10 +76,12 @@ function FAQ() {
                 </motion.div>
               )}
             </AnimatePresence>
+           
           </motion.div>
         ))}
        
       </div>
+      
     </div>
   );
 }

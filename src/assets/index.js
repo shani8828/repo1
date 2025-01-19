@@ -36,6 +36,17 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
+// import 
+import Degrees from "./About_Home/360Degrees.png";
+import CodeLand from "./About_Home/CodeLand.png";
+import FinanceFantasia from "./About_Home/FinanceFantasia.png"
+import Innovate from "./About_Home/Innovate-x.png";
+import NetworSify from "./About_Home/NetworSify.png";
+import NLP from "./About_Home/NLP.py2.png";
+import Operheimer from "./About_Home/Operheimer.png";
+import OptiSim from "./About_Home/OptiSim.png"
+
+
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
 import service3 from "./services/service-3.png";
@@ -75,7 +86,19 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+//unstop 
+import unstop from "./socials/unstop-icon-800x800.png"
+
 export {
+  Degrees,
+  CodeLand,
+  FinanceFantasia,
+  Innovate,
+  NetworSify,
+  NLP,
+  Operheimer,
+  OptiSim,
+  
   brainwave,
   check,
   check2,
@@ -144,4 +167,5 @@ export {
   instagram,
   telegram,
   twitter,
+  unstop,
 };

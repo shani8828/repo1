@@ -1,21 +1,112 @@
 import React, { useState } from "react";
-import { heroBackground } from "../assets";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import Section from "./Section";
-import Heading from "./Heading";
 import brackets from "../assets/svg/Brackets";
 
-const prevSpons = [
-  "ACC.png",
-  "AIBH.png",
-  "Allied_publishers.png",
-  "GE_HealthCare.png",
-  "RP_Industrial_Consultant.png",
-  "Springer.png",
-  "SR_Srinivasan.jpg",
-  "TATA.png",
-  "Total_Library_Solution.png",
-];
+import { BackgroundCircles, BottomLine } from "./design/Hero";
+import Heading from "./Heading";
+import Section from "./Section";
+import { Gradient } from "./design/Services.jsx";
+
+// Separate data into a new file: src/data/sponsorsData.js
+const SPONSORS_DATA = {
+  2025: {
+    title: "Optima 2025 Sponsors",
+    categories: {
+      titleSponsor: {
+        name: "Title Sponsor",
+        size: "lg",
+        sponsors: ["OPTYM.jpg"],
+      },
+      majorSponsors: {
+        name: "Major Sponsors",
+        size: "md",
+        sponsors: ["AirIndia.png", "FlexSim.jpg"],
+      },
+      strategicPartners: {
+        name: "Strategic Partners",
+        size: "sm",
+        sponsors: ["RahulCommerce.jpg", "Vicon.png"],
+      },
+      eventsPartners: {
+        name: "Event Partners",
+        size: "sm",
+        sponsors: [
+          "ORMAE.jpeg",
+          "DCVisionVR.jpg",
+          "Blue_Yonder.png",
+          "Delhivery_Logo.png",
+          "GFG.png",
+          "Sabre.png",
+        ],
+      },
+      merchandisePartner: {
+        name: "Merchandise Partner",
+        size: "sm",
+        sponsors: ["OwlPrints.png"],
+      },
+      mediaPartners: {
+        name: "Media Partners",
+        size: "sm",
+        sponsors: ["CampusVarta.png", "WomansEra.png"],
+      },
+    },
+  },
+  2023: {
+    title: "Optima 2023 Sponsors",
+    categories: {
+      titleSponsor: {
+        name: "Title Sponsor",
+        size: "lg",
+        sponsors: ["OPTYM.jpg"],
+      },
+      majorSponsors: {
+        name: "Major Sponsors",
+        size: "md",
+        sponsors: ["AirIndia.png", "FlexSim.jpg"],
+      },
+      strategicPartners: {
+        name: "Strategic Partners",
+        size: "sm",
+        sponsors: ["RahulCommerce.jpg", "Vicon.png"],
+      },
+      eventsPartners: {
+        name: "Event Partners",
+        size: "sm",
+        sponsors: [
+          "ORMAE.jpeg",
+          "DCVisionVR.jpg",
+          "Blue_Yonder.png",
+          "Delhivery_Logo.png",
+          "GFG.png",
+          "Sabre.png",
+        ],
+      },
+      merchandisePartner: {
+        name: "Merchandise Partner",
+        size: "sm",
+        sponsors: ["OwlPrints.png"],
+      },
+      mediaPartners: {
+        name: "Media Partners",
+        size: "sm",
+        sponsors: ["CampusVarta.png", "WomansEra.png"],
+      },
+    },
+  },
+  previous: {
+    title: "Previous Sponsors",
+    sponsors: [
+      "ACC.png",
+      "AIBH.png",
+      "Allied_publishers.png",
+      "GE_HealthCare.png",
+      "RP_Industrial_Consultant.png",
+      "Springer.png",
+      "SR_Srinivasan.jpg",
+      "TATA.png",
+      "Total_Library_Solution.png",
+    ],
+  },
+};
 
 const imgToUrl = {
   "ACC.png": "https://www.acclimited.com/",
@@ -43,243 +134,58 @@ const imgToUrl = {
   "WomansEra.png": "https://www.womansera.com/",
 };
 
-const spons23 = {
-  titleSponsor: ["OPTYM.jpg"],
-  majorSponsors: ["AirIndia.png", "FlexSim.jpg"],
-  strategicPartners: ["RahulCommerce.jpg", "Vicon.png"],
-  eventsPartners: [
-    "ORMAE.jpeg",
-    "DCVisionVR.jpg",
-    "Blue_Yonder.png",
-    "Delhivery_Logo.png",
-    "GFG.png",
-    "Sabre.png",
-  ],
-  merchandisePartner: ["OwlPrints.png"],
-  mediaPartners: ["CampusVarta.png", "WomansEra.png"],
-};
-
-const GradientLight = () => {
-  return (
-    <div className="absolute top-0 left-1/4 w-full aspect-square bg-radial-gradient from-[#28206C] to-[#28206C]/0 pointer-events-none opacity-50" />
-  );
-};
-
-const Spons = () => {
-  const [activeTab, setActiveTab] = useState("prevSpons");
-
-  const tabs = [
-    { id: "prevSpons", label: "Previous Sponsors" },
-    { id: "spons23", label: "Optima 2023 Sponsors" },
-  ];
+// Component for sponsor category section
+const SponsorCategory = ({ name, sponsors, size = "sm" }) => {
+  const sizeClasses = {
+    sm: "max-w-[18rem] p-4",
+    md: "max-w-[32rem] p-6",
+    lg: "max-w-[56rem] p-4",
+  };
 
   return (
-    <Section
-      className="pt-[12rem] -mt-[5.25rem] "
-      crosses
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddingss
-      id="spons"
-    >
-      <div className="container mx-auto relative z-2 ">
-        <Heading tag="" title="Our Esteemed Sponsors" />
-
-        {/* Tab Switcher */}
-        <div className="flex justify-center gap-4 mb-8">
-          {tabs.map((tab) => (
-            <div
-              className={`tagline flex items-center ${
-                activeTab === tab.id ? "scale-125 p-4" : ""
-              }`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {brackets("left")}
-              <div
-                className={`mx-3 text-n-3 ${
-                  activeTab === tab.id ? "font-bold text-white" : ""
-                } `}
-              >
-                {" "}
-                {tab.label}
-              </div>
-              {brackets("right")}
-            </div>
-          ))}
-        </div>
-
-        {/* Content */}
-        {activeTab === "prevSpons" && (
-          <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
-            {prevSpons.map((spons, index) => (
-              <div
-                className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
-                key={spons}
-              >
-                {index % 2 === 0 && <GradientLight />}
-                <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {activeTab === 'spons23' && (
-<div className="space-y-10">
-  {/* Title Sponsor */}
-  <div className="text-center">
-    <h2 className="text-4xl font-bold mt-12 mb-8">Title Sponsor</h2>
-    <div className="flex justify-center">
-      {spons23.titleSponsor.map((spons) => (
-        <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-        <div
-          className="relative p-4 rounded-lg shadow-2xl bg-white hover:scale-105 transition-transform duration-300 max-w-[56rem] group"
-          key={spons}
-        >
-          {/* <GradientLight /> */}
-      <div className="h-[300px] md:h-[500px] w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
-      <img
-        src={`/assets/spons/spons-23/${spons}`}
-        alt="Sponsor"
-        className="h-full w-auto object-contain p-4"
-      />
-    </div>
-         
-        </div>
-        </a>
-      ))}
-    </div>
-  </div>
-
-  {/* Major Sponsors */}
-  <div>
-    <h2 className="text-4xl font-bold mb-6 text-center">Major Sponsors</h2>
-    <div className="flex flex-wrap gap-8 justify-center">
-      {spons23.majorSponsors.map((spons) => (
-        <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-
-        <div
-          className="relative p-6 rounded-lg shadow-xl bg-white hover:scale-105 transition-transform duration-300 max-w-[32rem] group"
-          key={spons}
+    <div className="mb-10">
+      <h2
+        className={`font-bold mb-6 text-center ${
+          size === "lg" ? "text-4xl mt-12" : "text-2xl"
+        }`}
+      >
+        {name}
+      </h2>
+      <div className="flex flex-wrap gap-6 justify-center">
+        {sponsors.map((spons) => (
+          <a
+            key={spons}
+            href={imgToUrl[spons]}
+            target="_blank"
+            rel="noreferrer"
           >
-          <GradientLight />
-            <div className="h-56 md:h-72 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
-      <img
-        src={`/assets/spons/spons-23/${spons}`} 
-        alt="Sponsor"
-        className="h-full w-auto object-contain p-4"
-        />
-    </div>
-          {/* <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} /> */}
-        </div>
-        </a>
-      ))}
-    </div>
-  </div>
-
-            {/* Strategic Partners */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-center">
-                Strategic Partners
-              </h2>
-              <div className="flex flex-wrap gap-6 justify-center">
-                {spons23.strategicPartners.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-5 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 max-w-[20rem] group"
-                      key={spons}
-                    >
-                      <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} />
-                    </div>
-                  </a>
-                ))}
-              </div>
+            <div
+              className={`relative rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 ${sizeClasses[size]} group`}
+            >
+              <SponsCard
+                imageUrl={`/assets/spons/spons-23/${spons}`}
+                size={size}
+              />
             </div>
-
-            {/* Events Partners */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-center">
-                Event Partners
-              </h2>
-              <div className="flex flex-wrap gap-6 justify-center">
-                {spons23.eventsPartners.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-4 rounded-lg shadow-md bg-white hover:scale-105 transition-transform duration-300 max-w-[18rem] group"
-                      key={spons}
-                    >
-                      <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Merchandise Partner */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-center">
-                Merchandise Partner
-              </h2>
-              <div className="flex justify-center">
-                {spons23.merchandisePartner.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-4 rounded-lg shadow-md bg-white hover:scale-105 transition-transform duration-300 max-w-[18rem] group"
-                      key={spons}
-                    >
-                      <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Media Partners */}
-            <div>
-              <h2 className="text-2xl font-bold mb-6 text-center">
-                Media Partners
-              </h2>
-              <div className="flex flex-wrap gap-6 justify-center">
-                {spons23.mediaPartners.map((spons) => (
-                  <a href={imgToUrl[spons]} target="_blank" rel="noreferrer">
-                    <div
-                      className="relative p-4 rounded-lg shadow-md bg-white hover:scale-105 transition-transform duration-300 max-w-[16rem] group"
-                      key={spons}
-                    >
-                      <SponsCard imageUrl={`/assets/spons/spons-23/${spons}`} />
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
+          </a>
+        ))}
       </div>
-
-      {/* Hero Background */}
-      <div className="absolute -top-[80%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
-        <img
-          src={heroBackground}
-          className="w-full"
-          width={1440}
-          height={1800}
-          alt="hero"
-        />
-      </div>
-
-      {/* Background Circles */}
-      <BackgroundCircles />
-
-      {/* Gradient */}
-      <Gradient />
-      <BottomLine />
-    </Section>
+    </div>
   );
 };
 
-export default Spons;
+// Updated SponsCard component
+const SponsCard = ({ imageUrl, size = "sm" }) => {
+  const heightClasses = {
+    sm: "h-40",
+    md: "h-56 md:h-72",
+    lg: "h-[300px] md:h-[500px]",
+  };
 
-const SponsCard = ({ imageUrl }) => {
   return (
-    <div className="h-40 w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10">
+    <div
+      className={`${heightClasses[size]} w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10`}
+    >
       <img
         src={imageUrl}
         alt="Sponsor"
@@ -289,3 +195,86 @@ const SponsCard = ({ imageUrl }) => {
   );
 };
 
+// Main Spons component
+const Spons = () => {
+  const [activeTab, setActiveTab] = useState("2025");
+  const tabs = [
+    { id: "previous", label: "Previous Sponsors" },
+    { id: "2023", label: "Optima 2023 Sponsors" },
+    { id: "2025", label: "Optima 2025 Sponsors" },
+  ];
+
+  return (
+    <Section
+      className="pt-[12rem] -mt-[5.25rem]"
+      crosses
+      crossesOffset="lg:translate-y-[5.25rem]"
+      customPaddingss
+      id="spons"
+    >
+      <div className="relative z-10">
+        <BackgroundCircles />
+      </div>
+      <div className="container mx-auto relative z-20">
+        <Heading tag="" title="Our Esteemed Sponsors" />
+
+        <div className="flex justify-center gap-4 mb-8">
+          {tabs.map((tab) => (
+            <TabButton
+              key={tab.id}
+              active={activeTab === tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              label={tab.label}
+            />
+          ))}
+        </div>
+
+        {activeTab === "previous" ? (
+          <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
+            {SPONSORS_DATA.previous.sponsors.map((spons) => (
+              <div
+                key={spons}
+                className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
+              >
+                <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="space-y-10">
+            {Object.entries(SPONSORS_DATA[activeTab].categories).map(
+              ([key, category]) => (
+                <SponsorCategory
+                  key={key}
+                  name={category.name}
+                  sponsors={category.sponsors}
+                  size={category.size}
+                />
+              )
+            )}
+          </div>
+        )}
+      </div>
+
+      <Gradient />
+    </Section>
+  );
+};
+
+// Tab button component
+const TabButton = ({ active, onClick, label }) => (
+  <div
+    className={`tagline flex items-center cursor-pointer ${
+      active ? "scale-125 p-4" : ""
+    }`}
+    onClick={onClick}
+  >
+    {brackets("left")}
+    <div className={`mx-3 text-n-3 ${active ? "font-bold text-white" : ""}`}>
+      {label}
+    </div>
+    {brackets("right")}
+  </div>
+);
+
+export default Spons;

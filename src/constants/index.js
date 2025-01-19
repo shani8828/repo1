@@ -1,3 +1,4 @@
+
 import {
   benefitIcon1,
   benefitIcon2,
@@ -34,7 +35,18 @@ import {
   telegram,
   twitter,
   yourlogo,
+  // About_Home
+  Degrees,
+  CodeLand,
+  FinanceFantasia,
+  Innovate,
+  NetworSify,
+  NLP,
+  Operheimer,
+  OptiSim,
+  unstop,
 } from "../assets";
+
 
 export const navigation = [
   {
@@ -47,11 +59,11 @@ export const navigation = [
     title: "Gallery",
     url: "gallery",
   },
-  {
-    id: "2",
-    title: "Events",
-    url: "events",
-  },
+  // {
+  //   id: "2",
+  //   title: "Events",
+  //   url: "events",
+  // },
   {
     id: "3",
     title: "Competitions",
@@ -101,41 +113,6 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-export const roadmap = [
-  {
-    id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap1,
-    colorful: true,
-  },
-  {
-    id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap2,
-  },
-  {
-    id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
-    status: "done",
-    imageUrl: roadmap3,
-  },
-  {
-    id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
-    status: "progress",
-    imageUrl: roadmap4,
-  },
-];
 
 export const collabText =
   "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
@@ -143,216 +120,213 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
-    text: collabText,
+    title: "Progress",
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Innovation",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Advancement ",
   },
 ];
 
 export const collabApps = [
   {
     id: "0",
-    title: "Figma",
-    icon: figma,
+    title: "Degrees",
+    icon: Degrees,
     width: 26,
     height: 36,
   },
   {
     id: "1",
-    title: "Notion",
-    icon: notion,
+    title: "CodeLand,",
+    icon: CodeLand,
     width: 34,
     height: 36,
   },
   {
     id: "2",
-    title: "Discord",
-    icon: discord,
+    title: "FinanceFantasia",
+    icon: FinanceFantasia,
     width: 36,
     height: 28,
   },
   {
     id: "3",
-    title: "Slack",
-    icon: slack,
+    title: "Innovate,",
+    icon: Innovate,
     width: 34,
     height: 35,
   },
   {
     id: "4",
-    title: "Photoshop",
-    icon: photoshop,
+    title: "NetworSify,",
+    icon: NetworSify,
     width: 34,
     height: 34,
   },
   {
     id: "5",
-    title: "Protopie",
-    icon: protopie,
+    title: "NLP",
+    icon: NLP,
     width: 34,
     height: 34,
   },
   {
     id: "6",
-    title: "Framer",
-    icon: framer,
+    title: " Operheimer",
+    icon:  Operheimer,
     width: 26,
     height: 34,
   },
   {
     id: "7",
-    title: "Raindrop",
-    icon: raindrop,
+    title: " OptiSim,",
+    icon:  OptiSim,
     width: 38,
     height: 32,
   },
 ];
 
-export const pricing = [
-  {
-    id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-  {
-    id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
-  },
-  {
-    id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
-  },
-];
+
 
 export const events = [
   {
     id: "0",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    borderUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
   },
   {
     id: "1",
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    borderUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
     light: true,
   },
   {
     id: "2",
     title: "Connect everywhere",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    borderUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
   },
   {
     id: "3",
     title: "Fast responding",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    borderUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
     light: true,
   },
   {
     id: "4",
     title: "Ask anything",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    borderUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
   },
   {
     id: "5",
     title: "Improve everyday",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    borderUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    backgroundUrl: benefitImage2,
   },
 ];
+
+
 
 export const competitions = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
-    light: true,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: benefitImage2,
-    light: true,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    title: "NLP.py",
+    subTitle: "by Blue Yonder", // New subtitle added
+    text: "Natural Language Processing Challenge",
+    borderUrl: "./src/assets/benefits/card-1.svg",
+    photoUrl: Innovate, // Added photo URL
+    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    Unstopicon: unstop,
+    backgroundUrl: benefitImage2,
+    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
+    unstopLink: "https://unstop.com",  // Add your Unstop link here
   },
 ];
+
+

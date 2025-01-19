@@ -4,8 +4,6 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Roadmap";
 
-
-
 const About = () => {
   return (
     <Section className="overflow-hidden" id="about">

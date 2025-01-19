@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.optima-shani-team-container{
+.optima-team-container{
     position: relative;
     height: 100%;
     width: 100%;
@@ -13,20 +13,22 @@
     row-gap: 50px;
     column-gap: 20px;
     color: white;
+    /* background: #6b6ea4; */
+    /* background: linear-gradient(25deg, #19064d, #a72693); */
 }
 
-.optima-shani-executives,
-.optima-shani-core-heads {
-    margin-top: 20px;
+.optima-team-executives,
+.optima-team-core-heads {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
-.optima-shani-executives .optima-shani-team-members,
-.optima-shani-core-heads .optima-shani-team-members {
+.optima-team-executives .optima-team-members,
+.optima-team-core-heads .optima-team-members {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -37,11 +39,12 @@
     margin-top: 20px;
 }
 
-.optima-shani-executives h1,
-.optima-shani-core-heads h1 {
+.optima-team-executives h1,
+.optima-team-core-heads h1 {
     width: 290px;
     /* height: 50px; */
-    background: linear-gradient(-45deg, #9a4eff, #24ff72);
+    /* background: linear-gradient(-45deg, #9a4eff, #24ff72); */
+    background: linear-gradient(25deg, #19064d, #a72693);
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -78,8 +81,8 @@
 
 @media (max-width: 430px) {
 
-    .optima-shani-executives h1,
-    .optima-shani-core-heads h1{
+    .optima-team-executives h1,
+    .optima-team-core-heads h1{
         width: 300px;
     }
 
@@ -94,8 +97,8 @@
     }
 }
 @media (max-width:332px) {
-    .optima-shani-executives h1,
-    .optima-shani-core-heads h1{
+    .optima-team-executives h1,
+    .optima-team-core-heads h1{
         width: 265px;
     }
 }

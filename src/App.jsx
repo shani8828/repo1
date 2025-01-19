@@ -1,10 +1,7 @@
 import Benefits from "./components/Events";
-import Collaboration from "./components/Collaboration";
-import ShaniFooter from "./components/Footer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
-import Pricing from "./components/Pricing";
-import Roadmap from "./components/Roadmap";
 import { Routes, Route } from "react-router-dom";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";
@@ -24,13 +21,12 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/events" element={<Benefits />} />
-          {/* <Route path="/pricing" element={<Pricing />} /> */}
+          {/* <Route path="/events" element={<Benefits />} /> */}
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
         </Routes>
-        <ShaniFooter />
+        <Footer />
       </div>
 
       <ButtonGradient />
