@@ -1,9 +1,9 @@
 import exec1 from "../assets/Team/saharsh.jpeg";
 import exec2 from "../assets/Team/shashwat.jpeg";
-import core10 from "../assets/Team/mehran.jpeg";
+import core10 from "../assets/Team/Mehran.jpeg";
 import core9 from "../assets/Team/Mayank.jpeg";
 import core8 from "../assets/Team/Manasvi.jpeg";
-import core7 from "../assets/Team/debdulal.jpeg";
+import core7 from "../assets/Team/Debdulal.jpeg";
 import core6 from "../assets/Team/Suranjan.jpeg";
 import core5 from "../assets/Team/Nishant.jpeg";
 import core4 from "../assets/Team/Swetank.jpg";
@@ -57,12 +57,10 @@ export const CoreHeads = [
       facebook:
         "https://www.facebook.com/profile.php?id=100087744332005&mibextid=ZbWKwL",
       linkedin: "http://www.linkedin.com/in/sanchay-baranwal",
-      mail:
-        "mailto:baranwalsanchay01@gmail.com",
+      mail: "mailto:baranwalsanchay01@gmail.com",
     },
   },
-  
-  
+
   {
     id: 3,
     imageUrl: core4,
@@ -74,8 +72,8 @@ export const CoreHeads = [
       mail: "mailto:swetank.shandilya.iitkgp@gmail.com",
     },
   },
-  
- ,
+
+  ,
   {
     id: 4,
     imageUrl: core8,
@@ -87,7 +85,7 @@ export const CoreHeads = [
       mail: "mailto:manasvi.shekhar.iitkgp@gmail.com",
     },
   },
-  
+
   {
     id: 5,
     imageUrl: core9,
@@ -108,8 +106,7 @@ export const CoreHeads = [
       facebook: "https://www.facebook.com/share/18hRA7y8rK/",
       linkedin:
         "https://www.linkedin.com/in/shreya-das-448281255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      mail:
-        "mailto:shreya.das.iitkgp@gmail.com",
+      mail: "mailto:shreya.das.iitkgp@gmail.com",
     },
   },
   {
@@ -154,8 +151,7 @@ export const CoreHeads = [
       facebook:
         "https://www.facebook.com/suranjan.karmakar.750?mibextid=ZbWKwL",
       linkedin: "https://www.linkedin.com/in/suranjan-karmakar1207",
-      mail:
-        "mailto:suranjan.karmakar.iitkgp@gmail.com",
+      mail: "mailto:suranjan.karmakar.iitkgp@gmail.com",
     },
   },
 ];

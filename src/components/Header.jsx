@@ -35,18 +35,17 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="flex items-center gap-1 w-[12rem] xl:mr-8" href="/">
-          <img src={'/logo-optima.png'} width={50} height={50} alt="Optima" />
-          <h1 className="text-3xl">Optima</h1>
+      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
+        <a className="flex items-center gap-1 w-[15rem] xl:mr-8" href="/">
+          <img src={"/logo-optima.png"} width={50} height={50} alt="Optima" />
+          <h1 className="text-2xl font-semibold ml-2">OPTIMA 2025</h1>
         </a>
-
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
-          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
+          } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:bg-transparent`}
         >
-          <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+          <div className="relative z-2 flex flex-col-reverse items-start justify-center m-auto lg:flex-row lg:justify-end">
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -54,7 +53,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-3 xl:px-6 py-5 md:py-6 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                } px-3 xl:px-6 py-5 md:py-6 lg:-mr-0.25 lg:text-base lg:font-semibold ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"

@@ -3,17 +3,23 @@ import { grid } from "../assets";
 import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Roadmap";
+import Button from "./Button";
 
 const About = () => {
   return (
-    <Section className="overflow-hidden" id="about">
+    <Section
+      className="pt-[6rem] -mt-[5.25rem]"
+      crossesOffset="lg:translate-y-[5.25rem]"
+      customPaddings
+      id="about"
+    >
       <div className="container md:pb-10">
         <Heading
-          tag="Welcome to Optima"
-          title="IIT Kharagpur's Techno-Optimization Fest"
+          className="md:max-w-md lg:max-w-2xl text-center mb-6"
+          title="Optima 2025"
         />
 
-        <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+        <div className="relative grid gap-6 md:grid-cols-2 md:gap-12 md:pb-[7rem]">
           <div className="md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] bg-conic-gradient">
             <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
               <div className="absolute top-0 left-0 max-w-full">
@@ -38,7 +44,7 @@ const About = () => {
                 <h4 className="h4 mb-4">
                   Optima - IIT Kharagpur's Techno-Optimization Fest
                 </h4>
-                <p className="body-2 text-n-4">
+                <p className="body-2 text-n-4 mb-8">
                   A nexus of innovation, problem-solving, and interdisciplinary
                   collaboration, Optima is orchestrated by the esteemed
                   Department of Industrial and Systems Engineering. With a focal
@@ -50,12 +56,21 @@ const About = () => {
                   driving sustainable advancements, efficiencies, and
                   productivity.
                 </p>
+                <div className="flex justify-center">
+                  <Button
+                    className="mt-4"
+                    href="https://forms.gle/23232323232323232323232323232323"
+                    target="_blank"
+                  >
+                    Register Now
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
 
           <div className="md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] bg-conic-gradient">
-            <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15">
+            <div className="relative p-8 bg-n-8 rounded-[2.4375rem] overflow-hidden xl:p-15 ">
               <div className="absolute top-0 left-0 max-w-full">
                 <img
                   className="w-full"
@@ -94,6 +109,15 @@ const About = () => {
                   Research and Optimization, Safety Analytics and Virtual
                   Reality
                 </p>
+                <div className="flex justify-center">
+                  <Button
+                    className="mt-4"
+                    href="https://forms.gle/23232323232323232323232323232323"
+                    target="_blank"
+                  >
+                    About ISE
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

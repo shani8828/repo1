@@ -1,16 +1,15 @@
-import Benefits from "./components/Events";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Homepage from "./components/Homepage";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";
-import Gallery from "./components/Gallery";
 import Competitions from "./components/Competitions";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Header from "./components/Header";
+import Homepage from "./components/Homepage";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const App = () => {
   return (

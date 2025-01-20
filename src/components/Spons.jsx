@@ -5,6 +5,7 @@ import { BackgroundCircles, BottomLine } from "./design/Hero";
 import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Services.jsx";
+import Button from "./Button.jsx";
 
 // Separate data into a new file: src/data/sponsorsData.js
 const SPONSORS_DATA = {
@@ -139,7 +140,7 @@ const SponsorCategory = ({ name, sponsors, size = "sm" }) => {
   const sizeClasses = {
     sm: "max-w-[18rem] p-4",
     md: "max-w-[32rem] p-6",
-    lg: "max-w-[56rem] p-4",
+    lg: "max-w-[42rem] p-4",
   };
 
   return (
@@ -179,7 +180,7 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
   const heightClasses = {
     sm: "h-40",
     md: "h-56 md:h-72",
-    lg: "h-[300px] md:h-[500px]",
+    lg: "h-[300px] md:h-[400px]",
   };
 
   return (
@@ -199,33 +200,43 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 const Spons = () => {
   const [activeTab, setActiveTab] = useState("2025");
   const tabs = [
+    { id: "2025", label: "2025 Sponsors" },
+    { id: "2023", label: "2023 Sponsors" },
     { id: "previous", label: "Previous Sponsors" },
-    { id: "2023", label: "Optima 2023 Sponsors" },
-    { id: "2025", label: "Optima 2025 Sponsors" },
   ];
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem]"
-      crosses
+      className="pt-[8rem] -mt-[5.25rem]"
+      // crossess
       crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddingss
+      customPaddings
       id="spons"
     >
       <div className="relative z-10">
         <BackgroundCircles />
       </div>
       <div className="container mx-auto relative z-20">
-        <Heading tag="" title="Our Esteemed Sponsors" />
+        <Heading
+          className="md:max-w-md lg:max-w-2xl text-center "
+          title="Our Esteemed Sponsors"
+        />
 
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-col md:flex-row  w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
           {tabs.map((tab) => (
-            <TabButton
+            // <TabButton
+            //   key={tab.id}
+            //   active={activeTab === tab.id}
+            //   onClick={() => setActiveTab(tab.id)}
+            //   label={tab.label}
+            // />
+            <Button
               key={tab.id}
               active={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
-              label={tab.label}
-            />
+            >
+              {tab.label}
+            </Button>
           ))}
         </div>
 
@@ -263,18 +274,22 @@ const Spons = () => {
 
 // Tab button component
 const TabButton = ({ active, onClick, label }) => (
-  <div
-    className={`tagline flex items-center cursor-pointer ${
-      active ? "scale-125 p-4" : ""
-    }`}
+  <button
+    className={`
+      px-6 py-3 rounded-full transition-all duration-300
+      ${
+        active
+          ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
+          : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
+      }
+      font-medium border border-n-6 justify-center
+      flex items-center gap-2
+      text-center
+    `}
     onClick={onClick}
   >
-    {brackets("left")}
-    <div className={`mx-3 text-n-3 ${active ? "font-bold text-white" : ""}`}>
-      {label}
-    </div>
-    {brackets("right")}
-  </div>
+    <span>{label}</span>
+  </button>
 );
 
 export default Spons;
