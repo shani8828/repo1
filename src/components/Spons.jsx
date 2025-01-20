@@ -140,7 +140,7 @@ const SponsorCategory = ({ name, sponsors, size = "sm" }) => {
   const sizeClasses = {
     sm: "max-w-[18rem] p-4",
     md: "max-w-[32rem] p-6",
-    lg: "max-w-[56rem] p-4",
+    lg: "max-w-[42rem] p-4",
   };
 
   return (
@@ -180,7 +180,7 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
   const heightClasses = {
     sm: "h-40",
     md: "h-56 md:h-72",
-    lg: "h-[300px] md:h-[500px]",
+    lg: "h-[300px] md:h-[400px]",
   };
 
   return (

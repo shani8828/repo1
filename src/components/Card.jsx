@@ -3,7 +3,7 @@ import "../components/OptimaCss/Card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
-  faSquareFacebook
+  faSquareFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { SiGmail } from "react-icons/si";
 
@@ -16,23 +16,23 @@ const Card = ({ profile }) => {
         <h3 className="text-xl">{profile.positionName}</h3>
       </div>
       <div className="optima-card-back text-white">
-        <h2 className="text-3xl lg:text-4xl font-semibold">{profile.name}</h2>
+        <h2 className="text-2xl lg:text-4xl font-semibold">{profile.name}</h2>
         <h3 className="text-2xl lg:text-3xl">{profile.positionName}</h3>
         <p className="optima-card-back-contact">
           <a href={profile.socialLinks.facebook} target="_blank">
             <FontAwesomeIcon
-              className="text-4xl lg:text-5xl"
+              className="text-3xl lg:text-4xl"
               icon={faSquareFacebook}
             />
           </a>
           <a href={profile.socialLinks.linkedin} target="_blank">
             <FontAwesomeIcon
-              className="text-4xl lg:text-5xl"
+              className="text-3xl lg:text-4xl"
               icon={faLinkedin}
             />
           </a>
           <a href={profile.socialLinks.mail} target="_blank">
-          <SiGmail className=" text-4xl lg:text-5xl" />
+            <SiGmail className=" text-3xl lg:text-4xl" />
           </a>
         </p>
       </div>
@@ -41,4 +41,3 @@ const Card = ({ profile }) => {
 };
 
 export default Card;
-
