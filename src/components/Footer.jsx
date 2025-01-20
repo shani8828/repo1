@@ -84,7 +84,7 @@ const Footer = () => {
             <div className="optima-footer-quick-ways">
               <h3 className="text-3xl mb-3 font-semibold">QUICK WAYS</h3>
               <ul className="text-gray-300">
-              <li>
+                <li>
                   <a href="/about">About Us</a>
                 </li>
                 <li>
@@ -108,7 +108,6 @@ const Footer = () => {
                 {/* <li>
                   <a href="/guestlectures">Guest Lectures</a>
                 </li> */}
-                
               </ul>
             </div>
             <div className="optima-footer-reach-us">
@@ -140,7 +139,7 @@ const Footer = () => {
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faPhone} />
-                    +91 6370708967
+                    <span className="pl-2">+91 6370708967</span>
                   </a>
                   <a
                     className="optima-footer-hovered"
@@ -148,7 +147,7 @@ const Footer = () => {
                     target="_blank"
                   >
                     <FontAwesomeIcon icon={faPhone} shake />
-                    +91 6370708967
+                    <span className="pl-2">+91 6370708967</span>
                   </a>
                 </div>
                 <div className="optima-footer-mail1">
@@ -157,8 +156,7 @@ const Footer = () => {
                     href={`mailto:sumanta@optima.org.in`}
                     target="_blank"
                   >
-                    <FontAwesomeIcon icon={faEnvelope} />{" "}
-                    sumanta@optima.org.in
+                    <FontAwesomeIcon icon={faEnvelope} /> sumanta@optima.org.in
                   </a>
                   <a
                     className="optima-footer-hovered"

@@ -5,6 +5,7 @@ import { BackgroundCircles, BottomLine } from "./design/Hero";
 import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Services.jsx";
+import Button from "./Button.jsx";
 
 // Separate data into a new file: src/data/sponsorsData.js
 const SPONSORS_DATA = {
@@ -206,7 +207,7 @@ const Spons = () => {
 
   return (
     <Section
-      className="pt-[12rem] -mt-[5.25rem]"
+      className="pt-[8rem] -mt-[5.25rem]"
       // crossess
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddings
@@ -217,18 +218,25 @@ const Spons = () => {
       </div>
       <div className="container mx-auto relative z-20">
         <Heading
-          className="md:max-w-md lg:max-w-2xl text-center mb-6"
+          className="md:max-w-md lg:max-w-2xl text-center "
           title="Our Esteemed Sponsors"
         />
 
         <div className="flex flex-col md:flex-row  w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
           {tabs.map((tab) => (
-            <TabButton
+            // <TabButton
+            //   key={tab.id}
+            //   active={activeTab === tab.id}
+            //   onClick={() => setActiveTab(tab.id)}
+            //   label={tab.label}
+            // />
+            <Button
               key={tab.id}
               active={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
-              label={tab.label}
-            />
+            >
+              {tab.label}
+            </Button>
           ))}
         </div>
 
