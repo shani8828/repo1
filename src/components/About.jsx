@@ -8,10 +8,7 @@ const About = () => {
   return (
     <Section className="overflow-hidden" id="about">
       <div className="container md:pb-10">
-        <Heading
-          tag="Welcome to Optima"
-          title="IIT Kharagpur's Techno-Optimization Fest"
-        />
+        <Heading tag="Welcome to Optima" title="Optima 2025" />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
           <div className="md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] bg-conic-gradient">

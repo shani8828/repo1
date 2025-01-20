@@ -199,15 +199,15 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 const Spons = () => {
   const [activeTab, setActiveTab] = useState("2025");
   const tabs = [
-    { id: "previous", label: "Previous Sponsors" },
-    { id: "2023", label: "Optima 2023 Sponsors" },
     { id: "2025", label: "Optima 2025 Sponsors" },
+    { id: "2023", label: "Optima 2023 Sponsors" },
+    { id: "previous", label: "Previous Sponsors" },
   ];
 
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
-      crosses
+      // crossess
       crossesOffset="lg:translate-y-[5.25rem]"
       customPaddingss
       id="spons"
@@ -263,18 +263,21 @@ const Spons = () => {
 
 // Tab button component
 const TabButton = ({ active, onClick, label }) => (
-  <div
-    className={`tagline flex items-center cursor-pointer ${
-      active ? "scale-125 p-4" : ""
-    }`}
+  <button
+    className={`
+      px-6 py-3 rounded-full transition-all duration-300
+      ${
+        active
+          ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
+          : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
+      }
+      font-medium border border-n-6
+      flex items-center gap-2
+    `}
     onClick={onClick}
   >
-    {brackets("left")}
-    <div className={`mx-3 text-n-3 ${active ? "font-bold text-white" : ""}`}>
-      {label}
-    </div>
-    {brackets("right")}
-  </div>
+    <span>{label}</span>
+  </button>
 );
 
 export default Spons;
