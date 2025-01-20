@@ -3,10 +3,10 @@ name: Deploy to Netlify
 on:
     push:
         branches:
-            - main # Replace with your default branch name
+            - master # Replace with your default branch name
     pull_request:
         branches:
-            - main
+            - master
 
 jobs:
     deploy:
