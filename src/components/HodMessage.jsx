@@ -8,12 +8,12 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 const HodMessage = () => {
   return (
     <Section id="how-to-use">
-      <div className="container selection:text-blue-500">
+      <div className="container">
         <div className="relative">
           {/* Containing 3 divs */}
-          <div className="relative z-1 grid gap-5 lg:grid-cols-2">
+          <div className="relative z-1 grid gap-12 lg:grid-cols-[60%,35%]">
             {/* larger div */}
-            <div className="p-3 border border-n-1/10 flex flex-col justify-between items-center rounded-3xl transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-blue-400">
+            <div className="p-3 border border-n-1/10 flex flex-col justify-between items-center rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
               <h1 className="text-2xl lg:text-3xl m-3 font-semibold">
                 HOD's Message
               </h1>
@@ -24,10 +24,10 @@ const HodMessage = () => {
                 Prof. Jhareshwar Maiti
               </h1>
               <p className="p-4 text:sm lg:text-3xs lg:p-8">
-                <span className="text-blue-500 font-semibold text-4xl">
+                {/* <span className="text-purple-500 font-semibold text-4xl">
                   ✎...{" "}
-                </span>
-                As the Department of Industrial and Systems Engineering marks
+                </span> */}
+                "As the Department of Industrial and Systems Engineering marks
                 its 50th anniversary, I am delighted to present to you Optima,
                 the techno-optimization fest of IIT Kharagpur, meticulously
                 organised by our department. Optima offers a distinctive
@@ -37,18 +37,20 @@ const HodMessage = () => {
                 accross various domains. i extend a heartfelt invitation to all
                 of you to become integral participants in the journey of IIT
                 Kharagpur and the Department of Industrial and Systems
-                Engineering.
+                Engineering."
               </p>
               <div className="flex gap-5">
                 <a
-                  className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white "
-                  href="mailto:someone@example.com"
+                  className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white "
+                  href="mailto:jhareswar.maiti@gmail.com"
+                  target="_blank"
                 >
                   <FaEnvelope />
                 </a>
                 <a
-                  className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
-                  href="#"
+                  className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                  href="https://www.linkedin.com/in/jhareswar-maiti-9a269973/?originalSubdomain=in"
+                  target="_blank"
                 >
                   <FaLinkedin />
                 </a>
@@ -57,7 +59,7 @@ const HodMessage = () => {
             {/* another div containing two smaller divs */}
             <div className="flex flex-col gap-5 justify-between items-center">
               {/* first smaller div */}
-              <div className="h-1/2 w-full border border-n-1/10 flex flex-col items-center justify-evenly rounded-3xl gap-3 p-3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-blue-400">
+              <div className="h-1/2 w-full border border-n-1/10 flex flex-col items-center justify-evenly rounded-3xl gap-3 p-3 transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
                 <h1 className="text-2xl lg:text-3xl font-semibold">Chairman</h1>
                 <img
                   src={chair}
@@ -67,21 +69,23 @@ const HodMessage = () => {
                 <h1 className="">Prof. Gautam Sen</h1>
                 <div className="flex gap-5">
                   <a
-                    className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                    className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
                     href="mailto:gsen@iem.iitkgp.ac.in"
+                    target="_blank"
                   >
                     <FaEnvelope />
                   </a>
                   <a
-                    className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                    className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
                     href="https://www.linkedin.com/in/goutam-a-sen-71512712b/"
+                    target="_blank"
                   >
                     <FaLinkedin />
                   </a>
                 </div>
               </div>
               {/* second smaller div */}
-              <div className="h-1/2 w-full border border-n-1/10 flex flex-col items-center justify-evenly rounded-3xl gap-3 p-3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl hover:shadow-blue-400">
+              <div className="h-1/2 w-full border border-n-1/10 flex flex-col items-center justify-evenly rounded-3xl gap-3 p-3 transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
                 <h1 className="text-2xl lg:text-3xl font-semibold">
                   Co-Chairman
                 </h1>
@@ -93,14 +97,16 @@ const HodMessage = () => {
                 <h1>Prof. Mamata Jenamani</h1>
                 <div className="gap-5 flex">
                   <a
-                    className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                    className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
                     href="mailto:mj@iem.iitkgp.ac.in"
+                    target="_blank"
                   >
                     <FaEnvelope />
                   </a>
                   <a
-                    className="text-3xl hover:text-blue-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                    className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
                     href="https://www.linkedin.com/in/mamata-jenamani-6a93b894/"
+                    target="_blank"
                   >
                     <FaLinkedin />
                   </a>
@@ -108,7 +114,7 @@ const HodMessage = () => {
               </div>
             </div>
           </div>
-          <Gradient />
+          <Gradient/>
         </div>
       </div>
     </Section>

@@ -126,7 +126,7 @@ const Testimonial = () => {
 
 const ReviewBlock = ({ review }) => {
   return (
-    <blockquote className="flex h-full flex-col justify-between p-4 shadow-sm sm:p-8 border border-n-1/10 rounded-3xl  transition-all duration-300 hover:shadow-md hover:shadow-blue-500">
+    <blockquote className="flex h-full flex-col justify-between p-4 shadow-sm sm:p-8 border border-n-1/10 rounded-3xl  transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
       <div>
         <div className="flex  text-purple-500">
           {Array.from({ length: 5 }).map((_, i) => (
