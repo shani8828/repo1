@@ -6,7 +6,7 @@ import core8 from "../assets/Team/Manasvi.jpeg";
 import core7 from "../assets/Team/Debdulal.jpeg";
 import core6 from "../assets/Team/Suranjan.jpeg";
 import core5 from "../assets/Team/Nishant.jpeg";
-import core4 from "../assets/Team/Swetank.jpeg";
+import core4 from "../assets/Team/Swetank.jpg";
 import core3 from "../assets/Team/Shreya.jpeg";
 import core2 from "../assets/Team/Sumanta.jpg";
 import core1 from "../assets/Team/Sanchay.jpeg";

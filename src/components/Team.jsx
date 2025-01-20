@@ -11,13 +11,9 @@ import { Gradient } from "./design/Services.jsx";
 const Team = () => {
   const parallaxRef = useRef(null);
   return (
-    <Section id="team" className="overflow-hidden">
-      <div className="container relative z-2" ref={parallaxRef}>
-        <Heading
-          className="md:max-w-md lg:max-w-2xl mb-16"
-          title="Meet Our Team"
-          text="Passionate individuals working together to create extraordinary experiences"
-        />
+    <Section id="team">
+      <div className="container relative z-2 rounded-3xl" ref={parallaxRef}>
+        <Heading className="md:max-w-md lg:max-w-2xl text-center" title="Our Team" />
         <BackgroundCircles />
         <div className="optima-team-container max-w-[1280px] mx-auto selection:text-custom-purple mt-0">
           <div className="optima-team-executives mb-24">
