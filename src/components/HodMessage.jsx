@@ -7,7 +7,7 @@ import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 const HodMessage = () => {
   return (
-    <Section crosses id="how-to-use">
+    <Section id="how-to-use">
       <div className="container selection:text-blue-500">
         <div className="relative">
           {/* Containing 3 divs */}

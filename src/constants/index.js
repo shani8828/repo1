@@ -1,4 +1,3 @@
-
 import {
   benefitIcon1,
   benefitIcon2,
@@ -113,7 +112,6 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
-
 export const collabText =
   "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
@@ -178,20 +176,18 @@ export const collabApps = [
   {
     id: "6",
     title: " Operheimer",
-    icon:  Operheimer,
+    icon: Operheimer,
     width: 26,
     height: 34,
   },
   {
     id: "7",
     title: " OptiSim,",
-    icon:  OptiSim,
+    icon: OptiSim,
     width: 38,
     height: 32,
   },
 ];
-
-
 
 export const events = [
   {
@@ -246,8 +242,6 @@ export const events = [
   },
 ];
 
-
-
 export const competitions = [
   {
     id: "0",
@@ -256,11 +250,12 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
   {
     id: "1",
@@ -269,11 +264,12 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
   {
     id: "2",
@@ -282,11 +278,12 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
   {
     id: "3",
@@ -295,11 +292,12 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
   {
     id: "4",
@@ -308,11 +306,12 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
   {
     id: "5",
@@ -321,12 +320,11 @@ export const competitions = [
     text: "Natural Language Processing Challenge",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
-    whatsppicon: "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+    whatsppicon:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890",  // Add your WhatsApp link here
-    unstopLink: "https://unstop.com",  // Add your Unstop link here
+    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com", // Add your Unstop link here
   },
 ];
-
-

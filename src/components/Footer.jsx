@@ -84,30 +84,31 @@ const Footer = () => {
             <div className="optima-footer-quick-ways">
               <h3 className="text-3xl mb-3 font-semibold">QUICK WAYS</h3>
               <ul className="text-gray-300">
-                <li>
-                  <a href="/register">Register</a>
+              <li>
+                  <a href="/about">About Us</a>
                 </li>
                 <li>
+                  <a href="/gallery">Gallery</a>
+                </li>
+                {/* <li>
                   <a href="/workshops">Workshops</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="/competitions">Competitons</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/schedule">Schedule</a>
-                </li>
-                <li>
-                  <a href="/team">Team</a>
-                </li>
-                <li>
-                  <a href="/guestlectures">Guest Lectures</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="/sponsors">Sponsors</a>
                 </li>
                 <li>
-                  <a href="/about">About Us</a>
+                  <a href="/team">Team</a>
                 </li>
+                {/* <li>
+                  <a href="/guestlectures">Guest Lectures</a>
+                </li> */}
+                
               </ul>
             </div>
             <div className="optima-footer-reach-us">
