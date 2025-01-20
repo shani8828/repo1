@@ -199,8 +199,8 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 const Spons = () => {
   const [activeTab, setActiveTab] = useState("2025");
   const tabs = [
-    { id: "2025", label: "Optima 2025 Sponsors" },
-    { id: "2023", label: "Optima 2023 Sponsors" },
+    { id: "2025", label: "2025 Sponsors" },
+    { id: "2023", label: "2023 Sponsors" },
     { id: "previous", label: "Previous Sponsors" },
   ];
 
@@ -209,16 +209,19 @@ const Spons = () => {
       className="pt-[12rem] -mt-[5.25rem]"
       // crossess
       crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddingss
+      customPaddings
       id="spons"
     >
       <div className="relative z-10">
         <BackgroundCircles />
       </div>
       <div className="container mx-auto relative z-20">
-        <Heading tag="" title="Our Esteemed Sponsors" />
+        <Heading
+          className="md:max-w-md lg:max-w-2xl text-center mb-6"
+          title="Our Esteemed Sponsors"
+        />
 
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-col md:flex-row  w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
           {tabs.map((tab) => (
             <TabButton
               key={tab.id}
@@ -271,8 +274,9 @@ const TabButton = ({ active, onClick, label }) => (
           ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
           : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
       }
-      font-medium border border-n-6
+      font-medium border border-n-6 justify-center
       flex items-center gap-2
+      text-center
     `}
     onClick={onClick}
   >
