@@ -8,9 +8,7 @@ import Button from "./Button";
 const About = () => {
   return (
     <Section
-      className="pt-[6rem] -mt-[5.25rem]"
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
+      
       id="about"
     >
       <div className="container md:pb-10">
@@ -32,16 +30,16 @@ const About = () => {
                 />
               </div>
               <div className="relative z-1">
-                <div className="mb-10 -my-10 -mx-15 p-10">
+                <div className="mb-2 md:mb-5 lg:mb-8 -my-10 -mx-15 p-10">
                   <img
-                    className="w-[80%] mx-auto"
+                    className="w-[80%] mx-auto bg-gray-300 rounded-xl"
                     src="/assets/optima.png"
                     width={428}
                     height={326}
                     alt={"gdg"}
                   />
                 </div>
-                <h4 className="h4 mb-4">
+                <h4 className="h2 md:h4 mb-4">
                   Optima - IIT Kharagpur's Techno-Optimization Fest
                 </h4>
                 <p className="body-2 text-n-4 mb-8">
@@ -51,7 +49,7 @@ const About = () => {
                   point on technology-optimization synergy, Optima addresses
                   real-world challenges across sectors like supply chain
                   management, production line optimization, and more. The event,
-                  from 6th - 8th October 2023, offers a rich mix of
+                  from 6th - 8th October 2023, offered a rich mix of
                   competitions, workshops, seminars, and interactive sessions,
                   driving sustainable advancements, efficiencies, and
                   productivity.
@@ -81,16 +79,16 @@ const About = () => {
                 />
               </div>
               <div className="relative z-1">
-                <div className="mb-10 -my-10 -mx-15 p-10">
+                <div className="mb-2 md:mb-5 lg:mb-8 -my-10 -mx-15 p-10">
                   <img
-                    className="w-[80%] mx-auto"
+                    className="w-[80%] mx-auto bg-gray-300 rounded-xl"
                     src="/assets/ise.png"
                     width={628}
                     height={426}
                     alt={"gdg"}
                   />
                 </div>
-                <h4 className="h4 mb-4">
+                <h4 className="h2 md:h4 mb-4">
                   Department of Industrial and Systems Engineering - IIT
                   Kharagpur
                 </h4>

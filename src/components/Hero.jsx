@@ -21,7 +21,7 @@ const Hero = () => {
 
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3rem] md:mb-[4rem] lg:mb-[4.8rem]">
           <h1 className="h1 mb-6">
-            Welcome&nbsp;to&nbsp;
+            Welcome&nbsp;to
             {` `}
             <span className="inline-block relative">
               <span className="bg-gradient-to-r from-orange-500 to-red-600 text-transparent bg-clip-text">

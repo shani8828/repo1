@@ -207,10 +207,6 @@ const Spons = () => {
 
   return (
     <Section
-      className="pt-[8rem] -mt-[5.25rem]"
-      // crossess
-      crossesOffset="lg:translate-y-[5.25rem]"
-      customPaddings
       id="spons"
     >
       <div className="relative z-10">

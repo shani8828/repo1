@@ -129,12 +129,6 @@
     display: block;
 }
 
-.optima-footer-copyright-claim {
-    margin: 0px;
-    padding: 0px;
-    color: rgb(165, 164, 164);
-}
-
 @media (max-width: 970px) {
     #optima-footer {
         display: flex;

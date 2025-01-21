@@ -167,7 +167,7 @@ const Footer = () => {
                     sumanta@optima.org.in
                   </a>
                 </div>
-                <div className="optima-footer-mail2">
+                {/* <div className="optima-footer-mail2">
                   <a
                     className="optima-footer-normal"
                     href={`mailto:suranjan.karmakar.iitkgp@gmail.com`}
@@ -184,12 +184,12 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faEnvelope} beat />{" "}
                     suranjan.karmakar.iitkgp@gmail.com
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </section>
-        <div className="optima-footer-copyright-claim text-center">
+        <div className="text-xs sm:text-sm md:text-md lg:text-lg text-gray-400 text-center">
           &copy; Optima 2025 | All Rights Reserved.
         </div>
       </footer>
