@@ -162,40 +162,40 @@ const StarIcon = () => (
 // Example data for reviews
 const reviews = [
   {
-    title: "Stayin' Alive",
+    title: "Learning & fun!",
     content:
-      "No, Rose, they are not breathing. And they have no arms or legs… Where are they? If we come across somebody with no arms or legs, do we bother resuscitating them?",
-    author: "Michael Scott",
+      "Optima was a brilliant fest! The events were well-curated, with a perfect balance of learning and fun. The workshops, in particular, were highly insightful and engaging.",
+    author: "Rajesh Sharma",
+  },
+  {
+    title: "Evident commitment",
+    content:
+      "Optima was a delightful fest! The team's professionalism and commitment were evident in every aspect. Their ability to handle queries promptly was commendable. Looking forward to the next edition!",
+    author: "Priya Gupta",
   },
   {
     title: "Amazing Service!",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat est at nunc vestibulum, ac lacinia velit sollicitudin.",
-    author: "Jim Halpert",
+      "I am totally satisfied with the fest management. The team was responsive, professional, and delivered decent attitude towards each participants.",
+    author: "Pritish Kumar Panda",
   },
   {
     title: "Would recommend",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quaerat!",
-    author: "Pam Beesly",
+      "Optima exceeded my expectations. The organizers made sure all participants felt valued and included. Their dedication and hard work truly reflected in the success of the fest.",
+    author: "Sneha Kulkarni",
+  },
+  {
+    title: "Satisfactory Experience",
+    content:
+      "Totally worth it to participate in the competitions. It was a great experience to compete against such talented minds. The problems given there were very much challenging.",
+    author: "Himanshu Panda",
   },
   {
     title: "Would recommend",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quaerat!",
-    author: "Pam Beesly",
-  },
-  {
-    title: "Would recommend",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quaerat!",
-    author: "Pam Beesly",
-  },
-  {
-    title: "Would recommend",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quaerat!",
-    author: "Pam Beesly",
+      "It was great to attend Optima 2023. Competitions were very much engaging and will definately participate next year too.",
+    author: "Tej Prakash",
   },
 ];
 
