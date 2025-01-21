@@ -40,7 +40,7 @@ export const CoreHeads = [
   {
     id: 1,
     imageUrl: core2,
-    name: "Sumanta Ku Behera",
+    name: "Sumanta Behera",
     positionName: "Public Relations & Media Outreach",
     socialLinks: {
       facebook: "https://www.facebook.com/sumanta.iitkgp",
@@ -113,7 +113,7 @@ export const CoreHeads = [
     id: 7,
     imageUrl: core10,
     name: "Mehran Shah",
-    positionName: "Demo Position",
+    positionName: "Events",
     socialLinks: {
       facebook: "#",
       linkedin: "https://www.linkedin.com/in/mehran-shah1/",
