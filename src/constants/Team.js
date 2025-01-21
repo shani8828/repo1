@@ -41,7 +41,7 @@ export const CoreHeads = [
     id: 1,
     imageUrl: core2,
     name: "Sumanta Behera",
-    positionName: "Public Relations & Media Outreach",
+    positionName: "Public Relations & Media Outreach Head",
     socialLinks: {
       facebook: "https://www.facebook.com/sumanta.iitkgp",
       linkedin: "https://www.linkedin.com/in/sumantaiitkgp/",
@@ -52,7 +52,7 @@ export const CoreHeads = [
     id: 2,
     imageUrl: core1,
     name: "Sanchay Baranwal",
-    positionName: "Sponsorship and Marketing",
+    positionName: "Sponsorship and Marketing Head",
     socialLinks: {
       facebook:
         "https://www.facebook.com/profile.php?id=100087744332005&mibextid=ZbWKwL",
@@ -65,7 +65,7 @@ export const CoreHeads = [
     id: 3,
     imageUrl: core4,
     name: "Swetank Shandilya",
-    positionName: "Sponsorship and Marketing",
+    positionName: "Sponsorship and Marketing Head",
     socialLinks: {
       facebook: "https://www.facebook.com/profile.php?id=100087193197560",
       linkedin: "https://www.linkedin.com/in/swetank-shandilya-368592269/",
@@ -78,7 +78,7 @@ export const CoreHeads = [
     id: 4,
     imageUrl: core8,
     name: "Manasvi Shekhar",
-    positionName: "Sponsorships and Marketing",
+    positionName: "Sponsorships and Marketing Head",
     socialLinks: {
       facebook: "https://www.facebook.com/profile.php?id=100087888134515",
       linkedin: "https://www.linkedin.com/in/manasvi-shekhar-1a193a257/",
@@ -90,7 +90,7 @@ export const CoreHeads = [
     id: 5,
     imageUrl: core9,
     name: "Mayank Sethia",
-    positionName: "Events",
+    positionName: "Events Head",
     socialLinks: {
       facebook: "https://www.facebook.com/mayank.sethia.3958",
       linkedin: "https://www.linkedin.com/in/mayank-sethia-757820271/",
@@ -101,7 +101,7 @@ export const CoreHeads = [
     id: 6,
     imageUrl: core3,
     name: "Shreya Das",
-    positionName: "Events",
+    positionName: "Events Head",
     socialLinks: {
       facebook: "https://www.facebook.com/share/18hRA7y8rK/",
       linkedin:
@@ -113,7 +113,7 @@ export const CoreHeads = [
     id: 7,
     imageUrl: core10,
     name: "Mehran Shah",
-    positionName: "Events",
+    positionName: "Events Head",
     socialLinks: {
       facebook: "#",
       linkedin: "https://www.linkedin.com/in/mehran-shah1/",
@@ -124,7 +124,7 @@ export const CoreHeads = [
     id: 8,
     imageUrl: core7,
     name: "Debdulal De",
-    positionName: "Design & Media",
+    positionName: "Design & Media Head",
     socialLinks: {
       facebook: "https://www.facebook.com/profile.php?id=100087670770698",
       linkedin: "https://www.linkedin.com/in/debdulal08de/",
@@ -135,7 +135,7 @@ export const CoreHeads = [
     id: 9,
     imageUrl: core5,
     name: "Nishant Mishra",
-    positionName: "Tech",
+    positionName: "Tech Head",
     socialLinks: {
       facebook: "https://www.facebook.com/profile.php?id=100085898921718",
       linkedin: "https://www.linkedin.com/in/nishant-mishra-4307b7257/",
@@ -146,7 +146,7 @@ export const CoreHeads = [
     id: 10,
     imageUrl: core6,
     name: "Suranjan Karmakar",
-    positionName: "Tech",
+    positionName: "Tech Head",
     socialLinks: {
       facebook:
         "https://www.facebook.com/suranjan.karmakar.750?mibextid=ZbWKwL",
