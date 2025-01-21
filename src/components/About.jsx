@@ -7,10 +7,7 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <Section
-      
-      id="about"
-    >
+    <Section id="about">
       <div className="container md:pb-10">
         <Heading
           className="md:max-w-md lg:max-w-2xl text-center mb-6"
@@ -49,18 +46,21 @@ const About = () => {
                   point on technology-optimization synergy, Optima addresses
                   real-world challenges across sectors like supply chain
                   management, production line optimization, and more. The event,
-                  from 6th - 8th October 2023, offered a rich mix of
-                  competitions, workshops, seminars, and interactive sessions,
-                  driving sustainable advancements, efficiencies, and
-                  productivity.
+                  from 7th - 9th March 2025, offers a rich mix of competitions,
+                  workshops, seminars, and interactive sessions, driving
+                  sustainable advancements, efficiencies, and productivity.
                 </p>
                 <div className="flex justify-center">
                   <Button
-                    className="mt-4"
-                    href="https://forms.gle/23232323232323232323232323232323"
-                    target="_blank"
+                    onClick={() =>
+                      window.open(
+                        "https://optima.org.in/",
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
                   >
-                    Register Now
+                    Visit Optima 2023
                   </Button>
                 </div>
               </div>
@@ -110,10 +110,15 @@ const About = () => {
                 <div className="flex justify-center">
                   <Button
                     className="mt-4"
-                    href="https://forms.gle/23232323232323232323232323232323"
-                    target="_blank"
+                    onClick={() =>
+                      window.open(
+                        "http://www.iem.iitkgp.ac.in/",
+                        "_blank",
+                        "noopener,noreferrer"
+                      )
+                    }
                   >
-                    About ISE
+                    More About ISE
                   </Button>
                 </div>
               </div>
