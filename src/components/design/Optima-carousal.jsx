@@ -10,6 +10,7 @@ const CarouselComponent = () => {
     "/homepagePhotos/3.png",
     "/homepagePhotos/2.png",
     "/homepagePhotos/1.png",
+    "/homepagePhotos/5.png",
   ];
 
   // State to track the current image index
@@ -21,7 +22,7 @@ const CarouselComponent = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change image every 3 seconds
+    }, 4000); // Change image every 3 seconds
 
     // Cleanup on component unmount
     return () => clearInterval(intervalId);
