@@ -13,9 +13,9 @@ const Homepage = () => {
          <HodMessage/>
          <About_home/>
          <Testimonial/>
-         <div className="relative z-10">
+         {/* <div className="relative z-10">
           <FAQs />
-         </div>
+         </div> */}
          </Section>
          
       </>
