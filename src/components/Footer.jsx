@@ -90,24 +90,21 @@ const Footer = () => {
                 <li>
                   <a href="/gallery">Gallery</a>
                 </li>
-                {/* <li>
+                <li>
                   <a href="/workshops">Workshops</a>
-                </li> */}
+                </li>
                 <li>
                   <a href="/competitions">Competitons</a>
                 </li>
-                {/* <li>
-                  <a href="/schedule">Schedule</a>
-                </li> */}
+                <li>
+                  <a href="/guestLecture">Guest Lecture</a>
+                </li>
                 <li>
                   <a href="/sponsors">Sponsors</a>
                 </li>
                 <li>
                   <a href="/team">Team</a>
                 </li>
-                {/* <li>
-                  <a href="/guestlectures">Guest Lectures</a>
-                </li> */}
               </ul>
             </div>
             <div className="optima-footer-reach-us">

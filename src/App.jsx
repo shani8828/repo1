@@ -10,6 +10,8 @@ import Header from "./components/Header";
 import Homepage from "./components/Homepage";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
+import Workshops from "./components/Workshops";
+import GuestLecture from "./components/GuestLecture";
 
 const App = () => {
   return (
@@ -20,8 +22,9 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
-          {/* <Route path="/events" element={<Benefits />} /> */}
+          <Route path="/workshops" element={<Workshops />} />
           <Route path="/competitions" element={<Competitions />} />
+          <Route path="/guestLecture" element={<GuestLecture />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
         </Routes>

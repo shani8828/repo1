@@ -58,11 +58,11 @@ export const navigation = [
     title: "Gallery",
     url: "gallery",
   },
-  // {
-  //   id: "2",
-  //   title: "Events",
-  //   url: "events",
-  // },
+  {
+    id: "2",
+    title: "Workshops",
+    url: "workshops",
+  },
   {
     id: "3",
     title: "Competitions",
@@ -70,22 +70,27 @@ export const navigation = [
   },
   {
     id: "4",
+    title: "Guest Lecture",
+    url: "guestLecture",
+  },
+  {
+    id: "5",
     title: "Sponsors",
     url: "sponsors",
   },
   {
-    id: "5",
+    id: "6",
     title: "Team",
     url: "team",
   },
   // {
-  //   id: "6",
+  //   id: "7",
   //   title: "New account",
   //   url: "signup",
   //   onlyMobile: true,
   // },
   // {
-  //   id: "7",
+  //   id: "8",
   //   title: "Sign in",
   //   url: "login",
   //   onlyMobile: true,
@@ -189,7 +194,7 @@ export const collabApps = [
   },
 ];
 
-export const events = [
+export const workshops = [
   {
     id: "0",
     title: "Ask anything",

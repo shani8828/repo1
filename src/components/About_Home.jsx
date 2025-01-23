@@ -13,8 +13,8 @@ const About_home = () => {
         <div className="w-full lg:w-1/2 max-w-[28rem] text-center lg:text-left space-y-6">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold">Optima 2025</h2>
-            <h3 className="text-xl mt-1 md:text-xl font-semibold">
-              Industrial and Systems Engineering
+            <h3 className="text-xl mt-1 md:text-xl font-semibold text-gray-300">
+              Department of Industrial and Systems Engineering
             </h3>
           </div>
 

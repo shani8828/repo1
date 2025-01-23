@@ -53,7 +53,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-3 xl:px-6 py-5 md:py-6 lg:-mr-0.25 lg:text-base lg:font-semibold ${
+                } px-3 xl:px-4 py-5 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
