@@ -4,6 +4,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Roadmap";
 import Button from "./Button";
+import { BackgroundCircles } from "./design/Hero";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
           className="md:max-w-md lg:max-w-2xl text-center mb-6"
           title="Optima 2025"
         />
+        <BackgroundCircles/>
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-12 md:pb-[7rem]">
           <div className="md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] bg-conic-gradient">

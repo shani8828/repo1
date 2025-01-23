@@ -7,6 +7,8 @@ import Button from "./Button";
 import { FaWhatsapp } from "react-icons/fa";
 import unstopIcon from "../assets/unstop-icon.png";
 import ComingSoon from "./design/ComingSoon";
+import { BackgroundCircles } from "./design/Hero";
+import { Gradient } from "./design/Services";
 
 const Competitions = () => {
   return (
@@ -17,6 +19,7 @@ const Competitions = () => {
           className="md:max-w-md lg:max-w-2xl text-center"
           title="Competitions"
         />
+        <BackgroundCircles/>
 
         <ComingSoon/>
         {/* Competitions Cards */}
@@ -105,6 +108,7 @@ const Competitions = () => {
           ))}
         </div> */}
       </div>
+      <Gradient/>
     </Section>
   );
 };

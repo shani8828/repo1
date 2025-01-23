@@ -1,21 +1,22 @@
 
 import Heading from "./Heading";
 import Section from "./Section";
-import { GradientLight } from "./design/Benefits";
+import { Gradient } from "./design/Services.jsx";
 import TopCaraousal from "./design/TopCaraousal";
 import GallerySlot1 from "./design/GallerySlot1";
 import GallerySlot2 from "./design/GallerySlot2";
 import GuestLec from "./design/GuestLec";
+import { BackgroundCircles } from "./design/Hero.jsx";
 
 const Gallery = () => {
   return (
-    <Section>
-      <section id="gallery" className="gallery-section">
-        <div className="container mx-auto px-4">
+    <Section id="gallery" >
+        <div className="container mx-auto px-4 relative z-2">
           <Heading
-            className="md:max-w-md lg:max-w-2xl text-center mb-6"
+            className="md:max-w-md lg:max-w-2xl text-center"
             title="Glimpses of Optima"
           />
+          <BackgroundCircles/>
           <div className="custom-slider-wrapper">
             <TopCaraousal />
           </div>
@@ -38,7 +39,7 @@ const Gallery = () => {
             <GallerySlot2 />
           </div>
         </div>
-      </section>
+        <Gradient/>
     </Section>
   );
 };

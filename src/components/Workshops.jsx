@@ -5,6 +5,8 @@ import Arrow from "../assets/svg/Arrow";
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import ComingSoon from "./design/ComingSoon";
+import { BackgroundCircles } from "./design/Hero";
+import { Gradient } from "./design/Services";
 
 const Workshops = () => {
   return (
@@ -14,9 +16,11 @@ const Workshops = () => {
           className="md:max-w-md lg:max-w-2xl"
           title="Workshops"
         />
+        <BackgroundCircles/>
 
         <ComingSoon/>
       </div>
+      <Gradient/>
     </Section>
   );
 };
