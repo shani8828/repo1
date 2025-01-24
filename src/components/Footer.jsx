@@ -18,7 +18,7 @@ import { GradientLight } from "./design/Benefits";
 const Footer = () => {
   return (
     <div className="relative z-5">
-      <footer className="selection:text-custom-purple">
+      <footer>
         <section id="optima-footer">
           <div className="optima-footer-about-portion">
             <a href="/">
@@ -80,9 +80,9 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="quick-ways-reach-us">
-            <div className="optima-footer-quick-ways">
-              <h3 className="text-3xl mb-3 font-semibold">QUICK WAYS</h3>
+          <div className="quick-links-contact-us">
+            <div className="optima-footer-quick-links">
+              <h3 className="text-3xl mb-3 font-semibold">QUICK LINKS</h3>
               <ul className="text-gray-300">
                 <li>
                   <a href="/about">About Us</a>
@@ -94,10 +94,10 @@ const Footer = () => {
                   <a href="/workshops">Workshops</a>
                 </li>
                 <li>
-                  <a href="/competitions">Competitons</a>
+                  <a href="/competitions">Competitions</a>
                 </li>
                 <li>
-                  <a href="/guestLecture">Guest Lecture</a>
+                  <a href="/guest-lectures">Guest Lectures</a>
                 </li>
                 <li>
                   <a href="/sponsors">Sponsors</a>
@@ -107,10 +107,10 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="optima-footer-reach-us">
-              <h3 className="text-3xl mb-3 font-semibold">REACH US</h3>
+            <div className="optima-footer-contact-us">
+              <h3 className="text-3xl mb-3 font-semibold">CONTACT US</h3>
               <div>
-                <div className="optima-footer-location ">
+                <div className="optima-footer-location">
                   <a
                     className="optima-footer-normal"
                     href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
