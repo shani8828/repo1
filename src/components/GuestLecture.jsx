@@ -11,7 +11,7 @@ const GuestLecture = () => {
         <div className="container relative z-2 min-h-screen">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Guest Lecture"
+          title="Guest Lectures"
         />
         <BackgroundCircles/>
 

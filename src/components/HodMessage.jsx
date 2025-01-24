@@ -15,7 +15,7 @@ const HodMessage = () => {
             {/* larger div */}
             <div className="p-3 border border-n-1/10 flex flex-col justify-between items-center rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
               <h1 className="text-2xl lg:text-3xl m-3 font-semibold">
-                HOD's Message
+                Message from Head of Department
               </h1>
               <div className="min-w-full flex justify-center items-center rounded-3xl">
                 <img src={hod} alt="hod" className="rounded-3xl w-40 lg:w-48" />
@@ -28,18 +28,18 @@ const HodMessage = () => {
                   ✎...{" "}
                 </span> */}
                 "As the Department of Industrial and Systems Engineering marks
-                its 50th anniversary, I am delighted to present to you Optima,
+                its 52th anniversary, I am delighted to present to you Optima 2025,
                 the techno-optimization fest of IIT Kharagpur, meticulously
                 organised by our department. Optima offers a distinctive
                 platform for students to delve into this domain and experience
                 world-class research, while providing brands with an opportunity
                 to engage with one of the most astute and diverse audiences
-                accross various domains. i extend a heartfelt invitation to all
+                accross various domains. I extend a heartfelt invitation to all
                 of you to become integral participants in the journey of IIT
                 Kharagpur and the Department of Industrial and Systems
                 Engineering."
               </p>
-              <div className="flex gap-5">
+              {/* <div className="flex gap-5">
                 <a
                   className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white "
                   href="mailto:jhareswar.maiti@gmail.com"
@@ -54,7 +54,7 @@ const HodMessage = () => {
                 >
                   <FaLinkedin />
                 </a>
-              </div>
+              </div> */}
             </div>
             {/* another div containing two smaller divs */}
             <div className="flex flex-col gap-5 justify-between items-center">
@@ -66,7 +66,7 @@ const HodMessage = () => {
                   alt="hod"
                   className="rounded-3xl w-40 lg:w-48"
                 />
-                <h1 className="">Prof. Gautam Sen</h1>
+                <h1 className="">Prof. Goutam Sen</h1>
                 <div className="flex gap-5">
                   <a
                     className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"

@@ -129,7 +129,7 @@ const ReviewBlock = ({ review }) => {
     <blockquote className="flex h-full flex-col justify-between p-4 shadow-sm sm:p-8 border border-n-1/10 rounded-3xl  transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
       <div>
         <div className="flex  text-purple-500">
-          {Array.from({ length: 5 }).map((_, i) => (
+          {Array.from({ length: review.stars }).map((_, i) => (
             <StarIcon key={i} />
           ))}
         </div>
@@ -166,36 +166,42 @@ const reviews = [
     content:
       "Optima was a brilliant fest! The events were well-curated, with a perfect balance of learning and fun. The workshops, in particular, were highly insightful and engaging.",
     author: "Rajesh Sharma",
+    stars:5
   },
   {
     title: "Evident commitment",
     content:
       "Optima was a delightful fest! The team's professionalism and commitment were evident in every aspect. Their ability to handle queries promptly was commendable. Looking forward to the next edition!",
     author: "Priya Gupta",
+    stars:4
   },
   {
     title: "Amazing Service!",
     content:
       "I am totally satisfied with the fest management. The team was responsive, professional, and delivered decent attitude towards each participants.",
     author: "Pritish Kumar Panda",
+    stars:5
   },
   {
     title: "Would recommend",
     content:
       "Optima exceeded my expectations. The organizers made sure all participants felt valued and included. Their dedication and hard work truly reflected in the success of the fest.",
     author: "Sneha Kulkarni",
+    stars:4
   },
   {
     title: "Satisfactory Experience",
     content:
       "Totally worth it to participate in the competitions. It was a great experience to compete against such talented minds. The problems given there were very much challenging.",
     author: "Himanshu Panda",
+    stars:5
   },
   {
     title: "Would recommend",
     content:
       "It was great to attend Optima 2023. Competitions were very much engaging and will definately participate next year too.",
     author: "Tej Prakash",
+    stars:4
   },
 ];
 

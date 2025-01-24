@@ -55,23 +55,23 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Gallery",
-    url: "gallery",
-  },
-  {
-    id: "2",
-    title: "Workshops",
-    url: "workshops",
-  },
-  {
-    id: "3",
     title: "Competitions",
     url: "competitions",
   },
   {
+    id: "2",
+    title: "Guest Lectures",
+    url: "guest-lectures",
+  },
+  {
+    id: "3",
+    title: "Workshops",
+    url: "workshops",
+  },
+  {
     id: "4",
-    title: "Guest Lecture",
-    url: "guestLecture",
+    title: "Gallery",
+    url: "gallery",
   },
   {
     id: "5",
@@ -123,15 +123,15 @@ export const collabText =
 export const collabContent = [
   {
     id: "0",
-    title: "Progress",
+    title: "Data Analytics",
   },
   {
     id: "1",
-    title: "Innovation",
+    title: "Operations",
   },
   {
     id: "2",
-    title: "Advancement ",
+    title: "Supply Chain",
   },
 ];
 

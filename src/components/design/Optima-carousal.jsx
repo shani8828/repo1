@@ -7,10 +7,10 @@ const CarouselComponent = () => {
   // Array of image URLs (you can replace these with your own images)
   const images = [
     "/homepagePhotos/4.png",
+    "/homepagePhotos/5.png",
     "/homepagePhotos/3.png",
     "/homepagePhotos/2.png",
     "/homepagePhotos/1.png",
-    "/homepagePhotos/5.png",
   ];
 
   // State to track the current image index

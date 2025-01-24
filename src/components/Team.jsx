@@ -13,7 +13,7 @@ const Team = () => {
   return (
     <Section id="team">
       <div className="container relative z-2 rounded-3xl" ref={parallaxRef}>
-        <Heading className="md:max-w-md lg:max-w-2xl text-center" title="Our Heads" />
+        <Heading className="md:max-w-md lg:max-w-2xl text-center" title="Heads" />
         <BackgroundCircles />
         <div className="optima-team-container max-w-[1280px] mx-auto selection:text-custom-purple mt-0">
           {/* <div className="optima-team-executives mb-24">
