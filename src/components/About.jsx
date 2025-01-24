@@ -14,7 +14,7 @@ const About = () => {
           className="md:max-w-md lg:max-w-2xl text-center mb-6"
           title="Optima 2025"
         />
-        <BackgroundCircles/>
+        <BackgroundCircles />
 
         <div className="relative grid gap-6 md:grid-cols-2 md:gap-12 md:pb-[7rem]">
           <div className="md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] bg-conic-gradient">
@@ -41,7 +41,7 @@ const About = () => {
                 <h4 className="h2 md:h4 mb-4">
                   Optima - IIT Kharagpur's Techno-Optimization Fest
                 </h4>
-                <p className="body-2 text-n-4 mb-8">
+                <p className="body-2 text-n-4 mb-8 tracking-tighter">
                   A nexus of innovation, problem-solving, and interdisciplinary
                   collaboration, Optima is orchestrated by the esteemed
                   Department of Industrial and Systems Engineering. With a focal
@@ -53,17 +53,9 @@ const About = () => {
                   sustainable advancements, efficiencies, and productivity.
                 </p>
                 <div className="flex justify-center">
-                  <Button
-                    onClick={() =>
-                      window.open(
-                        "https://optima.org.in/",
-                        "_blank",
-                        "noopener,noreferrer"
-                      )
-                    }
-                  >
-                    Visit Optima 2023
-                  </Button>
+                  <a href="https://optima.org.in/" target="_blank">
+                    <Button>Visit Optima 2023</Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -94,7 +86,7 @@ const About = () => {
                   Department of Industrial and Systems Engineering - IIT
                   Kharagpur
                 </h4>
-                <p className="body-2 text-n-4">
+                <p className="body-2 text-n-4 mb-8 tracking-tighter">
                   With its inception in 1973, the Department of Industrial and
                   Systems Engineering at IIT Kharagpur embarked on a remarkable
                   journey that has left an indelible mark on the landscape of
@@ -110,18 +102,9 @@ const About = () => {
                   Reality
                 </p>
                 <div className="flex justify-center">
-                  <Button
-                    className="mt-4"
-                    onClick={() =>
-                      window.open(
-                        "http://www.iem.iitkgp.ac.in/",
-                        "_blank",
-                        "noopener,noreferrer"
-                      )
-                    }
-                  >
-                    More About ISE
-                  </Button>
+                  <a href="http://www.iem.iitkgp.ac.in/" target="_blank">
+                    <Button>More About ISE</Button>
+                  </a>
                 </div>
               </div>
             </div>
