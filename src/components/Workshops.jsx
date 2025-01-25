@@ -21,6 +21,10 @@ const Workshops = () => {
         <ComingSoon/>
       </div>
       <Gradient/>
+      <div className="text-2xl text-center m-0">
+        <span><a href="https://optima.org.in/workshops" className="bg-transparent border border-n-1/10 transition-all duration-300 hover:shadow-md hover:shadow-purple-500 p-2 rounded-md cursor-pointer" target="_blank">Visit</a></span>
+        <span> our past edition.</span>
+      </div>
     </Section>
   );
 };

@@ -33,6 +33,7 @@ const ComingSoon = () => {
         </span>
         is yet to come.
       </p>
+      
     </div>
   );
 };
