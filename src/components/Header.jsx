@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import logo from "../assets/optima2025-logo.png";
 
 import { brainwave } from "../assets";
 import { navigation } from "../constants";
@@ -37,7 +38,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
         <a className="flex items-center gap-1 w-[15rem] xl:mr-8" href="/">
-          <img src={"/src/assets/optima2025-logo.png"} alt="Optima" className="w-[200px] md:w-[230px]"/>
+          <img src={logo} alt="Optima" className="w-[200px] md:w-[230px]"/>
         </a>
         <nav
           className={`${
