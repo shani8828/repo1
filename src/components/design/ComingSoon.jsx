@@ -4,7 +4,6 @@ import {
   faWandMagicSparkles,
   faPersonPraying,
 } from "@fortawesome/free-solid-svg-icons";
-import "../OptimaCss/ComingSoon.css";
 import AnimationComingSoon from "./AnimationComingSoon";
 const ComingSoon = () => {
   return (
