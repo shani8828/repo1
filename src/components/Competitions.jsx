@@ -21,7 +21,9 @@ const Competitions = () => {
         />
         <BackgroundCircles/>
 
-        <ComingSoon/>
+        <div className='flex justify-center'>
+          <ComingSoon/>
+        </div>
         {/* Competitions Cards */}
         {/* <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
           {competitions.map((item) => (

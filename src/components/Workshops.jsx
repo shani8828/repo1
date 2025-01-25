@@ -13,12 +13,14 @@ const Workshops = () => {
     <Section id="workshops">
       <div className="container relative z-2 min-h-screen">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl text-center"
           title="Workshops"
         />
         <BackgroundCircles/>
 
-        <ComingSoon/>
+        <div className='flex justify-center'>
+          <ComingSoon/>
+        </div>
       </div>
       <Gradient/>
     </Section>

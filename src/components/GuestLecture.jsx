@@ -10,12 +10,14 @@ const GuestLecture = () => {
     <Section id='guestLecture'>
         <div className="container relative z-2 min-h-screen">
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl text-center"
           title="Guest Lectures"
         />
         <BackgroundCircles/>
 
-        <ComingSoon/>
+        <div className='flex justify-center'>
+          <ComingSoon/>
+        </div>
         
       </div>
       <Gradient/>
