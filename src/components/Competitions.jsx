@@ -9,7 +9,6 @@ import unstopIcon from "../assets/unstop-icon.png";
 import ComingSoon from "./design/ComingSoon";
 import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
-import PastEdition from "./design/PastEdition";
 
 const Competitions = () => {
   return (

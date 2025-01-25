@@ -41,7 +41,7 @@ const About = () => {
                 <h4 className="h2 md:h4 mb-4">
                   Optima - IIT Kharagpur's Techno-Optimization Fest
                 </h4>
-                <p className="body-2 text-n-4 mb-8 tracking-tighter">
+                <p className="body-1 text-n-3 md:text-n-4 mb-8 tracking-tighter">
                   A nexus of innovation, problem-solving, and interdisciplinary
                   collaboration, Optima is orchestrated by the esteemed
                   Department of Industrial and Systems Engineering. With a focal
@@ -86,7 +86,7 @@ const About = () => {
                   Department of Industrial and Systems Engineering - IIT
                   Kharagpur
                 </h4>
-                <p className="body-2 text-n-4 mb-8 tracking-tighter">
+                <p className="body-1 text-n-3 md:text-n-4 mb-8 tracking-tighter">
                   With its inception in 1973, the Department of Industrial and
                   Systems Engineering at IIT Kharagpur embarked on a remarkable
                   journey that has left an indelible mark on the landscape of

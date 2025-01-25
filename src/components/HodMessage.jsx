@@ -23,7 +23,7 @@ const HodMessage = () => {
               <h1 className="text-xl lg:text-2xl font-semibold mt-2">
                 Prof. Jhareshwar Maiti
               </h1>
-              <p className="p-4 text:sm lg:text-3xs lg:p-8">
+              <p className="p-4 text-n-2 md:text-lg lg:p-8">
                 {/* <span className="text-purple-500 font-semibold text-4xl">
                   ✎...{" "}
                 </span> */}

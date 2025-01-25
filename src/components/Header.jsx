@@ -37,8 +37,7 @@ const Header = () => {
     >
       <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
         <a className="flex items-center gap-1 w-[15rem] xl:mr-8" href="/">
-          <img src={"/logo-optima.png"} width={50} height={50} alt="Optima" />
-          <h1 className="text-2xl font-semibold ml-2">OPTIMA 2025</h1>
+          <img src={"/src/assets/optima2025-logo.png"} alt="Optima" className="w-[200px] md:w-[230px]"/>
         </a>
         <nav
           className={`${

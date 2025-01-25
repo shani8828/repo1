@@ -12,6 +12,7 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    font-size: large;
 }
 
 .optima-footer-about-portion {
@@ -21,7 +22,7 @@
 }
 
 .optima-footer-about-portion img {
-    width: 250px;
+    width: 310px;
     /* margin-left: 10px; */
 }
 
@@ -43,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-top: 14px;
+    margin-top: 20px;
 }
 
 .optima-footer-quick-links {
@@ -60,7 +61,7 @@
 
 .optima-footer-quick-links li:hover {
     color: #F47621;
-    transform: scale(1.03);
+    transform: scale(1.05);
     transition: 0.3s;
 }
 
@@ -238,13 +239,7 @@
     }
 }
 @media (max-width: 332px) {
-    .optima-footer-about-portion{
-        font-size: small;
-    }
     .optima-footer-quick-links{
         display: none;
-    }
-    .optima-footer-contact-us{
-        font-size: small;
     }
 }

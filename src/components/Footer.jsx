@@ -24,7 +24,7 @@ const Footer = () => {
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
-            <p className="lg:pr-10 opacity-80">
+            <p className="lg:pr-10 text-n-2 opacity-80">
               Optima, IIT Kharagpur's Techno-Optimization Fest, fosters
               innovation, problem-solving, and collaborations, organized by the
               Department of Industrial and Systems Engineering.
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
           <div className="quick-links-contact-us">
             <div className="optima-footer-quick-links">
-              <h3 className="text-2xl md:text-2.5xl lg:text-3xl mb-3 ">QUICK LINKS</h3>
+              <h3 className="text-2xl md:text-2.5xl lg:text-2.8xl mb-3 ">QUICK LINKS</h3>
               <div className="flex gap-4">
                 <ul>
                   <li>
@@ -62,7 +62,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="optima-footer-contact-us">
-              <h3 className="text-2xl md:text-2.5xl lg:text-3xl mb-3">CONTACT US</h3>
+              <h3 className="text-2xl md:text-2.5xl lg:text-2.8xl mb-3">CONTACT US</h3>
               <div>
                 <div className="optima-footer-location pb-1">
                   <a

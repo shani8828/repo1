@@ -6,6 +6,7 @@ import Heading from "./Heading";
 import Section from "./Section";
 import { Gradient } from "./design/Services.jsx";
 import Button from "./Button.jsx";
+import ComingSoon from "./design/ComingSoon.jsx";
 
 // Separate data into a new file: src/data/sponsorsData.js
 const SPONSORS_DATA = {
@@ -197,18 +198,86 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 };
 
 // Main Spons component
+// const Spons = () => {
+//   const [activeTab, setActiveTab] = useState("2025");
+//   const tabs = [
+//     { id: "2025", label: "2024-2025" },
+//     { id: "2023", label: "2023-2024" },
+//     { id: "previous", label: "Previous" },
+//   ];
+
+//   return (
+//     <Section
+//       id="spons"
+//     >
+//       <div className="relative z-10">
+//         <BackgroundCircles />
+//       </div>
+//       <div className="container mx-auto relative z-20">
+//         <Heading
+//           className="md:max-w-md lg:max-w-2xl text-center "
+//           title="Our Esteemed Sponsors"
+//         />
+
+//         <div className="flex flex-col md:flex-row  w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
+//           {tabs.map((tab) => (
+//             // <TabButton
+//             //   key={tab.id}
+//             //   active={activeTab === tab.id}
+//             //   onClick={() => setActiveTab(tab.id)}
+//             //   label={tab.label}
+//             // />
+//             <Button
+//               key={tab.id}
+//               active={activeTab === tab.id}
+//               onClick={() => setActiveTab(tab.id)}
+//             >
+//               {tab.label}
+//             </Button>
+//           ))}
+//         </div>
+
+//         {activeTab === "previous" ? (
+//           <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
+//             {SPONSORS_DATA.previous.sponsors.map((spons) => (
+//               <div
+//                 key={spons}
+//                 className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
+//               >
+//                 <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
+//               </div>
+//             ))}
+//           </div>
+//         ) : (
+//           <div className="space-y-10">
+//             {Object.entries(SPONSORS_DATA[activeTab].categories).map(
+//               ([key, category]) => (
+//                 <SponsorCategory
+//                   key={key}
+//                   name={category.name}
+//                   sponsors={category.sponsors}
+//                   size={category.size}
+//                 />
+//               )
+//             )}
+//           </div>
+//         )}
+//       </div>
+
+//       <Gradient />
+//     </Section>
+//   );
+// };
 const Spons = () => {
   const [activeTab, setActiveTab] = useState("2025");
   const tabs = [
-    { id: "2025", label: "2025 Sponsors" },
-    { id: "2023", label: "2023 Sponsors" },
-    { id: "previous", label: "Previous Sponsors" },
+    { id: "2025", label: "2024-2025" },
+    { id: "2023", label: "2023-2024" },
+    { id: "previous", label: "Previous" },
   ];
 
   return (
-    <Section
-      id="spons"
-    >
+    <Section id="spons">
       <div className="relative z-10">
         <BackgroundCircles />
       </div>
@@ -218,14 +287,8 @@ const Spons = () => {
           title="Our Esteemed Sponsors"
         />
 
-        <div className="flex flex-col md:flex-row  w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
+        <div className="flex flex-col md:flex-row w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
           {tabs.map((tab) => (
-            // <TabButton
-            //   key={tab.id}
-            //   active={activeTab === tab.id}
-            //   onClick={() => setActiveTab(tab.id)}
-            //   label={tab.label}
-            // />
             <Button
               key={tab.id}
               active={activeTab === tab.id}
@@ -236,7 +299,11 @@ const Spons = () => {
           ))}
         </div>
 
-        {activeTab === "previous" ? (
+        {activeTab === "2025" ? (
+          <div className="flex justify-center">
+          <ComingSoon/>
+        </div>
+        ) : activeTab === "previous" ? (
           <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
             {SPONSORS_DATA.previous.sponsors.map((spons) => (
               <div
@@ -267,6 +334,7 @@ const Spons = () => {
     </Section>
   );
 };
+
 
 // Tab button component
 const TabButton = ({ active, onClick, label }) => (
