@@ -5,8 +5,8 @@ const guestLectures = [
   {
     id: 1,
     image: "/GalleryPhotos/guest-lecture-images/g1.jpg",
-    title: "Innovative Technology",
-    description: "Dr. Smith discussed cutting-edge advancements in AI.",
+    title: "Deeptak Chatterjee",
+    description: "Head of Application Development & Innovation, Tata Steel",
   },
   {
     id: 2,
