@@ -8,7 +8,7 @@ import { Gradient } from './design/Services';
 const GuestLecture = () => {
   return (
     <Section id='guestLecture'>
-        <div className="container relative z-2 min-h-screen">
+        <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl text-center"
           title="Guest Lectures"
@@ -16,7 +16,7 @@ const GuestLecture = () => {
         <BackgroundCircles/>
 
         <div className='flex justify-center'>
-          <ComingSoon/>
+          <ComingSoon link="https://optima.org.in/guest-lectures"/>
         </div>
         
       </div>

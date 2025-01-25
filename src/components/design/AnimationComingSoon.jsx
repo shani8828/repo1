@@ -3,11 +3,11 @@ import "../OptimaCss/AnimationComingSoon.css";
 
 const AnimationComingSoon = () => {
   return (
-    <div class="pl">
-      <div class="pl__dot pl__dot--a"></div>
-      <div class="pl__dot pl__dot--b"></div>
-      <div class="pl__dot pl__dot--c"></div>
-      <div class="pl__dot pl__dot--d"></div>
+    <div className="pl">
+      <div className="pl__dot pl__dot--a"></div>
+      <div className="pl__dot pl__dot--b"></div>
+      <div className="pl__dot pl__dot--c"></div>
+      <div className="pl__dot pl__dot--d"></div>
     </div>
   );
 };

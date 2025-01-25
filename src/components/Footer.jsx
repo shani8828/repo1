@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Footer/logo-optima.png";
+import logo from "../assets/optima2025-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
@@ -24,93 +24,47 @@ const Footer = () => {
             <a href="/">
               <img src={logo} alt="logo" />
             </a>
-            <p className="p-0 opacity-80">
+            <p className="lg:pr-10 opacity-80">
               Optima, IIT Kharagpur's Techno-Optimization Fest, fosters
               innovation, problem-solving, and collaborations, organized by the
               Department of Industrial and Systems Engineering.
             </p>
-            <div className="optima-footer-social-handles">
-              <div className="optima-footer-fb">
-                <a
-                  className="optima-footer-normal"
-                  href="https://www.facebook.com/optima.iitkharagpur"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faSquareFacebook} />
-                </a>
-                <a
-                  className="optima-footer-hovered"
-                  href="https://www.facebook.com/optima.iitkharagpur"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faSquareFacebook} />
-                </a>
-              </div>
-              <div className="optima-footer-ig">
-                <a
-                  className="optima-footer-normal"
-                  href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faSquareInstagram} />
-                </a>
-                <a
-                  className="optima-footer-hovered"
-                  href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faSquareInstagram} />
-                </a>
-              </div>
-              <div className="optima-footer-in">
-                <a
-                  className="optima-footer-normal"
-                  href="https://www.linkedin.com/company/optima-iitkgp/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-                <a
-                  className="optima-footer-hovered"
-                  href="https://www.linkedin.com/company/optima-iitkgp/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-              </div>
-            </div>
           </div>
           <div className="quick-links-contact-us">
             <div className="optima-footer-quick-links">
-              <h3 className="text-3xl mb-3 font-semibold">QUICK LINKS</h3>
-              <ul className="text-gray-300">
-                <li>
-                  <a href="/about">About Us</a>
-                </li>
-                <li>
-                  <a href="/gallery">Gallery</a>
-                </li>
-                <li>
-                  <a href="/workshops">Workshops</a>
-                </li>
-                <li>
-                  <a href="/competitions">Competitions</a>
-                </li>
-                <li>
-                  <a href="/guest-lectures">Guest Lectures</a>
-                </li>
-                <li>
-                  <a href="/sponsors">Sponsors</a>
-                </li>
-                <li>
-                  <a href="/team">Team</a>
-                </li>
-              </ul>
+              <h3 className="text-2xl md:text-2.5xl lg:text-3xl mb-3 ">QUICK LINKS</h3>
+              <div className="flex gap-4">
+                <ul>
+                  <li>
+                    <a href="/about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="/gallery">Gallery</a>
+                  </li>
+                  <li>
+                    <a href="/workshops">Workshops</a>
+                  </li>
+                  <li>
+                    <a href="/competitions">Competitions</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="/guest-lectures">Guest Lectures</a>
+                  </li>
+                  <li>
+                    <a href="/sponsors">Sponsors</a>
+                  </li>
+                  <li>
+                    <a href="/team">Team</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div className="optima-footer-contact-us">
-              <h3 className="text-3xl mb-3 font-semibold">CONTACT US</h3>
+              <h3 className="text-2xl md:text-2.5xl lg:text-3xl mb-3">CONTACT US</h3>
               <div>
-                <div className="optima-footer-location">
+                <div className="optima-footer-location pb-1">
                   <a
                     className="optima-footer-normal"
                     href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
@@ -129,7 +83,7 @@ const Footer = () => {
                     721302
                   </a>
                 </div>
-                <div className="optima-footer-call">
+                <div className="optima-footer-call pb-1">
                   <a
                     className="optima-footer-normal"
                     href={`tel:+916370708967`}
@@ -147,7 +101,7 @@ const Footer = () => {
                     <span className="pl-2">+91 6370708967</span>
                   </a>
                 </div>
-                <div className="optima-footer-mail1">
+                <div className="optima-footer-mail1 pb-1">
                   <a
                     className="optima-footer-normal"
                     href={`mailto:sumanta@optima.org.in`}
@@ -182,6 +136,56 @@ const Footer = () => {
                     suranjan.karmakar.iitkgp@gmail.com
                   </a>
                 </div> */}
+              </div>
+              <div className="optima-footer-social-handles">
+                <div className="optima-footer-fb">
+                  <a
+                    className="optima-footer-normal"
+                    href="https://www.facebook.com/optima.iitkharagpur"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faSquareFacebook} />
+                  </a>
+                  <a
+                    className="optima-footer-hovered"
+                    href="https://www.facebook.com/optima.iitkharagpur"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faSquareFacebook} />
+                  </a>
+                </div>
+                <div className="optima-footer-ig">
+                  <a
+                    className="optima-footer-normal"
+                    href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faSquareInstagram} />
+                  </a>
+                  <a
+                    className="optima-footer-hovered"
+                    href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faSquareInstagram} />
+                  </a>
+                </div>
+                <div className="optima-footer-in">
+                  <a
+                    className="optima-footer-normal"
+                    href="https://www.linkedin.com/company/optima-iitkgp/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                  <a
+                    className="optima-footer-hovered"
+                    href="https://www.linkedin.com/company/optima-iitkgp/"
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

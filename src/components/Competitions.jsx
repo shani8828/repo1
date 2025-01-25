@@ -9,20 +9,21 @@ import unstopIcon from "../assets/unstop-icon.png";
 import ComingSoon from "./design/ComingSoon";
 import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
+import PastEdition from "./design/PastEdition";
 
 const Competitions = () => {
   return (
     <Section id="competitions">
-      <div className="container relative z-2 min-h-screen">
+      <div className="container relative z-2">
         {/* Section Heading */}
         <Heading
           className="md:max-w-md lg:max-w-2xl text-center"
           title="Competitions"
         />
-        <BackgroundCircles/>
+        <BackgroundCircles />
 
-        <div className='flex justify-center'>
-          <ComingSoon/>
+        <div className="flex justify-center">
+          <ComingSoon link="https://optima.org.in/competitions"/>
         </div>
         {/* Competitions Cards */}
         {/* <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
@@ -110,7 +111,7 @@ const Competitions = () => {
           ))}
         </div> */}
       </div>
-      <Gradient/>
+      <Gradient />
     </Section>
   );
 };

@@ -11,7 +11,7 @@ import { Gradient } from "./design/Services";
 const Workshops = () => {
   return (
     <Section id="workshops">
-      <div className="container relative z-2 min-h-screen">
+      <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl text-center"
           title="Workshops"
@@ -19,7 +19,7 @@ const Workshops = () => {
         <BackgroundCircles/>
 
         <div className='flex justify-center'>
-          <ComingSoon/>
+          <ComingSoon link="https://optima.org.in/workshops"/>
         </div>
       </div>
       <Gradient/>
