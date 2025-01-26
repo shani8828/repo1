@@ -53,7 +53,7 @@ const About = () => {
                   sustainable advancements, efficiencies, and productivity.
                 </p>
                 <div className="flex justify-center">
-                  <a href="https://optima.org.in/" target="_blank">
+                  <a href="https://2023.optima.org.in/" target="_blank">
                     <Button>Visit Optima 2023</Button>
                   </a>
                 </div>
