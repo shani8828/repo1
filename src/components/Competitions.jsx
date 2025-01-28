@@ -22,7 +22,7 @@ const Competitions = () => {
         <BackgroundCircles />
 
         <div className="flex justify-center">
-          <ComingSoon link="https://optima.org.in/competitions"/>
+          <ComingSoon link="https://2023.optima.org.in/competitions"/>
         </div>
         {/* Competitions Cards */}
         {/* <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">

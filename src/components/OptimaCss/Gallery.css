@@ -7,7 +7,7 @@
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(25deg, #19064d, #a72693);
+    background: linear-gradient(25deg, #100430, #682191);
     position: relative; /* Ensures proper alignment for dots */
   }
   
@@ -83,7 +83,7 @@
   gap: 6px;
   padding: 6px;
   width: 100%;
-  background: linear-gradient(25deg, #19064d, #a72693);
+  background: linear-gradient(25deg, #100430, #682191);
 }
 
 .CollageGallery-row {

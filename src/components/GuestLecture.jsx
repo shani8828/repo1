@@ -16,7 +16,7 @@ const GuestLecture = () => {
         <BackgroundCircles/>
 
         <div className='flex justify-center'>
-          <ComingSoon link="https://optima.org.in/guest-lectures"/>
+          <ComingSoon link="https://2023.optima.org.in/guest-lectures"/>
         </div>
         
       </div>

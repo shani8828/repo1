@@ -2,7 +2,6 @@ import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/optima2025-logo.png";
 
-import { brainwave } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -10,7 +9,7 @@ import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 
 const Header = () => {
-  const pathname = useLocation();
+  const location = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -32,13 +31,13 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
+      className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     >
-      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
+      <div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="flex items-center gap-1 w-[15rem] xl:mr-8" href="/">
-          <img src={logo} alt="Optima" className="w-[200px] md:w-[230px]"/>
+          <img src={logo} alt="Optima" className="w-[200px] md:w-[230px]" />
         </a>
         <nav
           className={`${
@@ -51,13 +50,13 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 ${
+                className={`block relative font-code text-2xl uppercase transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
                 } px-3 xl:px-4 py-5 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
-                  item.url === pathname.hash
-                    ? "z-2 lg:text-n-1"
-                    : "lg:text-n-1/50"
-                } lg:leading-5 lg:hover:text-n-1`} //removed padding
+                  location.pathname === item.url // Check if the current page matches the URL
+                    ? "text-color-1" // Apply purple color for active page
+                    : "text-n-1/50"
+                } lg:leading-5 lg:hover:text-n-1`}
               >
                 {item.title}
               </a>
@@ -66,16 +65,6 @@ const Header = () => {
 
           <HamburgerMenu />
         </nav>
-
-        {/* <a
-          href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
-        >
-          New account
-        </a>
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button> */}
 
         <Button
           className="ml-auto lg:hidden"

@@ -19,7 +19,7 @@ const Workshops = () => {
         <BackgroundCircles/>
 
         <div className='flex justify-center'>
-          <ComingSoon link="https://optima.org.in/workshops"/>
+          <ComingSoon link="https://2023.optima.org.in/workshops"/>
         </div>
       </div>
       <Gradient/>

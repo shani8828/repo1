@@ -51,37 +51,37 @@ export const navigation = [
   {
     id: "0",
     title: "About",
-    url: "about",
+    url: "/about",
   },
   {
     id: "1",
     title: "Competitions",
-    url: "competitions",
+    url: "/competitions",
   },
   {
     id: "2",
     title: "Guest Lectures",
-    url: "guest-lectures",
+    url: "/guest-lectures",
   },
   {
     id: "3",
     title: "Workshops",
-    url: "workshops",
+    url: "/workshops",
   },
   {
     id: "4",
     title: "Gallery",
-    url: "gallery",
+    url: "/gallery",
   },
   {
     id: "5",
     title: "Sponsors",
-    url: "sponsors",
+    url: "/sponsors",
   },
   {
     id: "6",
     title: "Team",
-    url: "team",
+    url: "/team",
   },
   // {
   //   id: "7",

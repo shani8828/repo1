@@ -15,7 +15,7 @@ const HodMessage = () => {
             {/* larger div */}
             <div className="p-3 border border-n-1/10 flex flex-col justify-between items-center rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-purple-500">
               <h1 className="text-2xl lg:text-3xl m-3 font-semibold">
-                Message from Head of Department
+                Message from Head of the Department
               </h1>
               <div className="min-w-full flex justify-center items-center rounded-3xl">
                 <img src={hod} alt="hod" className="rounded-3xl w-40 lg:w-48" />
