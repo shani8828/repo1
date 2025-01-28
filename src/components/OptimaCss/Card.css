@@ -37,7 +37,8 @@
 
 .optima-card-front {
   background-color: #fff;
-  background: linear-gradient(-45deg, #f403d1, #9B4DFF);
+  background: linear-gradient(125deg, rgba(58, 16, 106, 0.8), rgba(10, 10, 94, 0.95));
+  /* background: linear-gradient(-45deg, #f403d1, #9B4DFF); */
 }
 
 .optima-card-front img {
@@ -50,7 +51,8 @@
 .optima-card-back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: linear-gradient(45deg, #f403d1, #9B4DFF);
+  background: linear-gradient(125deg, rgba(58, 16, 106, 0.8), rgba(10, 10, 94, 0.95));
+  /* background: linear-gradient(45deg, #f403d1, #9B4DFF); */
 }
 
 .optima-card-back-contact {
