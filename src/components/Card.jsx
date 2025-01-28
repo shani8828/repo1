@@ -10,6 +10,7 @@ import { SiGmail } from "react-icons/si";
 const Card = ({ profile }) => {
   return (
     <div className="optima-card">
+      {/* contains two divs: front and back */}
       <div className="optima-card-side optima-card-front text-white">
         <img src={profile.imageUrl} alt={`${profile.name}'s Image`} />
         <h2 className="text-2xl font-semibold text-center">{profile.name}</h2>
