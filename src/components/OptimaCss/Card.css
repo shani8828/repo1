@@ -2,74 +2,59 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+
 .optima-card {
-  background: none;
+  -webkit-perspective: 150rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   position: relative;
   width: 300px;
   height: 400px;
-  transform-style: preserve-3d;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.optima-card:hover {
-  transform: rotateY(180deg);
-  scale: 1.02;
-}
-.optima-card-front {
-  padding: 24px;
-  text-align: center;
+
+.optima-card-side {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 24px;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(
-    125deg,
-    rgba(56, 20, 96, 0.8),
-    rgba(11, 11, 58, 0.95)
-  );
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
 }
+
+.optima-card-front {
+  background-color: #fff;
+  background: linear-gradient(125deg, rgba(58, 16, 106, 0.8), rgba(10, 10, 94, 0.95));
+  /* background: linear-gradient(-45deg, #f403d1, #9B4DFF); */
+}
+
 .optima-card-front img {
   height: 220px;
   width: 220px;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
 }
+
 .optima-card-back {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 32px;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 24px;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: linear-gradient(
-    125deg,
-    rgba(56, 20, 96, 0.8),
-    rgba(11, 11, 58, 0.95)
-  );
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(125deg, rgba(58, 16, 106, 0.8), rgba(10, 10, 94, 0.95));
+  /* background: linear-gradient(45deg, #f403d1, #9B4DFF); */
 }
+
 .optima-card-back-contact {
   display: flex;
   justify-content: center;
@@ -78,22 +63,37 @@
   height: 60px;
   width: 100%;
 }
+
 .optima-card-back-contact a {
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
   transition: all 0.3s ease;
+  cursor: pointer;
 }
+
 .optima-card-back-contact a:hover {
   transform: translateY(-3px);
   color: #fff;
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
 }
+
+.optima-card:hover .optima-card-front {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.optima-card:hover .optima-card-back {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
 @media (max-width: 332px) {
+
   .optima-card,
-  .optima-card-front,
-  .optima-card-back {
+  .optima-card-side {
     width: 265px;
     height: 375px;
   }
+
   .optima-card-front img {
     height: 205px;
     width: 205px;
