@@ -12,12 +12,13 @@ import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
 import GuestLecture from "./components/GuestLecture";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-      <Header className="fixed top-0 left-0 w-full z-50" />
+        <Header className="fixed top-0 left-0 w-full z-50" />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/guest-lectures" element={<GuestLecture />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
