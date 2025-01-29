@@ -12,6 +12,7 @@ import {
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import "../components/OptimaCss/Footer.css";
+import { Link } from "react-router-dom";
 
 import { GradientLight } from "./design/Benefits";
 
@@ -36,29 +37,29 @@ const Footer = () => {
                 QUICK LINKS
               </h3>
               <div className="flex gap-4">
-                <ul>
+              <ul>
                   <li>
-                    <a href="/about">About Us</a>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="/gallery">Gallery</a>
+                    <Link to="/gallery">Gallery</Link>
                   </li>
                   <li>
-                    <a href="/workshops">Workshops</a>
+                    <Link to="/workshops">Workshops</Link>
                   </li>
                   <li>
-                    <a href="/competitions">Competitions</a>
+                    <Link to="/competitions">Competitions</Link>
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="/guest-lectures">Guest Lectures</a>
+                    <Link to="/guest-lectures">Guest Lectures</Link>
                   </li>
                   <li>
-                    <a href="/sponsors">Sponsors</a>
+                    <Link to="/sponsors">Sponsors</Link>
                   </li>
                   <li>
-                    <a href="/team">Team</a>
+                    <Link to="/team">Team</Link>
                   </li>
                 </ul>
               </div>
