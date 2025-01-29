@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/optima2025-logo.png";
 
@@ -46,9 +46,9 @@ const Header = () => {
         >
           <div className="relative z-2 flex flex-col items-start justify-center m-auto lg:flex-row lg:justify-end">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.id}
-                href={item.url}
+                to={item.url}
                 onClick={handleClick}
                 className={`block relative font-code text-2xl uppercase transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
@@ -59,7 +59,7 @@ const Header = () => {
                 } lg:leading-5 lg:hover:text-n-1`}
               >
                 {item.title}
-              </a>
+              </Link>
             ))}
           </div>
 

@@ -268,55 +268,52 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 //     </Section>
 //   );
 // };
+
+
 const Spons = () => {
   const [activeTab, setActiveTab] = useState("2025");
-  const tabs = [
-    { id: "2025", label: "2024-2025" },
-    { id: "2023", label: "2023-2024" },
-    { id: "previous", label: "Previous" },
-  ];
 
   return (
     <Section id="spons">
-      <div className="relative z-10">
-        <BackgroundCircles />
-      </div>
-      <div className="container mx-auto relative z-20">
+      <div className="container relative z-2">
         <Heading
-          className="md:max-w-md lg:max-w-2xl text-center "
+          className="md:max-w-md lg:max-w-2xl text-center"
           title="Our Esteemed Sponsors"
         />
 
+        <BackgroundCircles />
+
         <div className="flex flex-col md:flex-row w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
-          {tabs.map((tab) => (
-            <Button
-              key={tab.id}
-              active={activeTab === tab.id}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {tab.label}
-            </Button>
-          ))}
+          <Button
+            active={activeTab === "2025"}
+            onClick={() => setActiveTab("2025")}
+          >
+            2024-2025
+          </Button>
+          <Button
+            active={activeTab === "2023"}
+            onClick={() => setActiveTab("2023")}
+          >
+            2023-2024
+          </Button>
+          <Button
+            active={activeTab === "previous"}
+            onClick={() => setActiveTab("previous")}
+          >
+            Previous
+          </Button>
         </div>
 
-        {activeTab === "2025" ? (
-          <div className="flex justify-center">
-          <ComingSoon/>
-        </div>
-        ) : activeTab === "previous" ? (
-          <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
-            {SPONSORS_DATA.previous.sponsors.map((spons) => (
-              <div
-                key={spons}
-                className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
-              >
-                <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
-              </div>
-            ))}
+        {/* Hardcoded Content Based on Selection */}
+        {activeTab === "2025" && (
+          <div className="flex justify-center z-0">
+            <ComingSoon />
           </div>
-        ) : (
+        )}
+
+        {activeTab === "2023" && (
           <div className="space-y-10">
-            {Object.entries(SPONSORS_DATA[activeTab].categories).map(
+            {Object.entries(SPONSORS_DATA["2023"].categories).map(
               ([key, category]) => (
                 <SponsorCategory
                   key={key}
@@ -328,13 +325,25 @@ const Spons = () => {
             )}
           </div>
         )}
+
+        {activeTab === "previous" && (
+          <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
+            {SPONSORS_DATA.previous.sponsors.map((spons) => (
+              <div
+                key={spons}
+                className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
+              >
+                <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
       <Gradient />
     </Section>
   );
 };
-
 
 // Tab button component
 const TabButton = ({ active, onClick, label }) => (
