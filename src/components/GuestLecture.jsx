@@ -6,6 +6,7 @@ import { BackgroundCircles } from './design/Hero';
 import { Gradient } from './design/Services';
 
 const GuestLecture = () => {
+  document.title = "Guest Lectures | Optima 2025";
   return (
     <Section id='guestLecture'>
         <div className="container relative z-2">

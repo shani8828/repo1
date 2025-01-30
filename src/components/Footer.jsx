@@ -36,7 +36,7 @@ const Footer = () => {
               <h3 className="text-2xl md:text-2.5xl lg:text-2.8xl mb-3 ">
                 QUICK LINKS
               </h3>
-              <div className="flex gap-4">
+              <div className="flex gap-[2rem]">
               <ul>
                   <li>
                     <Link to="/about">About Us</Link>

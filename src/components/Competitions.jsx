@@ -11,6 +11,7 @@ import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
 
 const Competitions = () => {
+  document.title = "Competitions | Optima 2025";
   return (
     <Section id="competitions">
       <div className="container relative z-2">

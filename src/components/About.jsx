@@ -7,6 +7,7 @@ import Button from "./Button";
 import { BackgroundCircles } from "./design/Hero";
 
 const About = () => {
+  document.title = "About | Optima 2025";
   return (
     <Section id="about">
       <div className="container md:pb-10">

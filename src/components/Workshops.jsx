@@ -9,6 +9,7 @@ import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
 
 const Workshops = () => {
+  document.title = "Workshops | Optima 2025";
   return (
     <Section id="workshops">
       <div className="container relative z-2">

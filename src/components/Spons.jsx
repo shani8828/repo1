@@ -271,6 +271,7 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 
 
 const Spons = () => {
+  document.title = "Sponsors | Optima 2025";
   const [activeTab, setActiveTab] = useState("2025");
 
   return (
