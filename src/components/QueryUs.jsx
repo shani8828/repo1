@@ -63,7 +63,8 @@ const QueryUs = () => {
                 <span className="pl-2">+91 6370708967</span>
               </a>
               <a href={`tel:+917027000295`} target="_blank">
-                <span className="pl-7">+91 7027000295</span>
+              <FontAwesomeIcon icon={faPhone} style={{ color: "#9333ea" }} />
+                <span className="pl-2">+91 7027000295</span>
               </a>
             </div>
             <div className="flex flex-col gap-0 mb-4">
@@ -75,7 +76,10 @@ const QueryUs = () => {
                 sumanta@optima.org.in
               </a>
               <a href={`mailto:baranwalsanchay01@gmail.com`} target="_blank">
-                <span className="pl-6">baranwalsanchay01@gmail.com</span>
+              <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ color: "#9333ea" }}
+                />{" "}baranwalsanchay01@gmail.com
               </a>
             </div>
             <h1 className="mb-3">Get connected with us : </h1>
