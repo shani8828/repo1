@@ -22,14 +22,14 @@ const Competitions = () => {
         />
         <BackgroundCircles />
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <ComingSoon link="https://2023.optima.org.in/competitions"/>
-        </div>
+        </div> */}
         {/* Competitions Cards */}
-        {/* <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
+        <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
           {competitions.map((item) => (
             <div
-              className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] hover:scale-[103%] transition-all duration-300"
+              className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
                 backgroundImage: `url(${item.borderUrl})`,
               }}
@@ -57,34 +57,37 @@ const Competitions = () => {
 
                 <p className="body-2 mb-6 text-n-3 text-center">{item.text}</p>
 
-                <div className="flex items-center mt-auto gap-3 justify-between">
+                <div className="flex items-center mt-auto gap-2 md:gap-3 justify-center">
                   <a
                     href={item.whatsAppLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:scale-[110%] transition transition:translate duration-200"
                   >
-                    <FaWhatsapp size={40} color="#25D366" />
+                    <FaWhatsapp className="w-8 h-8 md:w-12 md:h-11" color="#25D366" />
+
                   </a>
 
                   <a
                     href={item.unstopLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="cursor-pointer"
+                    className="cursor-pointer hover:scale-[108%] transition transition:translate duration-200"
                   >
                     <img
                       src={unstopIcon}
                       alt="unstopIcon"
-                      className="w-10 sm:w-10 md:w-10 lg:w-10"
+                      className="w-8 md:w-12"
                     />
                   </a>
 
-                  <Button className="hover:cursor-pointer">
+                  <button 
+                  className="cursor-pointer hover:scale-[105%] max-w-[50%] border border-n-2 rounded-md p-1.5 md:p-2 flex items-center transition transition:translate duration-200"
+                  onClick={() => window.open(item.driveLink, "_blank", "noopener,noreferrer")}>
                     <p className="ml-auto font-code text-xs font-bold text-n-2 uppercase cursor-pointer">
                       Problem Statement
                     </p>
-                  </Button>
+                  </button>
                 </div>
               </div>
 
@@ -109,7 +112,7 @@ const Competitions = () => {
               <ClipPath />
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
       <Gradient />
     </Section>
