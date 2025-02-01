@@ -12,6 +12,7 @@ import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
 import GuestLecture from "./components/GuestLecture";
+import QueryUs from "./components/QueryUs";
 import NotFound from "./components/NotFound";
 
 const App = () => {
@@ -28,11 +29,11 @@ const App = () => {
           <Route path="/guest-lectures" element={<GuestLecture />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/query-us" element={<QueryUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );
