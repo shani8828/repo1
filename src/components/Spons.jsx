@@ -16,40 +16,41 @@ const SPONSORS_DATA = {
       titleSponsor: {
         name: "Title Sponsor",
         size: "lg",
-        sponsors: ["OPTYM.jpg"],
+        sponsors: ["adani.jpg"],
       },
       majorSponsors: {
         name: "Major Sponsors",
         size: "md",
-        sponsors: ["AirIndia.png", "FlexSim.jpg"],
+        sponsors: ["Blue_Yonder.png"],
       },
       strategicPartners: {
         name: "Strategic Partners",
         size: "sm",
-        sponsors: ["RahulCommerce.jpg", "Vicon.png"],
+        sponsors: ["OPTYM.jpg"],
       },
-      eventsPartners: {
-        name: "Event Partners",
-        size: "sm",
-        sponsors: [
-          "ORMAE.jpeg",
-          "DCVisionVR.jpg",
-          "Blue_Yonder.png",
-          "Delhivery_Logo.png",
-          "GFG.png",
-          "Sabre.png",
-        ],
-      },
-      merchandisePartner: {
-        name: "Merchandise Partner",
-        size: "sm",
-        sponsors: ["OwlPrints.png"],
-      },
-      mediaPartners: {
-        name: "Media Partners",
-        size: "sm",
-        sponsors: ["CampusVarta.png", "WomansEra.png"],
-      },
+      
+      // eventsPartners: {
+      //   name: "Event Partners",
+      //   size: "sm",
+      //   sponsors: [
+      //     "ORMAE.jpeg",
+      //     "DCVisionVR.jpg",
+      //     "Delhivery_Logo.png",
+      //     "GFG.png",
+      //     "Sabre.png",
+      //   ],
+      // },
+      // merchandisePartner: {
+      //   name: "Merchandise Partner",
+      //   size: "sm",
+      //   sponsors: ["OwlPrints.png"],
+      // },
+      // mediaPartners: {
+      //   name: "Media Partners",
+      //   size: "sm",
+      //   sponsors: ["CampusVarta.png", "WomansEra.png"],
+      // },
+
     },
   },
   2023: {
@@ -269,7 +270,6 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 //   );
 // };
 
-
 const Spons = () => {
   document.title = "Sponsors | Optima 2025";
   const [activeTab, setActiveTab] = useState("2025");
@@ -307,8 +307,21 @@ const Spons = () => {
 
         {/* Hardcoded Content Based on Selection */}
         {activeTab === "2025" && (
-          <div className="flex justify-center z-0">
-            <ComingSoon />
+          // <div className="flex justify-center z-0">
+          //   {/* <ComingSoon /> */}
+
+          // </div>
+          <div className="space-y-10">
+            {Object.entries(SPONSORS_DATA["2025"].categories).map(
+              ([key, category]) => (
+                <SponsorCategory
+                  key={key}
+                  name={category.name}
+                  sponsors={category.sponsors}
+                  size={category.size}
+                />
+              )
+            )}
           </div>
         )}
 
