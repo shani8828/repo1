@@ -10,213 +10,213 @@ import ComingSoon from "./design/ComingSoon.jsx";
 
 // Separate data into a new file: src/data/sponsorsData.js
 const SPONSORS_DATA = {
-  2025: {
-    title: "Optima 2025 Sponsors",
-    categories: {
-      // titleSponsor: {
-      //   name: "Title Sponsor",
-      //   size: "lg",
-      //   sponsors: ["adani.jpg"],
-      // },
-      // coTitleSponsor: {
-      //   name: "Co-Title Sponsor",
-      //   size: "md",
-      //   sponsors: ["spons-25/adani.jpg"],
-      // },
-      majorSponsors: {
-        name: "Major Sponsors",
-        size: "md",
-        sponsors: ["spons-25/blue_yonder.png"],
-      },
-      strategicPartners: {
-        name: "Strategic Sponsors",
-        size: "sm",
-        sponsors: ["spons-25/OPTYM.jpg"],
-      },
+	2025: {
+		title: "Optima 2025 Sponsors",
+		categories: {
+			// titleSponsor: {
+			//   name: "Title Sponsor",
+			//   size: "lg",
+			//   sponsors: ["adani.jpg"],
+			// },
+			// coTitleSponsor: {
+			//   name: "Co-Title Sponsor",
+			//   size: "md",
+			//   sponsors: ["spons-25/adani.jpg"],
+			// },
+			majorSponsors: {
+				name: "Major Sponsors",
+				size: "md",
+				sponsors: ["spons-25/blue_yonder.png"],
+			},
+			strategicPartners: {
+				name: "Strategic Sponsors",
+				size: "sm",
+				sponsors: ["spons-25/OPTYM.jpg"],
+			},
 
-      // eventsPartners: {
-      //   name: "Event Partners",
-      //   size: "sm",
-      //   sponsors: [
-      //     "ORMAE.jpeg",
-      //     "DCVisionVR.jpg",
-      //     "Delhivery_Logo.png",
-      //     "GFG.png",
-      //     "Sabre.png",
-      //   ],
-      // },
-      // merchandisePartner: {
-      //   name: "Merchandise Partner",
-      //   size: "sm",
-      //   sponsors: ["OwlPrints.png"],
-      // },
-      // mediaPartners: {
-      //   name: "Media Partners",
-      //   size: "sm",
-      //   sponsors: ["CampusVarta.png", "WomansEra.png"],
-      // },
-    },
-  },
-  2023: {
-    title: "Optima 2023 Sponsors",
-    categories: {
-      titleSponsor: {
-        name: "Title Sponsor",
-        size: "lg",
-        sponsors: ["spons-23/OPTYM.jpg"],
-      },
-      majorSponsors: {
-        name: "Major Sponsors",
-        size: "md",
-        sponsors: ["spons-23/AirIndia.png", "spons-23/FlexSim.jpg"],
-      },
-      strategicPartners: {
-        name: "Strategic Partners",
-        size: "sm",
-        sponsors: ["spons-23/RahulCommerce.jpg", "spons-23/Vicon.png"],
-      },
-      eventsPartners: {
-        name: "Event Partners",
-        size: "sm",
-        sponsors: [
-          "spons-23/ORMAE.jpeg",
-          "spons-23/DCVisionVR.jpg",
-          "spons-23/Blue_Yonder.png",
-          "spons-23/Delhivery_Logo.png",
-          "spons-23/GFG.png",
-          "spons-23/Sabre.png",
-        ],
-      },
-      merchandisePartner: {
-        name: "Merchandise Partner",
-        size: "sm",
-        sponsors: ["spons-23/OwlPrints.png"],
-      },
-      mediaPartners: {
-        name: "Media Partners",
-        size: "sm",
-        sponsors: ["spons-23/CampusVarta.png", "spons-23/WomansEra.png"],
-      },
-    },
-  },
-  previous: {
-    title: "Previous Sponsors",
-    categories: {
-      previousSponsors: {
-        name: "Previous Sponsors",
-        size: "sm",
-        sponsors: [
-          "spons-prev/ACC.png",
-          "spons-prev/AIBH.png",
-          "spons-prev/Allied_publishers.png",
-          "spons-prev/GE_HealthCare.png",
-          "spons-prev/RP_Industrial_Consultant.png",
-          "spons-prev/Springer.png",
-          "spons-prev/SR_Srinivasan.jpg",
-          "spons-prev/TATA.png",
-          "spons-prev/Total_Library_Solution.png",
-        ],
-      },
-    },
-  },
+			// eventsPartners: {
+			//   name: "Event Partners",
+			//   size: "sm",
+			//   sponsors: [
+			//     "ORMAE.jpeg",
+			//     "DCVisionVR.jpg",
+			//     "Delhivery_Logo.png",
+			//     "GFG.png",
+			//     "Sabre.png",
+			//   ],
+			// },
+			// merchandisePartner: {
+			//   name: "Merchandise Partner",
+			//   size: "sm",
+			//   sponsors: ["OwlPrints.png"],
+			// },
+			// mediaPartners: {
+			//   name: "Media Partners",
+			//   size: "sm",
+			//   sponsors: ["CampusVarta.png", "WomansEra.png"],
+			// },
+		},
+	},
+	2023: {
+		title: "Optima 2023 Sponsors",
+		categories: {
+			titleSponsor: {
+				name: "Title Sponsor",
+				size: "lg",
+				sponsors: ["spons-23/OPTYM.jpg"],
+			},
+			majorSponsors: {
+				name: "Major Sponsors",
+				size: "md",
+				sponsors: ["spons-23/AirIndia.png", "spons-23/FlexSim.jpg"],
+			},
+			strategicPartners: {
+				name: "Strategic Partners",
+				size: "sm",
+				sponsors: ["spons-23/RahulCommerce.jpg", "spons-23/Vicon.png"],
+			},
+			eventsPartners: {
+				name: "Event Partners",
+				size: "sm",
+				sponsors: [
+					"spons-23/ORMAE.jpeg",
+					"spons-23/DCVisionVR.jpg",
+					"spons-23/Blue_Yonder.png",
+					"spons-23/Delhivery_Logo.png",
+					"spons-23/GFG.png",
+					"spons-23/Sabre.png",
+				],
+			},
+			merchandisePartner: {
+				name: "Merchandise Partner",
+				size: "sm",
+				sponsors: ["spons-23/OwlPrints.png"],
+			},
+			mediaPartners: {
+				name: "Media Partners",
+				size: "sm",
+				sponsors: ["spons-23/CampusVarta.png", "spons-23/WomansEra.png"],
+			},
+		},
+	},
+	previous: {
+		title: "Previous Sponsors",
+		categories: {
+			previousSponsors: {
+				name: "Previous Sponsors",
+				size: "sm",
+				sponsors: [
+					"spons-prev/ACC.png",
+					"spons-prev/AIBH.png",
+					"spons-prev/Allied_publishers.png",
+					"spons-prev/GE_HealthCare.png",
+					"spons-prev/RP_Industrial_Consultant.png",
+					"spons-prev/Springer.png",
+					"spons-prev/SR_Srinivasan.jpg",
+					"spons-prev/TATA.png",
+					"spons-prev/Total_Library_Solution.png",
+				],
+			},
+		},
+	},
 };
 
 const imgToUrl = {
-  "spons-prev/ACC.png": "https://www.acclimited.com/",
-  "spons-prev/AIBH.png": "https://www.aibh.in/",
-  "spons-prev/Allied_publishers.png": "https://www.alliedpublishers.com/",
-  "spons-prev/GE_HealthCare.png": "https://www.gehealthcare.com/",
-  "spons-prev/RP_Industrial_Consultant.png": "https://www.rpic.in/",
-  "spons-prev/Springer.png": "https://www.springer.com/",
-  "spons-prev/SR_Srinivasan.jpg": "https://www.srsrinivasan.com/",
-  "spons-prev/TATA.png": "https://www.tata.com/",
-  "spons-prev/Total_Library_Solution.png": "https://tlsgroup.co.in/",
-  "spons-23/OPTYM.jpg": "https://www.optym.com/",
-  "spons-25/OPTYM.jpg": "https://www.optym.com/",
-  "spons-23/AirIndia.png": "https://www.airindia.in/",
-  "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
-  "spons-23/RahulCommerce.jpg": "http://rahulcom.com/",
-  "spons-23/Vicon.png": "https://www.vicon.com/",
-  "spons-23/ORMAE.jpeg": "https://www.ormae.com/",
-  "spons-23/DCVisionVR.jpg": "https://dcvision.in/",
-  "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
-  "spons-23/Blue_Yonder.png": "https://www.blueyonder.com/",
-  "spons-23/Delhivery_Logo.png": "https://www.delhivery.com/",
-  "spons-23/GFG.png": "https://www.geeksforgeeks.org/",
-  "spons-23/Sabre.png": "https://www.sabre.com/",
-  "spons-23/OwlPrints.png": "https://www.owlprints.in/",
-  "spons-23/CampusVarta.png": "https://www.campusvarta.com/",
-  "spons-23/WomansEra.png": "https://www.womansera.com/",
+	"spons-prev/ACC.png": "https://www.acclimited.com/",
+	"spons-prev/AIBH.png": "https://www.aibh.in/",
+	"spons-prev/Allied_publishers.png": "https://www.alliedpublishers.com/",
+	"spons-prev/GE_HealthCare.png": "https://www.gehealthcare.com/",
+	"spons-prev/RP_Industrial_Consultant.png": "https://www.rpic.in/",
+	"spons-prev/Springer.png": "https://www.springer.com/",
+	"spons-prev/SR_Srinivasan.jpg": "https://www.srsrinivasan.com/",
+	"spons-prev/TATA.png": "https://www.tata.com/",
+	"spons-prev/Total_Library_Solution.png": "https://tlsgroup.co.in/",
+	"spons-23/OPTYM.jpg": "https://www.optym.com/",
+	"spons-25/OPTYM.jpg": "https://www.optym.com/",
+	"spons-23/AirIndia.png": "https://www.airindia.in/",
+	"spons-23/FlexSim.jpg": "https://www.flexsim.com/",
+	"spons-23/RahulCommerce.jpg": "http://rahulcom.com/",
+	"spons-23/Vicon.png": "https://www.vicon.com/",
+	"spons-23/ORMAE.jpeg": "https://www.ormae.com/",
+	"spons-23/DCVisionVR.jpg": "https://dcvision.in/",
+	"spons-25/blue_yonder.png": "https://www.blueyonder.com/",
+	"spons-23/Blue_Yonder.png": "https://www.blueyonder.com/",
+	"spons-23/Delhivery_Logo.png": "https://www.delhivery.com/",
+	"spons-23/GFG.png": "https://www.geeksforgeeks.org/",
+	"spons-23/Sabre.png": "https://www.sabre.com/",
+	"spons-23/OwlPrints.png": "https://www.owlprints.in/",
+	"spons-23/CampusVarta.png": "https://www.campusvarta.com/",
+	"spons-23/WomansEra.png": "https://www.womansera.com/",
 };
 
 // Component for sponsor category section
 const SponsorCategory = ({ name, sponsors, size = "sm" }) => {
-  const sizeClasses = {
-    sm: "max-w-[18rem] p-4",
-    md: "max-w-[32rem] p-6",
-    lg: "max-w-[42rem] p-4",
-  };
+	const sizeClasses = {
+		sm: "max-w-[18rem] p-1",
+		md: "max-w-[32rem] p-2",
+		lg: "max-w-[42rem] p-3",
+	};
 
-  return (
-    <div className="mb-10">
-      <h2
-        className={`font-bold mb-6 text-center ${
-          size === "lg" ? "text-4xl mt-12" : "text-2xl"
-        }`}
-      >
-        {name}
-      </h2>
-      <div className="flex flex-wrap gap-6 justify-center">
-        {sponsors.map((spons) => (
-          <a
-            key={spons}
-            href={imgToUrl[spons]}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div
-              className={`relative rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 ${sizeClasses[size]} group`}
-            >
-              <SponsCard imageUrl={`/assets/spons/${spons}`} size={size} />
-            </div>
-          </a>
-        ))}
-      </div>
-    </div>
-  );
+	return (
+		<div className="mb-10">
+			<h2
+				className={`font-bold mb-6 text-center ${
+					size === "lg" ? "text-4xl mt-12" : "text-2xl"
+				}`}
+			>
+				{name}
+			</h2>
+			<div className="flex flex-wrap gap-6 justify-center">
+				{sponsors.map((spons) => (
+					<a
+						key={spons}
+						href={imgToUrl[spons]}
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div
+							className={`relative rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 ${sizeClasses[size]} group`}
+						>
+							<SponsCard imageUrl={`/assets/spons/${spons}`} size={size} />
+						</div>
+					</a>
+				))}
+			</div>
+		</div>
+	);
 };
 
 // Updated SponsCard component
 const SponsCard = ({ imageUrl, size = "sm" }) => {
-  const heightClasses = {
-    sm: "h-40",
-    md: "h-56 md:h-72",
-    lg: "h-[250px] md:h-[400px]",
-  };
+	const heightClasses = {
+		sm: "h-40",
+		md: "h-56 md:h-72",
+		lg: "h-[250px] md:h-[400px]",
+	};
 
-  const widthClasses = {
-    sm: "w-40",
-    md: "w-56 md:w-72",
-    lg: "w-[250px] md:w-[400px]",
-  };
+	const widthClasses = {
+		sm: "w-40",
+		md: "w-56 md:w-72",
+		lg: "w-[250px] md:w-[400px]",
+	};
 
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      className={`${heightClasses[size]} ${widthClasses[size]} bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10`}
-    >
-      <motion.img
-        src={imageUrl}
-        alt="Sponsor"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="h-full w-auto object-contain p-4"
-      />
-    </motion.div>
-  );
+	return (
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 1 }}
+			className={`${heightClasses[size]} ${widthClasses[size]} bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10`}
+		>
+			<motion.img
+				src={imageUrl}
+				alt="Sponsor"
+				initial={{ opacity: 0, scale: 0.8 }}
+				animate={{ opacity: 1, scale: 1 }}
+				transition={{ duration: 1, delay: 0.3 }}
+				className="h-full w-auto object-contain p-2"
+			/>
+		</motion.div>
+	);
 };
 
 // Main Spons component
@@ -292,114 +292,114 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
 // };
 
 const Spons = () => {
-  document.title = "Sponsors | Optima 2025";
-  const [activeTab, setActiveTab] = useState("2025");
+	document.title = "Sponsors | Optima 2025";
+	const [activeTab, setActiveTab] = useState("2025");
 
-  return (
-    <Section id="spons">
-      <div className="container relative z-2">
-        <Heading
-          className="md:max-w-md lg:max-w-2xl text-center"
-          title="Our Esteemed Sponsors"
-        />
+	return (
+		<Section id="spons">
+			<div className="container relative z-2">
+				<Heading
+					className="md:max-w-md lg:max-w-2xl text-center"
+					title="Our Esteemed Sponsors"
+				/>
 
-        <BackgroundCircles />
+				<BackgroundCircles />
 
-        <div className="flex flex-col md:flex-row w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
-          <Button
-            active={activeTab === "2025"}
-            onClick={() => setActiveTab("2025")}
-          >
-            2024-2025
-          </Button>
-          <Button
-            active={activeTab === "2023"}
-            onClick={() => setActiveTab("2023")}
-          >
-            2023-2024
-          </Button>
-          <Button
-            active={activeTab === "previous"}
-            onClick={() => setActiveTab("previous")}
-          >
-            Previous
-          </Button>
-        </div>
+				<div className="flex flex-col md:flex-row w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
+					<Button
+						active={activeTab === "2025"}
+						onClick={() => setActiveTab("2025")}
+					>
+						2024-2025
+					</Button>
+					<Button
+						active={activeTab === "2023"}
+						onClick={() => setActiveTab("2023")}
+					>
+						2023-2024
+					</Button>
+					<Button
+						active={activeTab === "previous"}
+						onClick={() => setActiveTab("previous")}
+					>
+						Previous
+					</Button>
+				</div>
 
-        {/* Hardcoded Content Based on Selection */}
-        {activeTab === "2025" && (
-          // <div className="flex justify-center z-0">
-          //   {/* <ComingSoon /> */}
+				{/* Hardcoded Content Based on Selection */}
+				{activeTab === "2025" && (
+					// <div className="flex justify-center z-0">
+					//   {/* <ComingSoon /> */}
 
-          // </div>
-          <div className="space-y-10">
-            {Object.entries(SPONSORS_DATA["2025"].categories).map(
-              ([key, category]) => (
-                <SponsorCategory
-                  key={key}
-                  name={category.name}
-                  sponsors={category.sponsors}
-                  size={category.size}
-                />
-              )
-            )}
-          </div>
-        )}
+					// </div>
+					<div className="space-y-10">
+						{Object.entries(SPONSORS_DATA["2025"].categories).map(
+							([key, category]) => (
+								<SponsorCategory
+									key={key}
+									name={category.name}
+									sponsors={category.sponsors}
+									size={category.size}
+								/>
+							)
+						)}
+					</div>
+				)}
 
-        {activeTab === "2023" && (
-          <div className="space-y-10">
-            {Object.entries(SPONSORS_DATA["2023"].categories).map(
-              ([key, category]) => (
-                <SponsorCategory
-                  key={key}
-                  name={category.name}
-                  sponsors={category.sponsors}
-                  size={category.size}
-                />
-              )
-            )}
-          </div>
-        )}
+				{activeTab === "2023" && (
+					<div className="space-y-10">
+						{Object.entries(SPONSORS_DATA["2023"].categories).map(
+							([key, category]) => (
+								<SponsorCategory
+									key={key}
+									name={category.name}
+									sponsors={category.sponsors}
+									size={category.size}
+								/>
+							)
+						)}
+					</div>
+				)}
 
-        {activeTab === "previous" && (
-          <div className="space-y-10">
-            {Object.entries(SPONSORS_DATA["previous"].categories).map(
-              ([key, category]) => (
-                <SponsorCategory
-                  key={key}
-                  name={category.name}
-                  sponsors={category.sponsors}
-                  size={category.size}
-                />
-              )
-            )}
-          </div>
-        )}
-      </div>
+				{activeTab === "previous" && (
+					<div className="space-y-10">
+						{Object.entries(SPONSORS_DATA["previous"].categories).map(
+							([key, category]) => (
+								<SponsorCategory
+									key={key}
+									name={category.name}
+									sponsors={category.sponsors}
+									size={category.size}
+								/>
+							)
+						)}
+					</div>
+				)}
+			</div>
 
-      <Gradient />
-    </Section>
-  );
+			<Gradient />
+		</Section>
+	);
 };
 
 // Tab button component
 const TabButton = ({ active, onClick, label }) => (
-  <button
-    className={`
+	<button
+		className={`
       px-6 py-3 rounded-full transition-all duration-300
       ${
-        active
-          ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
-          : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
-      }
+				active
+					? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
+					: "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
+			}
       font-medium border border-n-6 justify-center
       flex items-center gap-2
       text-center
     `}
-    onClick={onClick}
-  >
-    <span>{label}</span>
-  </button>
+		onClick={onClick}
+	>
+		<span>{label}</span>
+	</button>
 );
 
 export default Spons;
