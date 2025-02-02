@@ -21,17 +21,17 @@ const SPONSORS_DATA = {
       // coTitleSponsor: {
       //   name: "Co-Title Sponsor",
       //   size: "md",
-      //   sponsors: ["adani.jpg"],
+      //   sponsors: ["spons-25/adani.jpg"],
       // },
       majorSponsors: {
         name: "Major Sponsors",
         size: "md",
-        sponsors: ["Blue_Yonder.png"],
+        sponsors: ["spons-25/blue_yonder.png"],
       },
       strategicPartners: {
         name: "Strategic Partners",
         size: "sm",
-        sponsors: ["OPTYM.jpg"],
+        sponsors: ["spons-25/OPTYM.jpg"],
       },
 
       // eventsPartners: {
@@ -63,82 +63,90 @@ const SPONSORS_DATA = {
       titleSponsor: {
         name: "Title Sponsor",
         size: "lg",
-        sponsors: ["OPTYM.jpg"],
+        sponsors: ["spons-23/OPTYM.jpg"],
       },
       majorSponsors: {
         name: "Major Sponsors",
         size: "md",
-        sponsors: ["AirIndia.png", "FlexSim.jpg"],
+        sponsors: ["spons-23/AirIndia.png", "spons-23/FlexSim.jpg"],
       },
       strategicPartners: {
         name: "Strategic Partners",
         size: "sm",
-        sponsors: ["RahulCommerce.jpg", "Vicon.png"],
+        sponsors: ["spons-23/RahulCommerce.jpg", "spons-23/Vicon.png"],
       },
       eventsPartners: {
         name: "Event Partners",
         size: "sm",
         sponsors: [
-          "ORMAE.jpeg",
-          "DCVisionVR.jpg",
-          "Blue_Yonder.png",
-          "Delhivery_Logo.png",
-          "GFG.png",
-          "Sabre.png",
+          "spons-23/ORMAE.jpeg",
+          "spons-23/DCVisionVR.jpg",
+          "spons-23/Blue_Yonder.png",
+          "spons-23/Delhivery_Logo.png",
+          "spons-23/GFG.png",
+          "spons-23/Sabre.png",
         ],
       },
       merchandisePartner: {
         name: "Merchandise Partner",
         size: "sm",
-        sponsors: ["OwlPrints.png"],
+        sponsors: ["spons-23/OwlPrints.png"],
       },
       mediaPartners: {
         name: "Media Partners",
         size: "sm",
-        sponsors: ["CampusVarta.png", "WomansEra.png"],
+        sponsors: ["spons-23/CampusVarta.png", "spons-23/WomansEra.png"],
       },
     },
   },
   previous: {
     title: "Previous Sponsors",
-    sponsors: [
-      "ACC.png",
-      "AIBH.png",
-      "Allied_publishers.png",
-      "GE_HealthCare.png",
-      "RP_Industrial_Consultant.png",
-      "Springer.png",
-      "SR_Srinivasan.jpg",
-      "TATA.png",
-      "Total_Library_Solution.png",
-    ],
+    categories: {
+      previousSponsors: {
+        name: "Previous Sponsors",
+        size: "sm",
+        sponsors: [
+          "spons-prev/ACC.png",
+          "spons-prev/AIBH.png",
+          "spons-prev/Allied_publishers.png",
+          "spons-prev/GE_HealthCare.png",
+          "spons-prev/RP_Industrial_Consultant.png",
+          "spons-prev/Springer.png",
+          "spons-prev/SR_Srinivasan.jpg",
+          "spons-prev/TATA.png",
+          "spons-prev/Total_Library_Solution.png",
+        ],
+      },
+    },
   },
 };
 
 const imgToUrl = {
-  "ACC.png": "https://www.acclimited.com/",
-  "AIBH.png": "https://www.aibh.in/",
-  "Allied_publishers.png": "https://www.alliedpublishers.com/",
-  "GE_HealthCare.png": "https://www.gehealthcare.com/",
-  "RP_Industrial_Consultant.png": "https://www.rpic.in/",
-  "Springer.png": "https://www.springer.com/",
-  "SR_Srinivasan.jpg": "https://www.srsrinivasan.com/",
-  "TATA.png": "https://www.tata.com/",
-  "Total_Library_Solution.png": "https://tlsgroup.co.in/",
-  "OPTYM.jpg": "https://www.optym.com/",
-  "AirIndia.png": "https://www.airindia.in/",
-  "FlexSim.jpg": "https://www.flexsim.com/",
-  "RahulCommerce.jpg": "http://rahulcom.com/",
-  "Vicon.png": "https://www.vicon.com/",
-  "ORMAE.jpeg": "https://www.ormae.com/",
-  "DCVisionVR.jpg": "https://dcvision.in/",
-  "Blue_Yonder.png": "https://www.blueyonder.com/",
-  "Delhivery_Logo.png": "https://www.delhivery.com/",
-  "GFG.png": "https://www.geeksforgeeks.org/",
-  "Sabre.png": "https://www.sabre.com/",
-  "OwlPrints.png": "https://www.owlprints.in/",
-  "CampusVarta.png": "https://www.campusvarta.com/",
-  "WomansEra.png": "https://www.womansera.com/",
+  "spons-prev/ACC.png": "https://www.acclimited.com/",
+  "spons-prev/AIBH.png": "https://www.aibh.in/",
+  "spons-prev/Allied_publishers.png": "https://www.alliedpublishers.com/",
+  "spons-prev/GE_HealthCare.png": "https://www.gehealthcare.com/",
+  "spons-prev/RP_Industrial_Consultant.png": "https://www.rpic.in/",
+  "spons-prev/Springer.png": "https://www.springer.com/",
+  "spons-prev/SR_Srinivasan.jpg": "https://www.srsrinivasan.com/",
+  "spons-prev/TATA.png": "https://www.tata.com/",
+  "spons-prev/Total_Library_Solution.png": "https://tlsgroup.co.in/",
+  "spons-23/OPTYM.jpg": "https://www.optym.com/",
+  "spons-25/OPTYM.jpg": "https://www.optym.com/",
+  "spons-23/AirIndia.png": "https://www.airindia.in/",
+  "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
+  "spons-23/RahulCommerce.jpg": "http://rahulcom.com/",
+  "spons-23/Vicon.png": "https://www.vicon.com/",
+  "spons-23/ORMAE.jpeg": "https://www.ormae.com/",
+  "spons-23/DCVisionVR.jpg": "https://dcvision.in/",
+  "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
+  "spons-23/Blue_Yonder.png": "https://www.blueyonder.com/",
+  "spons-23/Delhivery_Logo.png": "https://www.delhivery.com/",
+  "spons-23/GFG.png": "https://www.geeksforgeeks.org/",
+  "spons-23/Sabre.png": "https://www.sabre.com/",
+  "spons-23/OwlPrints.png": "https://www.owlprints.in/",
+  "spons-23/CampusVarta.png": "https://www.campusvarta.com/",
+  "spons-23/WomansEra.png": "https://www.womansera.com/",
 };
 
 // Component for sponsor category section
@@ -169,10 +177,7 @@ const SponsorCategory = ({ name, sponsors, size = "sm" }) => {
             <div
               className={`relative rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 ${sizeClasses[size]} group`}
             >
-              <SponsCard
-                imageUrl={`/assets/spons/spons-23/${spons}`}
-                size={size}
-              />
+              <SponsCard imageUrl={`/assets/spons/${spons}`} size={size} />
             </div>
           </a>
         ))}
@@ -357,15 +362,17 @@ const Spons = () => {
         )}
 
         {activeTab === "previous" && (
-          <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
-            {SPONSORS_DATA.previous.sponsors.map((spons) => (
-              <div
-                key={spons}
-                className="relative p-4 rounded-lg shadow-lg bg-white hover:scale-105 transition-transform duration-300 md:max-w-[18rem] group"
-              >
-                <SponsCard imageUrl={`/assets/spons/spons-prev/${spons}`} />
-              </div>
-            ))}
+          <div className="space-y-10">
+            {Object.entries(SPONSORS_DATA["previous"].categories).map(
+              ([key, category]) => (
+                <SponsorCategory
+                  key={key}
+                  name={category.name}
+                  sponsors={category.sponsors}
+                  size={category.size}
+                />
+              )
+            )}
           </div>
         )}
       </div>
