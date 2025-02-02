@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import brackets from "../assets/svg/Brackets";
-
+import { motion } from "framer-motion";
 import { BackgroundCircles, BottomLine } from "./design/Hero";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -13,11 +13,16 @@ const SPONSORS_DATA = {
   2025: {
     title: "Optima 2025 Sponsors",
     categories: {
-      titleSponsor: {
-        name: "Title Sponsor",
-        size: "lg",
-        sponsors: ["adani.jpg"],
-      },
+      // titleSponsor: {
+      //   name: "Title Sponsor",
+      //   size: "lg",
+      //   sponsors: ["adani.jpg"],
+      // },
+      // coTitleSponsor: {
+      //   name: "Co-Title Sponsor",
+      //   size: "md",
+      //   sponsors: ["adani.jpg"],
+      // },
       majorSponsors: {
         name: "Major Sponsors",
         size: "md",
@@ -28,7 +33,7 @@ const SPONSORS_DATA = {
         size: "sm",
         sponsors: ["OPTYM.jpg"],
       },
-      
+
       // eventsPartners: {
       //   name: "Event Partners",
       //   size: "sm",
@@ -50,7 +55,6 @@ const SPONSORS_DATA = {
       //   size: "sm",
       //   sponsors: ["CampusVarta.png", "WomansEra.png"],
       // },
-
     },
   },
   2023: {
@@ -182,19 +186,31 @@ const SponsCard = ({ imageUrl, size = "sm" }) => {
   const heightClasses = {
     sm: "h-40",
     md: "h-56 md:h-72",
-    lg: "h-[300px] md:h-[400px]",
+    lg: "h-[250px] md:h-[400px]",
+  };
+
+  const widthClasses = {
+    sm: "w-40",
+    md: "w-56 md:w-72",
+    lg: "w-[250px] md:w-[400px]",
   };
 
   return (
-    <div
-      className={`${heightClasses[size]} w-full bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10`}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className={`${heightClasses[size]} ${widthClasses[size]} bg-white rounded-lg shadow-md flex items-center justify-center overflow-hidden relative z-10`}
     >
-      <img
+      <motion.img
         src={imageUrl}
         alt="Sponsor"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.3 }}
         className="h-full w-auto object-contain p-4"
       />
-    </div>
+    </motion.div>
   );
 };
 
