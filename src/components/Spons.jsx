@@ -29,7 +29,7 @@ const SPONSORS_DATA = {
         sponsors: ["spons-25/blue_yonder.png"],
       },
       strategicPartners: {
-        name: "Strategic Partners",
+        name: "Strategic Sponsors",
         size: "sm",
         sponsors: ["spons-25/OPTYM.jpg"],
       },
