@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import ButtonGradient from "./assets/svg/ButtonGradient";
@@ -12,7 +12,10 @@ import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
 import GuestLecture from "./components/GuestLecture";
+import QueryUs from "./components/QueryUs";
 import NotFound from "./components/NotFound";
+import { competitions } from "./constants";
+import Redirect from "./components/Redirect";
 
 const App = () => {
   return (
@@ -25,14 +28,57 @@ const App = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/competitions" element={<Competitions />} />
+
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.path}
+                element={
+                  <Redirect
+                    href={event.unstopLink}
+                  />
+                }
+              />
+            );
+          })}
+
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.pathToWhatsApp}
+                element={
+                  <Redirect
+                    href={event.whatsAppLink}
+                  />
+                }
+              />
+            );
+          })}
+
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.pathToPS}
+                element={
+                  <Redirect
+                    href={event.driveLink}
+                  />
+                }
+              />
+            );
+          })}
+
           <Route path="/guest-lectures" element={<GuestLecture />} />
           <Route path="/sponsors" element={<Spons />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/query-us" element={<QueryUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
-
       <ButtonGradient />
     </>
   );

@@ -198,6 +198,7 @@ export const workshops = [
   {
     id: "0",
     title: "Ask anything",
+    image: "/logo-optima.png",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     borderUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
@@ -206,6 +207,7 @@ export const workshops = [
   {
     id: "1",
     title: "Improve everyday",
+    image: "/logo-optima.png",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     borderUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
@@ -215,6 +217,7 @@ export const workshops = [
   {
     id: "2",
     title: "Connect everywhere",
+    image: "/logo-optima.png",
     text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
     borderUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
@@ -223,6 +226,7 @@ export const workshops = [
   {
     id: "3",
     title: "Fast responding",
+    image: "/logo-optima.png",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     borderUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
@@ -232,6 +236,7 @@ export const workshops = [
   {
     id: "4",
     title: "Ask anything",
+    image: "/logo-optima.png",
     text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
     borderUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
@@ -240,6 +245,7 @@ export const workshops = [
   {
     id: "5",
     title: "Improve everyday",
+    image: "/logo-optima.png",
     text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
     borderUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
@@ -253,6 +259,9 @@ export const competitions = [
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -261,12 +270,16 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
   {
     id: "1",
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -275,12 +288,16 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
   {
     id: "2",
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -289,12 +306,16 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
   {
     id: "3",
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -303,12 +324,16 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
   {
     id: "4",
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -317,12 +342,16 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
   {
     id: "5",
     title: "NLP.py",
     subTitle: "by Blue Yonder", // New subtitle added
     text: "Natural Language Processing Challenge",
+    path: "/nlp",
+    pathToWhatsApp: "/nlp/whatsapp",
+    pathToPS: "/nlp/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
     photoUrl: Innovate, // Added photo URL
     whatsppicon:
@@ -331,5 +360,6 @@ export const competitions = [
     backgroundUrl: benefitImage2,
     whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
     unstopLink: "https://unstop.com", // Add your Unstop link here
+    driveLink: "https://drive.google.com/drive/folders/1"
   },
 ];
