@@ -325,22 +325,22 @@ const Spons = () => {
 				</div>
 				{/* Hardcoded Content Based on Selection */}
 				{activeTab === "2025" && (
-					<div className="flex justify-center z-0">
-						<ComingSoon /> {/* dummy */}
+					// <div className="flex justify-center z-0">
+					// 	<ComingSoon /> {/* dummy */}
+					// </div>
+					<div className="space-y-10">
+						{Object.entries(SPONSORS_DATA["2025"].categories).map(
+							([key, category]) => (
+								<SponsorCategory
+									key={key}
+									name={category.name}
+									sponsors={category.sponsors}
+									size={category.size}
+								/>
+							)
+						)}
 					</div>
 				)}
-				{/* <div className="space-y-10">
-					{Object.entries(SPONSORS_DATA["2025"].categories).map(
-						([key, category]) => (
-							<SponsorCategory
-								key={key}
-								name={category.name}
-								sponsors={category.sponsors}
-								size={category.size}
-							/>
-						)
-					)}
-				</div> */}
 
 				{activeTab === "2023" && (
 					<div className="space-y-10">
