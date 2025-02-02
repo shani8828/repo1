@@ -308,7 +308,7 @@ const Spons = () => {
         {/* Hardcoded Content Based on Selection */}
         {activeTab === "2025" && (
           <div className="flex justify-center z-0">
-            <ComingSoon />
+            <ComingSoon /> {/* dummy */}
           </div>
         )}
 
