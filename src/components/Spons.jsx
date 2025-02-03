@@ -39,25 +39,26 @@ const SPONSORS_DATA = {
       // Youth Incorporated	https://youthincmag.com/		Youth Media Partner
       // Insight Success			Media Partner
 
-      poweredBy: {
-        name: "Powered By",
-        size: "sm",
-        sponsors: ["spons-25/Unstop.png", "spons-25/InsightSuccess.png"],
-      },
       mediaPartner: {
         name: "Media Partner",
         size: "sm",
         sponsors: ["spons-25/CampusVarta.png"],
+        // "spons-25/InsightSuccess.png"
       },
       outreachPartner: {
         name: "Outreach Partner",
         size: "sm",
-        sponsors: ["spons-25/BlogAdda.jpeg"],
+        sponsors: ["spons-25/BlogAdda.png"],
       },
       youthMediaPartner: {
         name: "Youth Media Partner",
         size: "sm",
         sponsors: ["spons-25/YouthIncorporated.png"],
+      },
+      poweredBy: {
+        name: "Powered By",
+        size: "sm",
+        sponsors: ["spons-25/Unstop.png"],
       },
     },
   },
@@ -140,7 +141,7 @@ const imgToUrl = {
   "spons-25/Unstop.png": "https://unstop.com/",
   "spons-25/InsightSuccess.png": "https://www.insightsuccess.com/",
   "spons-25/CampusVarta.png": "https://www.campusvarta.com/",
-  "spons-25/BlogAdda.jpeg": "https://www.blogadda.com/",
+  "spons-25/BlogAdda.png": "https://www.blogadda.com/",
   "spons-25/YouthIncorporated.png": "https://youthincmag.com/",
   "spons-23/AirIndia.png": "https://www.airindia.in/",
   "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
