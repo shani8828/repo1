@@ -16,7 +16,7 @@ const SPONSORS_DATA = {
       // titleSponsor: {
       //   name: "Title Sponsor",
       //   size: "lg",
-      //   sponsors: ["adani.jpg"],
+      //   sponsors: ["spons-25/abc.jpg"],
       // },
       // coTitleSponsor: {
       //   name: "Co-Title Sponsor",
@@ -33,11 +33,6 @@ const SPONSORS_DATA = {
         size: "md",
         sponsors: ["spons-25/blue_yonder.png"],
       },
-      // Unstop	https://unstop.com/		Powered By
-      // Campus Varta	https://www.campusvarta.com/		Media Partner
-      // Blog Adda	https://www.blogadda.com/		Blogger Outreach Partner
-      // Youth Incorporated	https://youthincmag.com/		Youth Media Partner
-      // Insight Success			Media Partner
 
       mediaPartner: {
         name: "Media Partner",
@@ -46,7 +41,7 @@ const SPONSORS_DATA = {
         // "spons-25/InsightSuccess.png"
       },
       outreachPartner: {
-        name: "Outreach Partner",
+        name: "Blogger Outreach Partner",
         size: "sm",
         sponsors: ["spons-25/BlogAdda.png"],
       },
