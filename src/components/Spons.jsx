@@ -34,7 +34,11 @@ const SPONSORS_DATA = {
         size: "md",
         sponsors: ["spons-25/blue_yonder.png"],
       },
-
+      poweredBy: {
+        name: "Powered By",
+        size: "sm",
+        sponsors: ["spons-25/Unstop.png"],
+      },
       mediaPartner: {
         name: "Media Partners",
         size: "sm",
@@ -50,11 +54,6 @@ const SPONSORS_DATA = {
         name: "Youth Media Partner",
         size: "sm",
         sponsors: ["spons-25/YouthIncorporated.png"],
-      },
-      poweredBy: {
-        name: "Powered By",
-        size: "sm",
-        sponsors: ["spons-25/Unstop.png"],
       },
     },
   },
