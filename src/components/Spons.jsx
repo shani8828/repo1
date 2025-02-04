@@ -135,7 +135,7 @@ const imgToUrl = {
   "spons-23/OPTYM.jpg": "https://www.optym.com/",
   "spons-25/OPTYM.jpg": "https://www.optym.com/",
   "spons-25/Unstop.png": "https://unstop.com/",
-  "spons-25/InsightSuccess.png": "https://www.insightsuccess.com/",
+  "spons-25/InsightSuccess.png": "https://www.insightssuccess.in/",
   "spons-25/CampusVarta.png": "https://www.campusvarta.com/",
   "spons-25/BlogAdda.png": "https://www.blogadda.com/",
   "spons-25/YouthIncorporated.png": "https://youthincmag.com/",
