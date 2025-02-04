@@ -25,18 +25,18 @@ const SPONSORS_DATA = {
       //   sponsors: ["spons-25/adani.jpg"],
       // },
       strategicPartners: {
-        name: "Strategic Sponsors",
+        name: "Strategic Sponsor",
         size: "md",
         sponsors: ["spons-25/OPTYM.jpg"],
       },
       majorSponsors: {
-        name: "Major Sponsors",
+        name: "Major Sponsor",
         size: "md",
         sponsors: ["spons-25/blue_yonder.png"],
       },
 
       mediaPartner: {
-        name: "Media Partner",
+        name: "Media Partners",
         size: "sm",
         sponsors: ["spons-25/CampusVarta.png", "spons-25/InsightSuccess.png"],
       
