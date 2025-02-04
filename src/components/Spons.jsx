@@ -7,6 +7,7 @@ import Section from "./Section";
 import { Gradient } from "./design/Services.jsx";
 import Button from "./Button.jsx";
 import ComingSoon from "./design/ComingSoon.jsx";
+import { Link } from "react-router-dom";
 
 // Separate data into a new file: src/data/sponsorsData.js
 const SPONSORS_DATA = {
@@ -37,8 +38,8 @@ const SPONSORS_DATA = {
       mediaPartner: {
         name: "Media Partner",
         size: "sm",
-        sponsors: ["spons-25/CampusVarta.png"],
-        // "spons-25/InsightSuccess.png"
+        sponsors: ["spons-25/CampusVarta.png", "spons-25/InsightSuccess.png"],
+      
       },
       outreachPartner: {
         name: "Blogger Outreach Partner",
@@ -308,25 +309,25 @@ const Spons = () => {
           title="Our Esteemed Sponsors"
         />
         <BackgroundCircles />
-        <div className="flex flex-col md:flex-row w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
-          <Button
+        <div className="flex flex-col md:flex-row w-36 md:w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
+          <SelectButton
             active={activeTab === "2025"}
             onClick={() => setActiveTab("2025")}
           >
             2024-2025
-          </Button>
-          <Button
+          </SelectButton>
+          <SelectButton
             active={activeTab === "2023"}
             onClick={() => setActiveTab("2023")}
           >
             2023-2024
-          </Button>
-          <Button
+          </SelectButton>
+          <SelectButton
             active={activeTab === "previous"}
             onClick={() => setActiveTab("previous")}
           >
             Previous
-          </Button>
+          </SelectButton>
         </div>
         {/* Hardcoded Content Based on Selection */}
         {activeTab === "2025" && (
@@ -382,24 +383,39 @@ const Spons = () => {
   );
 };
 
-// Tab button component
-const TabButton = ({ active, onClick, label }) => (
-  <button
-    className={`
-      px-6 py-3 rounded-full transition-all duration-300
-      ${
-        active
-          ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
-          : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
-      }
-      font-medium border border-n-6 justify-center
-      flex items-center gap-2
-      text-center
-    `}
-    onClick={onClick}
-  >
-    <span>{label}</span>
-  </button>
-);
+
+const SelectButton = ({ active, href, onClick, children }) => {
+	const classes = `
+    px-3 md:px-6 py-3 rounded-full transition-all duration-300
+    ${
+      active
+        ? "bg-white text-primary-1 text-black shadow-lg transform scale-105"
+        : "bg-n-8/80 text-n-3 hover:bg-n-6 hover:text-white"
+    }
+    font-medium border border-n-6 justify-center
+    flex items-center gap-2
+    text-center
+  `
+	const spanClasses = "relative z-10";
+
+	const renderButton = () => (
+		<button className={classes} onClick={onClick}>
+			<span className={spanClasses}>{children}</span>
+		</button>
+	);
+
+	const renderLink = () =>
+		href.startsWith("/") ? (
+			<Link to={href} className={classes}>
+				<span className={spanClasses}>{children}</span>
+			</Link>
+		) : (
+			<a href={href} className={classes} target="_blank">
+				<span className={spanClasses}>{children}</span>
+			</a>
+		);
+
+	return href ? renderLink() : renderButton();
+};
 
 export default Spons;
