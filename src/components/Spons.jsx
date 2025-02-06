@@ -19,11 +19,11 @@ const SPONSORS_DATA = {
       //   size: "lg",
       //   sponsors: ["spons-25/abc.jpg"],
       // },
-      // coTitleSponsor: {
-      //   name: "Co-Title Sponsor",
-      //   size: "md",
-      //   sponsors: ["spons-25/adani.jpg"],
-      // },
+      coTitleSponsor: {
+        name: "Co-Title Sponsor",
+        size: "md",
+        sponsors: ["spons-25/adani.png"],
+      },
       strategicPartners: {
         name: "Strategic Sponsor",
         size: "md",
@@ -144,6 +144,7 @@ const imgToUrl = {
   "spons-23/Vicon.png": "https://www.vicon.com/",
   "spons-23/ORMAE.jpeg": "https://www.ormae.com/",
   "spons-23/DCVisionVR.jpg": "https://dcvision.in/",
+  "spons-25/adani.png": "https://www.adani.com/",
   "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
   "spons-23/Blue_Yonder.png": "https://www.blueyonder.com/",
   "spons-23/Delhivery_Logo.png": "https://www.delhivery.com/",

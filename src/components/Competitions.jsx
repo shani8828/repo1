@@ -32,23 +32,27 @@ const Competitions = () => {
 						<div
 							className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
 							style={{
-								backgroundImage: `url(${item.borderUrl})`,
+								backgroundImage: `url('/svg/card-1.svg')`,
 							}}
 							key={item.id}
 						>
 							<div className="relative z-2 flex flex-col min-h-[28rem] min-w-[18rem] md:min-w-[21rem] p-[2rem]">
 								<div className="flex justify-center mb-2">
-									{item.photoUrl? (<img
-										src={item.photoUrl}
-										alt={`${item.title} Photo`}
-										className="rounded-lg opacity-60 text-white filter invert brightness-110"
-										style={{ maxWidth: "350px", maxHeight: "180px" }}
-									/>):(<img
-										src={Innovate}
-										alt={`${item.title} Photo`}
-										className="rounded-lg opacity-60 text-white filter invert brightness-110"
-										style={{ maxWidth: "350px", maxHeight: "180px" }}
-									/>)}
+									{item.photoUrl ? (
+										<img
+											src={item.photoUrl}
+											alt={`${item.title} Photo`}
+											className="rounded-lg opacity-60 text-white filter invert brightness-110"
+											style={{ maxWidth: "350px", maxHeight: "180px" }}
+										/>
+									) : (
+										<img
+											src={Innovate}
+											alt={`${item.title} Photo`}
+											className="rounded-lg opacity-60 text-white filter invert brightness-110"
+											style={{ maxWidth: "350px", maxHeight: "180px" }}
+										/>
+									)}
 								</div>
 
 								<h5 className="h4 mb-2.5 text-center font-semibold">
@@ -86,21 +90,35 @@ const Competitions = () => {
 									)}
 
 									{item.unstopLink && (
-										<a
-											href={item.unstopLink}
-											target="_blank"
-											rel="noopener noreferrer"
-											className="cursor-pointer hover:scale-[108%] transition transition:translate duration-200"
+										// <a
+										// 	href={item.unstopLink}
+										// 	target="_blank"
+										// 	rel="noopener noreferrer"
+										// 	className="cursor-pointer hover:scale-[108%] transition transition:translate duration-200"
+										// >
+										// 	<img
+										// 		src={unstopIcon}
+										// 		alt="unstopIcon"
+										// 		className="w-8 md:w-11"
+										// 	/>
+										// </a>
+										<button
+											className="cursor-pointer hover:scale-[105%] max-w-[50%] border border-n-2 rounded-md p-1.5 md:p-2 flex items-center transition transition:translate duration-200"
+											onClick={() =>
+												window.open(
+													item.unstopLink,
+													"_blank",
+													"noopener,noreferrer"
+												)
+											}
 										>
-											<img
-												src={unstopIcon}
-												alt="unstopIcon"
-												className="w-8 md:w-11"
-											/>
-										</a>
+											<p className="ml-auto font-code text-xs font-bold text-n-2 uppercase cursor-pointer">
+												Details/ Register
+											</p>
+										</button>
 									)}
 
-									{item.whatsAppLink && (
+									{/* {item.whatsAppLink && (
 										<a
 											href={item.whatsAppLink}
 											target="_blank"
@@ -112,7 +130,7 @@ const Competitions = () => {
 												color="#25D366"
 											/>
 										</a>
-									)}
+									)} */}
 								</div>
 							</div>
 
