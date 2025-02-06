@@ -47,6 +47,8 @@ import {
 } from "../assets";
 
 
+import card1Svg from "./card-1.svg";
+
 export const navigation = [
   {
     id: "0",
@@ -252,7 +254,6 @@ export const workshops = [
     backgroundUrl: benefitImage2,
   },
 ];
-
 export const competitions = [
   {
     id: "0",
@@ -262,7 +263,7 @@ export const competitions = [
     path: "/innovate-X",
     pathToWhatsApp: "/innovate-X/whatsapp",
     pathToPS: "/innovate-X/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
+    borderUrl: card1Svg,
     //photoUrl: Innovate, // Added photo URL
     whatsppicon:
       "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
