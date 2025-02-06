@@ -270,21 +270,21 @@ export const competitions = [
 			"https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
 		driveLink: null,
 	},
-	// {
-	//   id: "1",
-	//   title: "Hack Tank",
-	//   subTitle: "by Hire3X", // New subtitle added
-	//   text: "The Hack Tank Hackathon",
-	//   path: "/Hack-Tank",
-	//   pathToWhatsApp: "/Hack-Tank/Whatsapp",
-	//   pathToPS: "/Hack-Tank/PS",
-	//   //photoUrl: Innovate, // Added photo URL
-	//   whatsppicon:
-	//     "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-	//   Unstopicon: unstop,
-	//   backgroundUrl: benefitImage2,
-	//   whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-	//   unstopLink: "https://unstop.com", // Add your Unstop link here
-	//   driveLink: null,
-	// },
+	{
+	  id: "1",
+	  title: "Hack Tank",
+	  subTitle: "by Hire3x", // New subtitle added
+	  text: "The BizTech Hackathon",
+	  path: "/Hack-Tank",
+	  pathToWhatsApp: "/Hack-Tank/Whatsapp",
+	  pathToPS: "/Hack-Tank/PS",
+	  photoUrl: NetworSify, // Added photo URL
+	  whatsppicon:
+	    "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+	  Unstopicon: unstop,
+	  backgroundUrl: benefitImage2,
+	  whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+	  unstopLink: "https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
+	  driveLink: null,
+	},
 ];
