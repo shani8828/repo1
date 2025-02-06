@@ -1,18 +1,22 @@
 import React, { useEffect } from "react";
 import Section from "./Section";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { heroBackground } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
 
 export default function Redirect({ href, delay }) {
-	useEffect(() => {
-		setTimeout(
-			() => {
-				window.location.href = href;
-			},
-			delay ? delay : 1000
-		);
-	});
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      // Open in new tab
+      window.open(href, '_blank');
+
+      navigate('/competitions');  
+    }, delay ? delay : 2000);
+
+    return () => clearTimeout(timer); 
+  }, [href, delay, navigate]); 
 	return (
 		<Section className="pt-[5rem] -mt-[5.25rem] ">
 			<div className="container relative z-2 min-h-[25rem] flex flex-col items-center justify-center text-center lg:mt-10">

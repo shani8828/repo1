@@ -258,9 +258,8 @@ export const competitions = [
 		//subTitle: "By IBM", // New subtitle added
 		text: "The IBM innovation challenge",
 		path: "/Innovate-X",
-		pathToWhatsApp: "/Innovate-X/whatsapp",
+		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
-		// borderUrl: card1Svg,
 		//photoUrl: Innovate, // Added photo URL
 		whatsppicon:
 			"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
@@ -273,20 +272,19 @@ export const competitions = [
 	},
 	// {
 	//   id: "1",
-	//   title: "Hire3X",
+	//   title: "Hack Tank",
 	//   subTitle: "by Hire3X", // New subtitle added
-	//   text: "The BizzTech Hackathon",
-	//   path: "/hire3x",
-	//   pathToWhatsApp: "/hire3x/whatsapp",
-	//   pathToPS: "/hire3x/PS",
-	//   borderUrl: "./src/assets/benefits/card-1.svg",
-	//   photoUrl: Innovate, // Added photo URL
+	//   text: "The Hack Tank Hackathon",
+	//   path: "/Hack-Tank",
+	//   pathToWhatsApp: "/Hack-Tank/Whatsapp",
+	//   pathToPS: "/Hack-Tank/PS",
+	//   //photoUrl: Innovate, // Added photo URL
 	//   whatsppicon:
 	//     "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
 	//   Unstopicon: unstop,
 	//   backgroundUrl: benefitImage2,
 	//   whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
 	//   unstopLink: "https://unstop.com", // Add your Unstop link here
-	//   driveLink: "https://drive.google.com/drive/folders/1"
+	//   driveLink: null,
 	// },
 ];
