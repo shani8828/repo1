@@ -29,12 +29,14 @@
     "scroll-lock": "^2.1.5",
     "slick-carousel": "^1.8.1",
     "tailwind-merge": "^2.6.0",
-    "tailwind-scrollbar-hide": "^2.0.0"
+    "tailwind-scrollbar-hide": "^2.0.0",
+    "vite-plugin-svgr": "^4.3.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
