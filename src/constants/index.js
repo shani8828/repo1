@@ -256,110 +256,39 @@ export const workshops = [
 export const competitions = [
   {
     id: "0",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
+    title: "Innovate X",
+    //subTitle: "By IBM", // New subtitle added
+    text: "The IBM innovation challenge",
+    path: "/innovate-X",
+    pathToWhatsApp: "/innovate-X/whatsapp",
+    pathToPS: "/innovate-X/PS",
     borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
+    //photoUrl: Innovate, // Added photo URL
     whatsppicon:
       "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
     Unstopicon: unstop,
     backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
+    whatsAppLink: "https://chat.whatsapp.com/F07PevjevGMDJ4fEsoWT0b", // Add your WhatsApp link here
+    unstopLink: "https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
+    //driveLink: "https://drive.google.com/drive/folders/1"
   },
-  {
-    id: "1",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
-    whatsppicon:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-    Unstopicon: unstop,
-    backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
-  },
-  {
-    id: "2",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
-    whatsppicon:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-    Unstopicon: unstop,
-    backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
-  },
-  {
-    id: "3",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
-    whatsppicon:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-    Unstopicon: unstop,
-    backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
-  },
-  {
-    id: "4",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
-    whatsppicon:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-    Unstopicon: unstop,
-    backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
-  },
-  {
-    id: "5",
-    title: "NLP.py",
-    subTitle: "by Blue Yonder", // New subtitle added
-    text: "Natural Language Processing Challenge",
-    path: "/nlp",
-    pathToWhatsApp: "/nlp/whatsapp",
-    pathToPS: "/nlp/PS",
-    borderUrl: "./src/assets/benefits/card-1.svg",
-    photoUrl: Innovate, // Added photo URL
-    whatsppicon:
-      "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-    Unstopicon: unstop,
-    backgroundUrl: benefitImage2,
-    whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-    unstopLink: "https://unstop.com", // Add your Unstop link here
-    driveLink: "https://drive.google.com/drive/folders/1"
-  },
+  // {
+  //   id: "1",
+  //   title: "Hire3X",
+  //   subTitle: "by Hire3X", // New subtitle added
+  //   text: "The BizzTech Hackathon",
+  //   path: "/hire3x",
+  //   pathToWhatsApp: "/hire3x/whatsapp",
+  //   pathToPS: "/hire3x/PS",
+  //   borderUrl: "./src/assets/benefits/card-1.svg",
+  //   photoUrl: Innovate, // Added photo URL
+  //   whatsppicon:
+  //     "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+  //   Unstopicon: unstop,
+  //   backgroundUrl: benefitImage2,
+  //   whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
+  //   unstopLink: "https://unstop.com", // Add your Unstop link here
+  //   driveLink: "https://drive.google.com/drive/folders/1"
+  // },
+  
 ];
