@@ -268,23 +268,23 @@ export const competitions = [
 		whatsAppLink: "https://chat.whatsapp.com/F07PevjevGMDJ4fEsoWT0b", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
-		driveLink: null,
+		driveLink: "https://drive.google.com/drive/folders/1r1oEfz0F3Um4q1VaSLAjr9vTiLOaN-RK?usp=drive_link",
 	},
 	{
-	  id: "1",
-	  title: "HackTank",
-	  subTitle: "by Hire3x", // New subtitle added
-	  text: "The BizTech Hackathon",
-	  path: "/HackTank",
-	  pathToWhatsApp: "/HackTank/Whatsapp",
-	  pathToPS: "/HackTank/PS",
-	  photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
-	  whatsppicon:
-	    "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-	  Unstopicon: unstop,
-	  backgroundUrl: benefitImage2,
-	  whatsAppLink: "https://wa.me/1234567890", // Add your WhatsApp link here
-	  unstopLink: "https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
-	  driveLink: null,
+		id: "1",
+		title: "HackTank",
+		subTitle: "by Hire3x", // New subtitle added
+		text: "The BizTech Hackathon",
+		path: "/HackTank",
+		pathToWhatsApp: "/HackTank/Whatsapp",
+		pathToPS: "/HackTank/PS",
+		photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
+		whatsppicon:
+			"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
+		Unstopicon: unstop,
+		backgroundUrl: benefitImage2,
+		whatsAppLink: "https://chat.whatsapp.com/HKtYpDh6O521EbZgzFOxrD", // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
+		driveLink: null,
 	},
 ];
