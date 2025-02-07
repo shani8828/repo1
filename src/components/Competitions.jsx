@@ -9,7 +9,7 @@ import unstopIcon from "../assets/unstop-icon.png";
 import ComingSoon from "./design/ComingSoon";
 import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
-import { grid, Innovate } from "../assets";
+import { grid } from "../assets";
 
 const Competitions = () => {
 	document.title = "Competitions | Optima 2025";
@@ -42,31 +42,31 @@ const Competitions = () => {
 										<img
 											src={item.photoUrl}
 											alt={`${item.title} Photo`}
-											className="rounded-lg opacity-60 text-white filter invert brightness-110"
+											className="rounded-lg text-white opacity-80 filter brightness-110"
 											style={{ maxWidth: "350px", maxHeight: "180px" }}
 										/>
 									) : (
 										<img
-											src={Innovate}
+											src={'/assets/competitions-card-images/hacktank-image.png'}
 											alt={`${item.title} Photo`}
-											className="rounded-lg opacity-60 text-white filter invert brightness-110"
+											className="rounded-lg opacity-80 text-white filter brightness-110"
 											style={{ maxWidth: "350px", maxHeight: "180px" }}
 										/>
 									)}
 								</div>
 
-								<h5 className="h4 mb-2.5 text-center font-semibold">
+								<h5 className="h4 text-center font-semibold">
 									{item.title}
 								</h5>
 
 								{item.subTitle && (
-									<h6 className="text-sm text-center mb-4 h2">
+									<h6 className="text-sm text-center mb-2 h2">
 										{item.subTitle}
 									</h6>
 								)}
 
 								{item.text && (
-									<p className="body-2 mb-6 text-n-3 text-center">
+									<p className="body-2 mb-2 text-n-3 text-center">
 										{item.text}
 									</p>
 								)}
@@ -137,7 +137,7 @@ const Competitions = () => {
 							{/* {item.light && <GradientLight />} */}
 
 							<div
-								className="absolute inset-0.5 opacity-60 bg-n-8"
+								className="absolute inset-0.5 opacity-50 bg-gradient-to-b from-n-4 to-black"
 								style={{ clipPath: "url(#benefits)" }}
 							>
 								<div className="absolute inset-0 transition-opacity">

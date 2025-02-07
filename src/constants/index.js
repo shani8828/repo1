@@ -260,7 +260,7 @@ export const competitions = [
 		path: "/Innovate-X",
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
-		//photoUrl: Innovate, // Added photo URL
+		photoUrl: '/assets/competitions-card-images/innovate-x-image.png',
 		whatsppicon:
 			"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
 		Unstopicon: unstop,
@@ -278,7 +278,7 @@ export const competitions = [
 	  path: "/HackTank",
 	  pathToWhatsApp: "/HackTank/Whatsapp",
 	  pathToPS: "/HackTank/PS",
-	  photoUrl: NetworSify, // Added photo URL
+	  photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
 	  whatsppicon:
 	    "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
 	  Unstopicon: unstop,
