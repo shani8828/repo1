@@ -5,18 +5,28 @@ import { heroBackground } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
 
 export default function Redirect({ href, delay }) {
-  const navigate = useNavigate();
+	//   const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      // Open in new tab
-      window.open(href, '_blank');
+	//   useEffect(() => {
+	//     const timer = setTimeout(() => {
+	//       // Open in new tab
+	//       window.open(href, '_blank');
 
-      navigate('/competitions');  
-    }, delay ? delay : 2000);
+	//       navigate('/competitions');
+	//     }, delay ? delay : 2000);
 
-    return () => clearTimeout(timer); 
-  }, [href, delay, navigate]); 
+	//     return () => clearTimeout(timer);
+	//   }, [href, delay, navigate]);
+
+	useEffect(() => {
+		setTimeout(
+			() => {
+				window.location.href = href;
+			},
+			delay ? delay : 1000
+		);
+	});
+
 	return (
 		<Section className="pt-[5rem] -mt-[5.25rem] ">
 			<div className="container relative z-2 min-h-[25rem] flex flex-col items-center justify-center text-center lg:mt-10">
