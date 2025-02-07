@@ -272,12 +272,12 @@ export const competitions = [
 	},
 	{
 	  id: "1",
-	  title: "Hack Tank",
+	  title: "HackTank",
 	  subTitle: "by Hire3x", // New subtitle added
 	  text: "The BizTech Hackathon",
-	  path: "/Hack-Tank",
-	  pathToWhatsApp: "/Hack-Tank/Whatsapp",
-	  pathToPS: "/Hack-Tank/PS",
+	  path: "/HackTank",
+	  pathToWhatsApp: "/HackTank/Whatsapp",
+	  pathToPS: "/HackTank/PS",
 	  photoUrl: NetworSify, // Added photo URL
 	  whatsppicon:
 	    "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
