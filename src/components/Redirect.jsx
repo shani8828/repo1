@@ -25,7 +25,7 @@ export default function Redirect({ href, delay }) {
 			},
 			delay ? delay : 1000
 		);
-	});
+	}, []);
 
 	return (
 		<Section className="pt-[5rem] -mt-[5.25rem] ">
