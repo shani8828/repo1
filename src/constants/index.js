@@ -82,6 +82,11 @@ export const navigation = [
 		title: "Team",
 		url: "/team",
 	},
+	{
+		id: "7",
+		title: "Contact Us",
+		url: "/query-us",
+	},
 	// {
 	//   id: "7",
 	//   title: "New account",
