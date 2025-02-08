@@ -22,7 +22,7 @@ jobs:
           # Step 3: Build the project with VITE_API_BACKEND_URL
       - name: Build project
         env:
-          VITE_API_BACKEND_URL: "https://optima-2025-backend-bfa8ccdhefdgb4bs.centralindia-01.azurewebsites.net"
+          VITE_API_BASE_URL: "https://optima-2025-backend-bfa8ccdhefdgb4bs.centralindia-01.azurewebsites.net"
         run: npm run build
 
       # Step 4: Deploy to Netlify
