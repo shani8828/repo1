@@ -293,7 +293,7 @@ export const competitions = [
 		pathToWhatsApp: "/Strategy-Sutram/Whatsapp",
 		pathToPS: "/Strategy-Sutram/PS",
 		photoUrl: '/assets/competitions-card-images/strategy-sutram-image.png', // Added photo URL
-		whatsAppLink: null, // Add your WhatsApp link here
+		whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
 		driveLink: null,
 	},
