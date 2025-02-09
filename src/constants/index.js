@@ -266,10 +266,6 @@ export const competitions = [
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
 		photoUrl: '/assets/competitions-card-images/innovate-x-image.png',
-		whatsppicon:
-			"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-		Unstopicon: unstop,
-		backgroundUrl: benefitImage2,
 		whatsAppLink: "https://chat.whatsapp.com/F07PevjevGMDJ4fEsoWT0b", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
@@ -284,12 +280,21 @@ export const competitions = [
 		pathToWhatsApp: "/HackTank/Whatsapp",
 		pathToPS: "/HackTank/PS",
 		photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
-		whatsppicon:
-			"https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg", // WhatsApp logo
-		Unstopicon: unstop,
-		backgroundUrl: benefitImage2,
 		whatsAppLink: "https://chat.whatsapp.com/HKtYpDh6O521EbZgzFOxrD", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
+		driveLink: null,
+	},
+	{
+		id: "2",
+		title: "Strategy Sutram",
+		//subTitle: "by Hire3x", // New subtitle added
+		text: "The Business Case Challenge",
+		path: "/Strategy-Sutram",
+		pathToWhatsApp: "/Strategy-Sutram/Whatsapp",
+		pathToPS: "/Strategy-Sutram/PS",
+		//photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
+		whatsAppLink: null, // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
 		driveLink: null,
 	},
 ];
