@@ -19,63 +19,65 @@ import Redirect from "./components/Redirect";
 import SignUp from "./components/auth/SignUp";
 import SignIn from "./components/auth/SignIn";
 import ResetPassword from "./components/auth/ResetPassword";
+import Profile from "./components/Profile";
 
 const App = () => {
-	return (
-		<>
-			<div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-				<Header className="fixed top-0 left-0 w-full z-50" />
-				<Routes>
-					<Route path="/" element={<Homepage />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/gallery" element={<Gallery />} />
-					<Route path="/workshops" element={<Workshops />} />
-					<Route path="/competitions" element={<Competitions />} />
+  return (
+    <>
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+        <Header className="fixed top-0 left-0 w-full z-50" />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/workshops" element={<Workshops />} />
+          <Route path="/competitions" element={<Competitions />} />
 
-					{competitions.map((event) => {
-						return (
-							<Route
-								key={event.id}
-								path={event.path}
-								element={<Redirect href={event.unstopLink} />}
-							/>
-						);
-					})}
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.path}
+                element={<Redirect href={event.unstopLink} />}
+              />
+            );
+          })}
 
-					{competitions.map((event) => {
-						return (
-							<Route
-								key={event.id}
-								path={event.pathToWhatsApp}
-								element={<Redirect href={event.whatsAppLink} />}
-							/>
-						);
-					})}
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.pathToWhatsApp}
+                element={<Redirect href={event.whatsAppLink} />}
+              />
+            );
+          })}
 
-					{competitions.map((event) => {
-						return (
-							<Route
-								key={event.id}
-								path={event.pathToPS}
-								element={<Redirect href={event.driveLink} />}
-							/>
-						);
-					})}
+          {competitions.map((event) => {
+            return (
+              <Route
+                key={event.id}
+                path={event.pathToPS}
+                element={<Redirect href={event.driveLink} />}
+              />
+            );
+          })}
 
-					<Route path="/guest-lectures" element={<GuestLecture />} />
-					<Route path="/sponsors" element={<Spons />} />
-					<Route path="/team" element={<Team />} />
-					<Route path="/query-us" element={<QueryUs />} />
-					<Route path="/signup" element={<SignUp />} />
-					<Route path="/signin" element={<SignIn />} />
-					<Route path="/reset-password" element={<ResetPassword />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-				<Footer />
-			</div>
-			<ButtonGradient />
-		</>
-	);
+          <Route path="/guest-lectures" element={<GuestLecture />} />
+          <Route path="/sponsors" element={<Spons />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/query-us" element={<QueryUs />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </div>
+      <ButtonGradient />
+    </>
+  );
 };
 
 export default App;

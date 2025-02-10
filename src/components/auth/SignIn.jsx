@@ -1,13 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import Section from "../Section";
 import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
-  const handleSubmit = (e) => {
+  const navigate = useNavigate();
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
+    setError("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5001/user/signin", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Sign in failed");
+      }
+
+      // Store token in localStorage
+      localStorage.setItem("token", data.token);
+      navigate("/"); // Redirect to dashboard after successful login
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -23,10 +64,17 @@ const SignIn = () => {
             <p className="text-n-4">Sign in to your account</p>
           </div>
 
+          {error && (
+            <div className="text-red-500 text-center mb-4">{error}</div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Email"
                 className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
                 required
@@ -34,6 +82,9 @@ const SignIn = () => {
 
               <input
                 type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
                 placeholder="Password"
                 className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
                 required
@@ -49,7 +100,9 @@ const SignIn = () => {
               </div>
             </div>
 
-            <Button className="w-full">Sign In</Button>
+            <Button className="w-full" disabled={isLoading}>
+              {isLoading ? "Signing In..." : "Sign In"}
+            </Button>
 
             <p className="text-center text-n-4">
               Don't have an account?{" "}
