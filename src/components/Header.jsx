@@ -28,8 +28,15 @@ const Header = () => {
     enablePageScroll();
     setOpenNavigation(false);
   };
-
+  
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  
+  const handleClickdropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    if (!openNavigation) return;
+    enablePageScroll();
+    setOpenNavigation(false);
+  };
 
   return (
     <div
@@ -50,7 +57,7 @@ const Header = () => {
             <Link
               to={"/about"}
               onClick={handleClick}
-              className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-4 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
+              className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                 location.pathname === "/about" // Check if the current page matches the URL
                   ? "text-color-1" // Apply purple color for active page
                   : "text-n-1/50"
@@ -62,21 +69,27 @@ const Header = () => {
               <button
                 onClick={() => {
                   setIsDropdownOpen(!isDropdownOpen);
-                  className = "text-purple-500";
                 }}
-                className={`relative font-code text-xl uppercase transition-colors text-n-1/50  px-3 pr-0 xl:px-4 py-4 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold  lg:leading-5 lg:hover:text-n-1 `}
+                className={`flex relative font-code text-xl uppercase transition-colors px-3 xl:pl-4  py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold
+                  ${location.pathname === "/competitions" ||  location.pathname === "/workshops" || location.pathname === "/guest-lectures"
+                  ? "text-color-1" // Apply purple color for active page
+                  : "text-n-1/50"}
+                lg:leading-5 lg:hover:text-n-1 `}
               >
-                Events ▼
+                Events <div className={`${isDropdownOpen? "":"rotate-90"} ml-1 transition transform-translate duration-200`}>▼</div>
               </button>
               {isDropdownOpen && (
-                <div className="relative lg:absolute lg:top-16 lg:left-0 group-hover:block text-black bg-transparent  lg:bg-black/80 rounded-lg  w-48">
+                <div className="relative lg:absolute lg:top-[69px] lg:left-[-40px] group-hover:block text-black bg-transparent lg:bg-black/80 rounded-b-xl w-48">
                   {navDropdown.map((item) => (
                     <Link
                       to={item.url}
-                      onClick={handleClick}
-                      className={`flex items-start gap-1 text-n-1/50 hover:text-color-1  mb-1 font-code uppercase text-lg transition-colors px-3 xl:px-4 py-2 md:py-4 lg:-mr-0.25 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-n-1`}
+                      onClick={handleClickdropdown}
+                      className={`flex items-start gap-1 hover:text-color-1 mb-1 font-code uppercase text-lg transition-colors pl-3 lg:ml-3 py-2 md:py-4 lg:text-sm lg:font-semibold
+                        ${location.pathname === item.url 
+                          ? "text-color-1"
+                          : "text-n-1/50"}
+                      lg:leading-5 lg:hover:text-n-1`}
                     >
-                      {/* <div className="-rotate-90 text-xs lg:text-lg">▼</div> */}
                       <div className="">→</div>
                       {item.title}
                     </Link>
@@ -91,7 +104,7 @@ const Header = () => {
                 onClick={handleClick}
                 className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-3 xl:px-4 py-4 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
+                } px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                   location.pathname === item.url // Check if the current page matches the URL
                     ? "text-color-1" // Apply purple color for active page
                     : "text-n-1/50"

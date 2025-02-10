@@ -26,14 +26,14 @@ export const navDropdown = [
         title:"Competitions",
         url:"/competitions"
     },
+	{
+		id:"1",
+		title:"Guest Lectures",
+		url:"/guest-lectures"
+	},
     {
-        id:"1",
+        id:"3",
         title:"Workshops",
         url:"/workshops"
-    },
-    {
-        id:"2",
-        title:"Guest Lectures",
-        url:"/guest-lectures"
     }
 ]
