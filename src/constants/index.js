@@ -297,4 +297,17 @@ export const competitions = [
 		unstopLink: "https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
 		driveLink: null,
 	},
+	{
+		id: "3",
+		title: "Operheimer",
+		//subTitle: "by Hire3x", // New subtitle added
+		text: "The Operations Modelling Challenge",
+		path: "/Operheimer",
+		pathToWhatsApp: "/Operheimer/Whatsapp",
+		pathToPS: "/Operheimer/PS",
+		//photoUrl: '/assets/competitions-card-images/strategy-sutram-image.png', // Added photo URL
+		//whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
+		driveLink: null,
+	},
 ];
