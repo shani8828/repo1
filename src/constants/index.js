@@ -305,8 +305,8 @@ export const competitions = [
 		path: "/Operheimer",
 		pathToWhatsApp: "/Operheimer/Whatsapp",
 		pathToPS: "/Operheimer/PS",
-		//photoUrl: '/assets/competitions-card-images/strategy-sutram-image.png', // Added photo URL
-		//whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
+		photoUrl: '/assets/competitions-card-images/Operheimer-image.png', // Added photo URL
+		whatsAppLink: "https://chat.whatsapp.com/BhyAT7Jjhs5Ii1dHIYockk", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
 		driveLink: null,
 	},
