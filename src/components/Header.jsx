@@ -71,14 +71,15 @@ const Header = () => {
               {isDropdownOpen && (
                 <div className="relative lg:absolute lg:top-16 lg:left-0 group-hover:block text-black bg-transparent  lg:bg-black/80 rounded-lg  w-48">
                   {navDropdown.map((item) => (
-                    <a
-                      href={item.url}
+                    <Link
+                      to={item.url}
+                      onClick={handleClick}
                       className={`flex items-start gap-1 text-n-1/50 hover:text-color-1  mb-1 font-code uppercase text-lg transition-colors px-3 xl:px-4 py-2 md:py-4 lg:-mr-0.25 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-n-1`}
                     >
                       {/* <div className="-rotate-90 text-xs lg:text-lg">▼</div> */}
                       <div className="">→</div>
                       {item.title}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
