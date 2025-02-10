@@ -46,61 +46,6 @@ import {
 	unstop,
 } from "../assets";
 
-export const navigation = [
-	{
-		id: "0",
-		title: "About",
-		url: "/about",
-	},
-	{
-		id: "1",
-		title: "Competitions",
-		url: "/competitions",
-	},
-	{
-		id: "2",
-		title: "Guest Lectures",
-		url: "/guest-lectures",
-	},
-	{
-		id: "3",
-		title: "Workshops",
-		url: "/workshops",
-	},
-	{
-		id: "4",
-		title: "Gallery",
-		url: "/gallery",
-	},
-	{
-		id: "5",
-		title: "Sponsors",
-		url: "/sponsors",
-	},
-	{
-		id: "6",
-		title: "Team",
-		url: "/team",
-	},
-	{
-		id: "7",
-		title: "Contact Us",
-		url: "/query-us",
-	},
-	// {
-	//   id: "7",
-	//   title: "New account",
-	//   url: "signup",
-	//   onlyMobile: true,
-	// },
-	// {
-	//   id: "8",
-	//   title: "Sign in",
-	//   url: "login",
-	//   onlyMobile: true,
-	// },
-];
-
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
