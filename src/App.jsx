@@ -20,10 +20,11 @@ import SignUp from "./components/auth/SignUp";
 import SignIn from "./components/auth/SignIn";
 import ResetPassword from "./components/auth/ResetPassword";
 import Profile from "./components/Profile";
+import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
-    <>
+    <AuthProvider>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header className="fixed top-0 left-0 w-full z-50" />
         <Routes>
@@ -76,7 +77,7 @@ const App = () => {
         <Footer />
       </div>
       <ButtonGradient />
-    </>
+    </AuthProvider>
   );
 };
 

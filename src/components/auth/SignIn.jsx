@@ -4,9 +4,11 @@ import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 const SignIn = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -41,9 +43,8 @@ const SignIn = () => {
         throw new Error(data.message || "Sign in failed");
       }
 
-      // Store token in localStorage
-      localStorage.setItem("token", data.token);
-      navigate("/"); // Redirect to dashboard after successful login
+      login(data.token);
+      navigate("/profile");
     } catch (err) {
       setError(err.message);
     } finally {

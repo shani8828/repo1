@@ -4,9 +4,11 @@ import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
 
 const SignUp = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showOTPInput, setShowOTPInput] = useState(false);
@@ -108,9 +110,8 @@ const SignUp = () => {
         throw new Error(data.message || "OTP verification failed");
       }
 
-      // Store token in localStorage
-      localStorage.setItem("token", data.token);
-      navigate("/dashboard"); // Redirect to dashboard after successful registration
+      login(data.token);
+      navigate("/profile");
     } catch (err) {
       setError(err.message);
     } finally {
