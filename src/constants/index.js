@@ -300,7 +300,7 @@ export const competitions = [
 	{
 		id: "3",
 		title: "Operheimer",
-		//subTitle: "by Hire3x", // New subtitle added
+		subTitle: "by Sirius Digitech, Adani AI labs", // New subtitle added
 		text: "The Operations Modelling Challenge",
 		path: "/Operheimer",
 		pathToWhatsApp: "/Operheimer/Whatsapp",
