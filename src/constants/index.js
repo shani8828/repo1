@@ -206,7 +206,7 @@ export const competitions = [
 		id: "0",
 		title: "Innovate-X",
 		//subTitle: "By IBM", // New subtitle added
-		text: "The IBM innovation challenge",
+		text: "The Innovation Challenge",
 		path: "/Innovate-X",
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
@@ -264,7 +264,7 @@ export const competitions = [
 		pathToWhatsApp: "/Stratathon/Whatsapp",
 		pathToPS: "/Stratathon/PS",
 		photoUrl: '/assets/competitions-card-images/Stratathon-image.png', // Added photo URL
-		whatsAppLink: null, // Add your WhatsApp link here
+		whatsAppLink: "https://chat.whatsapp.com/CqPOcfhnfRy5cdpxU0fJBU", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
 		driveLink: null,
 	},
