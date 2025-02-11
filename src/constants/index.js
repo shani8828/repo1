@@ -255,4 +255,17 @@ export const competitions = [
 		unstopLink: "https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
 		driveLink: null,
 	},
+	{
+		id: "4",
+		title: "Stratathon",
+		subTitle: "by KGTS (KGPian Game Theory Society)", // New subtitle added
+		text: "A Game Theory Challenge",
+		path: "/Stratathon",
+		pathToWhatsApp: "/Stratathon/Whatsapp",
+		pathToPS: "/Stratathon/PS",
+		photoUrl: '/assets/competitions-card-images/Stratathon-image.png', // Added photo URL
+		whatsAppLink: null, // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
+		driveLink: null,
+	},
 ];
