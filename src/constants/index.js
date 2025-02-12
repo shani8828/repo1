@@ -205,7 +205,7 @@ export const competitions = [
 	{
 		id: "0",
 		title: "Innovate-X",
-		//subTitle: "By IBM", // New subtitle added
+		subTitle: null,
 		text: "The Innovation Challenge",
 		path: "/Innovate-X",
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
@@ -232,7 +232,7 @@ export const competitions = [
 	{
 		id: "2",
 		title: "Strategy Sutram",
-		//subTitle: "by Hire3x", // New subtitle added
+		subTitle: null,
 		text: "The Business Case Challenge",
 		path: "/Strategy-Sutram",
 		pathToWhatsApp: "/Strategy-Sutram/Whatsapp",
@@ -266,6 +266,19 @@ export const competitions = [
 		photoUrl: '/assets/competitions-card-images/Stratathon-image.png', // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/CqPOcfhnfRy5cdpxU0fJBU", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
+		driveLink: null,
+	},
+	{
+		id: "5",
+		title: "AI Odyssey",
+		subTitle: "by LiveAI", // New subtitle added
+		text: "Your Gateway to a Global AI Experience",
+		path: "/Ai-Odyssey",
+		pathToWhatsApp: "/Ai-Odyssey/Whatsapp",
+		pathToPS: "/Ai-Odyssey/PS",
+		photoUrl: '/assets/competitions-card-images/Ai-Odyssey-image.png', // Added photo URL
+		whatsAppLink: "https://chat.whatsapp.com/G5DlPfVRNvfFzLKH9bwTRs", // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/quiz/ai-odyssey-optima-2025-iit-kharagpur-1398376", // Add your Unstop link here
 		driveLink: null,
 	},
 ];
