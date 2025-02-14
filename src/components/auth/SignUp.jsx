@@ -22,8 +22,9 @@ const SignUp = () => {
     confirmPassword: "",
     phone: "",
     college: "",
-    country: "",
-    place: "",
+    city: "",
+    age: "",
+    state: "",
     gender: "",
     yearOfStudy: "",
     campusAmbassadorId: "",
@@ -181,16 +182,27 @@ const SignUp = () => {
                   />
                 </div>
 
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  pattern="[0-9]{10}"
-                  className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
-                  required
-                />
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Phone Number"
+                    pattern="[0-9]{10}"
+                    className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1 col-span-3"
+                    required
+                  />
+                  <input
+                    type="number"
+                    name="age"
+                    value={formData.age}
+                    onChange={handleChange}
+                    placeholder="Age"
+                    className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1 col-span-1"
+                    required
+                  />
+                </div>
 
                 <div className="flex items-center gap-2 mb-2 px-2">
                   <input
@@ -218,10 +230,10 @@ const SignUp = () => {
                   />
                   <input
                     type="text"
-                    name="country"
-                    value={formData.country}
+                    name="city"
+                    value={formData.city}
                     onChange={handleChange}
-                    placeholder="Country"
+                    placeholder="City"
                     className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
                     required
                   />
@@ -229,10 +241,10 @@ const SignUp = () => {
 
                 <input
                   type="text"
-                  name="place"
-                  value={formData.place}
+                  name="state"
+                  value={formData.state}
                   onChange={handleChange}
-                  placeholder="Place"
+                  placeholder="State"
                   className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
                   required
                 />
@@ -247,7 +259,6 @@ const SignUp = () => {
                   <option value="">Select Gender</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
-                  <option value="other">Other</option>
                 </select>
 
                 <select
@@ -262,6 +273,7 @@ const SignUp = () => {
                   <option value="2">2nd Year</option>
                   <option value="3">3rd Year</option>
                   <option value="4">4th Year</option>
+                  <option value="other">Other</option>
                 </select>
 
                 <input

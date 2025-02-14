@@ -112,6 +112,16 @@ const Profile = () => {
                 <p className="text-n-4">Gender</p>
                 <p className="font-medium">{userData?.gender}</p>
               </div>
+              <div>
+                <p className="text-n-4">OPID</p>
+                <p className="font-medium">{userData?.OPID}</p>
+              </div>
+              {userData?.caID && (
+                <div>
+                  <p className="text-n-4">CA ID</p>
+                  <p className="font-medium">{userData?.caID}</p>
+                </div>
+              )}
             </div>
           </div>
 
@@ -130,21 +140,21 @@ const Profile = () => {
                   onChange={(e) => setWithAccommodation(e.target.checked)}
                   className="w-4 h-4"
                 />
-                <span>With Accommodation (+ ₹500)</span>
+                <span>With Accommodation (+ ₹200)</span>
               </label>
             </div>
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-n-4">Total Amount</p>
                 <p className="font-medium text-xl">
-                  ₹{withAccommodation ? "1500" : "1000"}
+                  ₹{withAccommodation ? "1200" : "1000"}
                 </p>
               </div>
               <Button>Proceed to Payment</Button>
             </div>
           </div>
 
-          {/* Registered Events Section */}
+          {/* Registered Events Section
           <div className="bg-n-8/80 rounded-2xl p-6">
             <h2 className="text-2xl font-bold mb-4">Registered Events</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -167,7 +177,7 @@ const Profile = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Section>
