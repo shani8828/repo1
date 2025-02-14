@@ -9,6 +9,8 @@ import unstopIcon from "../assets/unstop-icon.png";
 import ComingSoon from "./design/ComingSoon";
 import { BackgroundCircles } from "./design/Hero";
 import { Gradient } from "./design/Services";
+import { grid } from "../assets";
+import { PiNoteDuotone } from "react-icons/pi";
 
 const Competitions = () => {
 	document.title = "Competitions | Optima 2025";
@@ -22,106 +24,129 @@ const Competitions = () => {
 				/>
 				<BackgroundCircles />
 
-				<div className="flex justify-center">
+				{/* <div className="flex justify-center">
 					<ComingSoon link="https://2023.optima.org.in/competitions" />
-				</div>
-				{/* Competitions Cards */}
-				{/* <div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
+				</div> */}
+
+				<div className="flex flex-wrap gap-10 mb-10 items-center justify-center">
 					{competitions.map((item) => (
 						<div
 							className="block relative bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
 							style={{
-								backgroundImage: `url(${item.borderUrl})`,
+								backgroundImage: `url('/svg/card-1.svg')`,
 							}}
 							key={item.id}
 						>
-							<div className="relative z-2 flex flex-col min-h-[22rem] p-[2rem]">
+							<div className="relative z-2 flex flex-col min-h-[28rem] md:min-h-[30rem] min-w-[18rem] md:min-w-[23rem] p-[1rem] md:p-[2rem]">
 								<div className="flex justify-center mb-2">
-									<img
-										src={item.photoUrl}
-										alt={`${item.title} Photo`}
-										className="rounded-lg text-white filter invert brightness-110"
-										style={{ maxWidth: "350px", maxHeight: "180px" }}
-									/>
+									{item.photoUrl ? (
+										<img
+											src={item.photoUrl}
+											alt={`${item.title} Photo`}
+											className="rounded-lg text-white opacity-80 filter brightness-110"
+											style={{ maxWidth: "350px", maxHeight: "180px" }}
+										/>
+									) : (
+										<img
+											src={
+												"/assets/competitions-card-images/hacktank-image.png"
+											}
+											alt={`${item.title} Photo`}
+											className="rounded-lg opacity-80 text-white filter brightness-110"
+											style={{ maxWidth: "350px", maxHeight: "180px" }}
+										/>
+									)}
 								</div>
 
-								<h5 className="h4 mb-2.5 text-center font-semibold">
-									{item.title}
-								</h5>
+								<h5 className="h4 text-center font-semibold">{item.title}</h5>
 
 								{item.subTitle && (
-									<h6 className="text-sm text-center mb-4 h2">
+									<h6 className="text-sm text-center mb-2 h2">
 										{item.subTitle}
 									</h6>
 								)}
 
-								<p className="body-2 mb-6 text-n-3 text-center">{item.text}</p>
+								{item.text && (
+									<p className="body-2 mb-2 text-n-3 text-center">
+										{item.text}
+									</p>
+								)}
 
-								<div className="flex items-center mt-auto gap-2 md:gap-3 justify-center">
-									<a
-										href={item.whatsAppLink}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="cursor-pointer hover:scale-[110%] transition transition:translate duration-200"
-									>
-										<FaWhatsapp
-											className="w-8 h-8 md:w-12 md:h-11"
-											color="#25D366"
-										/>
-									</a>
+								<div className="flex flex-col items-center gap-1 mt-auto justify-center">
+									{item.unstopLink && (
+										<a
+											href={item.unstopLink}
+											target="_blank"
+											rel="noopener noreferrer"
+											//className="cursor-pointer hover:scale-[105%] border border-n-2 rounded-md px-5 py-1.5 md:py-2 flex items-center transition-transform duration-200"
+											className="cursor-pointer hover:scale-[105%] border border-n-2 rounded-md px-5 py-1.5 md:py-2 flex items-center transition-transform duration-200 
+               											bg-gradient-to-r from-purple-500 to-sky-400 text-white"
+										>
+											<p className="ml-auto font-code text-md font-bold uppercase">
+												Register
+											</p>
+										</a>
+									)}
 
-									<a
-										href={item.unstopLink}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="cursor-pointer hover:scale-[108%] transition transition:translate duration-200"
-									>
-										<img
-											src={unstopIcon}
-											alt="unstopIcon"
-											className="w-8 md:w-12"
-										/>
-									</a>
+									<div className="md:flex justify-center w-full gap-x-1">
+										{item.driveLink && (
+											<a
+												href={item.driveLink}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="cursor-pointer hover:scale-[105%] md:max-w-[50%] p-1.5 md:p-2 flex items-center transition-transform duration-200"
+											>
+												<PiNoteDuotone
+													className="text-[2.2rem]"
+													color="#FCA510"
+												/>
+												<p className="font-code ml-1 text-n-2 cursor-pointer">
+													<p className="text-sm md:text-md">{item.title}</p>
+													<p className="text-xs opacity-70">
+														Problem Statement
+													</p>
+												</p>
+											</a>
+										)}
 
-									<button
-										className="cursor-pointer hover:scale-[105%] max-w-[50%] border border-n-2 rounded-md p-1.5 md:p-2 flex items-center transition transition:translate duration-200"
-										onClick={() =>
-											window.open(
-												item.driveLink,
-												"_blank",
-												"noopener,noreferrer"
-											)
-										}
-									>
-										<p className="ml-auto font-code text-xs font-bold text-n-2 uppercase cursor-pointer">
-											Problem Statement
-										</p>
-									</button>
+										{item.whatsAppLink && (
+											<a
+												href={item.whatsAppLink}
+												target="_blank"
+												rel="noopener noreferrer"
+												//className="flex cursor-pointer hover:scale-[110%] transition transition:translate duration-200"
+												className="cursor-pointer hover:scale-[105%] md:max-w-[50%] p-1.5 md:p-2 flex items-center transition-transform duration-200"
+											>
+												<FaWhatsapp className="text-[2rem]" color="#25D366" />
+												<p className="font-code ml-1 text-n-2 cursor-pointer">
+													<p className="text-sm md:text-md">{item.title}</p>
+													<p className="text-xs opacity-70">WhatsApp Group</p>
+												</p>
+											</a>
+										)}
+									</div>
 								</div>
 							</div>
 
-							{item.light && <GradientLight />}
+							{/* {item.light && <GradientLight />} */}
 
 							<div
-								className="absolute inset-0.5 bg-n-8"
+								className="absolute inset-0.5 opacity-50 bg-gradient-to-b from-n-4 to-black"
 								style={{ clipPath: "url(#benefits)" }}
 							>
-								<div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
-									{item.backgroundUrl && (
-										<img
-											src={item.backgroundUrl}
-											alt={item.title}
-											className="w-full h-full object-cover"
-											style={{ maxWidth: "300px", maxHeight: "250px" }}
-										/>
-									)}
+								<div className="absolute inset-0 transition-opacity">
+									<img
+										src={grid}
+										alt={item.title}
+										className="w-full h-full object-cover"
+									/>
 								</div>
 							</div>
 
 							<ClipPath />
 						</div>
 					))}
-				</div> */}
+				</div>
 			</div>
 			<Gradient />
 		</Section>

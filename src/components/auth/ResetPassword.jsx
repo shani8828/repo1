@@ -3,13 +3,91 @@ import Section from "../Section";
 import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const ResetPassword = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [showOTPForm, setShowOTPForm] = useState(false);
+  const [userId, setUserId] = useState(null);
+  const [otp, setOtp] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleInitialSubmit = async (e) => {
     e.preventDefault();
-    // Handle password reset
+    setError("");
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(
+        "http://localhost:5001/user/password-reset-init",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send reset email");
+      }
+
+      setUserId(data.userId);
+      setShowOTPForm(true);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleResetSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+
+    if (newPassword !== confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const response = await fetch(
+        "http://localhost:5001/user/password-reset-complete",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            userId,
+            otp,
+            newPassword,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Password reset failed");
+      }
+
+      // Redirect to signin page after successful password reset
+      navigate("/signin");
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -22,33 +100,83 @@ const ResetPassword = () => {
         <div className="max-w-[440px] mx-auto">
           <div className="flex flex-col items-center mb-10">
             <h1 className="text-4xl font-bold mb-4">Reset Password</h1>
-            <p className="text-n-4 text-center">
-              Enter your email address and we'll send you instructions to reset
-              your password
-            </p>
+            {!showOTPForm ? (
+              <p className="text-n-4 text-center">
+                Enter your email address and we'll send you instructions to
+                reset your password
+              </p>
+            ) : (
+              <p className="text-n-4 text-center">
+                Enter the OTP sent to your email and set your new password
+              </p>
+            )}
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-4">
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
-                required
-              />
-            </div>
+          {error && (
+            <div className="text-red-500 text-center mb-4">{error}</div>
+          )}
 
-            <Button className="w-full">Send Reset Link</Button>
+          {!showOTPForm ? (
+            <form onSubmit={handleInitialSubmit} className="space-y-6">
+              <div className="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
+                  required
+                />
+              </div>
 
-            <p className="text-center text-n-4">
-              Remember your password?{" "}
-              <a href="/signin" className="text-primary-1 hover:text-primary-2">
-                Sign In
-              </a>
-            </p>
-          </form>
+              <Button className="w-full" disabled={isLoading}>
+                {isLoading ? "Sending..." : "Send Reset Link"}
+              </Button>
+            </form>
+          ) : (
+            <form onSubmit={handleResetSubmit} className="space-y-6">
+              <div className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Enter OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
+                  required
+                />
+
+                <input
+                  type="password"
+                  placeholder="New Password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
+                  required
+                  minLength={6}
+                />
+
+                <input
+                  type="password"
+                  placeholder="Confirm New Password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
+                  required
+                />
+              </div>
+
+              <Button className="w-full" disabled={isLoading}>
+                {isLoading ? "Resetting..." : "Reset Password"}
+              </Button>
+            </form>
+          )}
+
+          <p className="text-center text-n-4 mt-6">
+            Remember your password?{" "}
+            <a href="/signin" className="text-primary-1 hover:text-primary-2">
+              Sign In
+            </a>
+          </p>
         </div>
       </div>
       <Gradient />
