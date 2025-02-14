@@ -129,28 +129,41 @@ const Profile = () => {
           <div className="bg-n-8/80 rounded-2xl p-6 mb-6">
             <h2 className="text-2xl font-bold mb-4">Payment Status</h2>
             <div className="mb-4">
-              <p className="text-n-4">Status</p>
-              <p className="font-medium text-yellow-500">Incomplete</p>
+              {userData?.paymentStatus ? (
+                <>
+                  <p className="text-n-4">Status</p>
+                  <p className="font-medium text-green-500">Paid</p>
+                  <p className="font-medium text-n-4">Payment Amount:</p>
+                  <p className="font-medium text-green-500">
+                    ₹{userData?.paymentAmount}
+                  </p>
+                </>
+              ) : (
+                <div className="flex justify-between">
+                  <div>
+                    <p className="text-n-4">Status</p>
+
+                    <p className="font-medium text-yellow-500">Incomplete</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-n-4">
+                      Please proceed to payment to complete the registration.
+                      <br />
+                      If payment has been made, please wait for the changes to
+                      reflect.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
-            <div className="mb-4">
-              <label className="flex items-center space-x-2 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={withAccommodation}
-                  onChange={(e) => setWithAccommodation(e.target.checked)}
-                  className="w-4 h-4"
-                />
-                <span>With Accommodation (+ ₹200)</span>
-              </label>
-            </div>
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-n-4">Total Amount</p>
-                <p className="font-medium text-xl">
-                  ₹{withAccommodation ? "1200" : "1000"}
-                </p>
+
+            <div className="flex items-center justify-end">
+              <div className="flex items-center gap-2">
+                {!userData?.paymentStatus && (
+                  <Button>Proceed to Payment</Button>
+                )}
+                <Button>Contact Us</Button>
               </div>
-              <Button>Proceed to Payment</Button>
             </div>
           </div>
 

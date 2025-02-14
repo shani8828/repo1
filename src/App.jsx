@@ -1,25 +1,25 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import About from "./components/About";
+import ResetPassword from "./components/auth/ResetPassword";
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
 import Competitions from "./components/Competitions";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
+import GuestLecture from "./components/GuestLecture";
 import Header from "./components/Header";
 import Homepage from "./components/Homepage";
+import NotFound from "./components/NotFound";
+import Profile from "./components/Profile";
+import QueryUs from "./components/QueryUs";
+import Redirect from "./components/Redirect";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
-import GuestLecture from "./components/GuestLecture";
-import QueryUs from "./components/QueryUs";
-import NotFound from "./components/NotFound";
 import { competitions } from "./constants";
-import Redirect from "./components/Redirect";
-import SignUp from "./components/auth/SignUp";
-import SignIn from "./components/auth/SignIn";
-import ResetPassword from "./components/auth/ResetPassword";
-import Profile from "./components/Profile";
 import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
@@ -39,28 +39,32 @@ const App = () => {
               <Route
                 key={event.id}
                 path={event.path}
-                element={<Redirect href={event.unstopLink} />}
+                element={<Redirect href={event.unstopLink} delay={1000} />}
               />
             );
           })}
 
           {competitions.map((event) => {
-            return (
+            return event.whatsAppLink ? (
               <Route
                 key={event.id}
                 path={event.pathToWhatsApp}
-                element={<Redirect href={event.whatsAppLink} />}
+                element={<Redirect href={event.whatsAppLink} delay={1000} />}
               />
+            ) : (
+              <></>
             );
           })}
 
           {competitions.map((event) => {
-            return (
+            return event.driveLink ? (
               <Route
                 key={event.id}
                 path={event.pathToPS}
-                element={<Redirect href={event.driveLink} />}
+                element={<Redirect href={event.driveLink} delay={1000} />}
               />
+            ) : (
+              <></>
             );
           })}
 

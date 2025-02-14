@@ -1,8 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import logo from "../assets/optima2025-logo.png";
-
-import { navigation } from "../constants";
+import { navDropdown, navigation } from "../constants/Navlinks";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
@@ -32,10 +31,18 @@ const Header = () => {
     setOpenNavigation(false);
   };
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleClickdropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+    if (!openNavigation) return;
+    enablePageScroll();
+    setOpenNavigation(false);
+  };
+
   const handleLogout = () => {
     logout();
     navigate("/");
-    handleClick(); // Close mobile menu if open
   };
 
   return (
@@ -54,14 +61,70 @@ const Header = () => {
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-start justify-center m-auto lg:flex-row lg:justify-end">
+            <Link
+              to={"/about"}
+              onClick={handleClick}
+              className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
+                location.pathname === "/about" // Check if the current page matches the URL
+                  ? "text-color-1" // Apply purple color for active page
+                  : "text-n-1/50"
+              } lg:leading-5 lg:hover:text-n-1`}
+            >
+              About
+            </Link>
+            <div className="relative group">
+              <button
+                onClick={() => {
+                  setIsDropdownOpen(!isDropdownOpen);
+                }}
+                className={`flex relative font-code text-xl uppercase transition-colors px-3 xl:pl-4  py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold
+                  ${
+                    location.pathname === "/competitions" ||
+                    location.pathname === "/workshops" ||
+                    location.pathname === "/guest-lectures"
+                      ? "text-color-1" // Apply purple color for active page
+                      : "text-n-1/50"
+                  }
+                lg:leading-5 lg:hover:text-n-1 `}
+              >
+                Events{" "}
+                <div
+                  className={`${
+                    isDropdownOpen ? "" : "rotate-90"
+                  } ml-1 transition transform-translate duration-200`}
+                >
+                  ▼
+                </div>
+              </button>
+              {isDropdownOpen && (
+                <div className="relative lg:absolute lg:top-[69px] lg:left-[-40px] group-hover:block text-black bg-transparent lg:bg-black/80 rounded-b-xl w-48">
+                  {navDropdown.map((item) => (
+                    <Link
+                      to={item.url}
+                      onClick={handleClickdropdown}
+                      className={`flex items-start gap-1 hover:text-color-1 mb-1 font-code uppercase text-lg transition-colors pl-3 lg:ml-3 py-2 md:py-4 lg:text-sm lg:font-semibold
+                        ${
+                          location.pathname === item.url
+                            ? "text-color-1"
+                            : "text-n-1/50"
+                        }
+                      lg:leading-5 lg:hover:text-n-1`}
+                    >
+                      <div className="">→</div>
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             {navigation.map((item) => (
               <Link
                 key={item.id}
                 to={item.url}
                 onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase transition-colors hover:text-color-1 ${
+                className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 ${
                   item.onlyMobile ? "lg:hidden" : ""
-                } px-3 xl:px-4 py-5 md:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
+                } px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold ${
                   location.pathname === item.url // Check if the current page matches the URL
                     ? "text-color-1" // Apply purple color for active page
                     : "text-n-1/50"
@@ -70,7 +133,6 @@ const Header = () => {
                 {item.title}
               </Link>
             ))}
-
             {isAuthenticated ? (
               <>
                 <Link

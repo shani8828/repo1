@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 const AuthContext = createContext(null);
 
@@ -8,18 +8,18 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     // Check if user is logged in on component mount
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem("token");
     setIsAuthenticated(!!token);
     setIsLoading(false);
   }, []);
 
   const login = (token) => {
-    localStorage.setItem('token', token);
+    localStorage.setItem("token", token);
     setIsAuthenticated(true);
   };
 
   const logout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     setIsAuthenticated(false);
   };
 
@@ -30,4 +30,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-export const useAuth = () => useContext(AuthContext); 
+export const useAuth = () => useContext(AuthContext);
