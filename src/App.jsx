@@ -19,6 +19,7 @@ import Redirect from "./components/Redirect";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
+import Rules from "./components/Rules";
 import { competitions } from "./constants";
 import { AuthProvider } from "./context/AuthContext";
 
@@ -76,6 +77,7 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/rules" element={<Rules/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
