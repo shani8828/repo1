@@ -77,7 +77,7 @@ const App = () => {
           <Route path="/register" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/reset-password" element={<ResetPassword />} />
-          <Route path="/rules" element={<Rules/>} />
+          <Route path="/payment" element={<Rules/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
