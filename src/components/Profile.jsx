@@ -176,6 +176,7 @@ const Profile = () => {
 							)}
 						</div>
 
+						
 						<div className="flex items-center justify-end">
 							<div className="flex items-center gap-2">
 								{!userData?.paymentStatus && (
@@ -183,10 +184,12 @@ const Profile = () => {
 										Proceed to Payment
 									</Button>
 								)}
+								<Button href="/rules">Rules</Button>
 								<Button href="/query-us">Contact Us</Button>
 							</div>
 						</div>
 					</div>
+
 					{/* Registered Events Section
 					<div className="bg-n-8/80 rounded-2xl p-6">
 						<h2 className="text-2xl font-bold mb-4">
