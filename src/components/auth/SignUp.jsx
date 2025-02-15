@@ -8,7 +8,7 @@ import { useAuth } from "../../context/AuthContext";
 
 const SignUp = () => {
 	const [searchParams] = useSearchParams();
-	const caid = searchParams.get("caid");
+	const caID = searchParams.get("caID");
 
 	const navigate = useNavigate();
 	const { login } = useAuth();
@@ -26,7 +26,7 @@ const SignUp = () => {
 		state: "",
 		gender: "",
 		yearOfStudy: "",
-		campusAmbassadorId: caid || "",
+		campusAmbassadorId: caID || "",
 		isFromIITKGP: false,
 	});
 
@@ -260,7 +260,7 @@ const SignUp = () => {
 								name="campusAmbassadorId"
 								value={formData.campusAmbassadorId}
 								onChange={handleChange}
-								disabled={!!caid}
+								disabled={!!caID}
 								placeholder="Campus Ambassador ID (optional)"
 								className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
 							/>
