@@ -22,6 +22,7 @@ import Workshops from "./components/Workshops";
 import Payment from "./components/Payment";
 import { competitions } from "./constants";
 import { AuthProvider } from "./context/AuthContext";
+import Regulations from "./components/Regulations";
 
 const App = () => {
 	return (
@@ -93,6 +94,7 @@ const App = () => {
 					<Route path="/signin" element={<SignIn />} />
 					<Route path="/reset-password" element={<ResetPassword />} />
 					<Route path="/payment" element={<Payment />} />
+					<Route path="/rules" element={<Regulations />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 				<Footer />
