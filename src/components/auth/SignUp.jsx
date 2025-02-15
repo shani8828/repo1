@@ -49,7 +49,10 @@ const SignUp = () => {
 		});
 	};
 
-	// ... existing code ...
+	const showError = (message) => {
+		setError(message);
+		alert(message);
+	};
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -57,13 +60,13 @@ const SignUp = () => {
 		setIsLoading(true);
 
 		if (formData.password !== formData.confirmPassword) {
-			setError("Passwords do not match");
+			showError("Passwords do not match");
 			setIsLoading(false);
 			return;
 		}
 
 		if (formData.password.length < 6) {
-			setError("Password must be at least 6 characters");
+			showError("Password must be at least 6 characters");
 			setIsLoading(false);
 			return;
 		}
@@ -87,9 +90,7 @@ const SignUp = () => {
 
 			if (!response.ok) {
 				if (data.errors) {
-					const errorMessages = data.errors
-						.map((err) => err.msg)
-						.join(", ");
+					const errorMessages = data.errors.map((err) => err.msg).join(", ");
 					throw new Error(errorMessages);
 				}
 				throw new Error(data.message || "Registration failed");
@@ -98,13 +99,12 @@ const SignUp = () => {
 			login(data.token);
 			navigate("/profile");
 		} catch (err) {
-			setError(err.message);
+			showError(err.message);
 		} finally {
 			setIsLoading(false);
 		}
 	};
 
-	// ... existing code ...
 	return (
 		<Section className="pt-[5rem] ">
 			<div className="container relative z-2">
@@ -119,9 +119,7 @@ const SignUp = () => {
 					</div>
 
 					{error && (
-						<div className="text-red-500 text-center mb-4">
-							{error}
-						</div>
+						<div className="text-red-500 text-center mb-4">{error}</div>
 					)}
 
 					<form onSubmit={handleSubmit} className="space-y-6">
@@ -267,7 +265,6 @@ const SignUp = () => {
 								name="campusAmbassadorId"
 								value={formData.campusAmbassadorId}
 								onChange={handleChange}
-								disabled={!!caID}
 								placeholder="Campus Ambassador ID (optional)"
 								className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
 							/>
@@ -279,10 +276,7 @@ const SignUp = () => {
 
 						<p className="text-center text-n-4">
 							Already registered?{" "}
-							<a
-								href="/signin"
-								className="text-primary-1 hover:text-primary-2"
-							>
+							<a href="/signin" className="text-primary-1 hover:text-primary-2">
 								Sign in
 							</a>
 						</p>
