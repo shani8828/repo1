@@ -95,21 +95,6 @@ const Payment = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-full">
-					<div className="rounded-lg bg-none overflow-hidden relative flex items-center justify-center mb-8 w-full h-full pb-4">
-						<a
-							href="https://docs.google.com/forms/d/e/1FAIpQLSdzfCEholwyzqmtr3PrZbUI3sVF2wXmvFVFkR_3esQPus-nSg/viewform?usp=sharing"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<button className="group flex justify-center items-center rounded-lg bg-gradient-to-b from-purple-500 to-purple-700 hover:from-purple-400 hover:to-purple-600 font-semibold p-4 w-72 h-16 transition-all duration-200 shadow-lg transform active:translate-y-1">
-								<h1 className="text-center text-xl md:text-2xl lg:text-3xl bg-transparent text-white drop-shadow-md">
-									Payment
-								</h1>
-							</button>
-						</a>
-					</div>
-				</div>
 				<div className="rounded-lg p-0.25 bg-conic-gradient mb-6 w-full">
 					<div className="rounded-lg bg-n-8 overflow-hidden relative w-full flex flex-col p-4 gap-4 h-full">
 						<h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-semibold mb-2">
@@ -122,6 +107,21 @@ const Payment = () => {
 							</div>
 						))}
 						<Gradient />
+					</div>
+				</div>
+				<div className="mb-6 w-full">
+					<div className="rounded-lg bg-none overflow-hidden relative flex items-center justify-center mb-8 w-full h-full pb-4">
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSdzfCEholwyzqmtr3PrZbUI3sVF2wXmvFVFkR_3esQPus-nSg/viewform?usp=sharing"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button className="group flex justify-center items-center rounded-lg bg-gradient-to-b from-purple-500 to-purple-700 hover:from-purple-400 hover:to-purple-600 font-semibold p-4 w-72 h-16 transition-all duration-200 shadow-lg transform active:translate-y-1">
+								<h1 className="text-center text-xl md:text-2xl lg:text-3xl bg-transparent text-white drop-shadow-md">
+									Pay Here
+								</h1>
+							</button>
+						</a>
 					</div>
 				</div>
 				<div className="rounded-lg p-0.25 bg-conic-gradient w-full">
