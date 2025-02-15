@@ -23,35 +23,41 @@ const SignIn = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setIsLoading(true);
+ // ... existing code ...
 
-    try {
-      const response = await fetch("http://localhost:5001/user/signin", {
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
+  setIsLoading(true);
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_BASE_URL}/user/signin`,
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Sign in failed");
       }
+    );
 
-      login(data.token);
-      navigate("/profile");
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Sign in failed");
     }
-  };
 
+    login(data.token);
+    navigate("/profile");
+  } catch (err) {
+    setError(err.message);
+  } finally {
+    setIsLoading(false);
+  }
+};
+
+// ... existing code ...
   return (
     <Section className="pt-[5rem] ">
       <div className="container relative z-2">

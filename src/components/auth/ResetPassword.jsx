@@ -16,79 +16,88 @@ const ResetPassword = () => {
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleInitialSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    setIsLoading(true);
+ // ... existing code ...
 
-    try {
-      const response = await fetch(
-        "http://localhost:5001/user/password-reset-init",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email }),
-        }
-      );
+const handleInitialSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
+  setIsLoading(true);
 
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.message || "Failed to send reset email");
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_BASE_URL}/user/password-reset-init`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
       }
+    );
 
-      setUserId(data.userId);
-      setShowOTPForm(true);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    const data = await response.json();
 
-  const handleResetSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-
-    if (newPassword !== confirmPassword) {
-      setError("Passwords do not match");
-      return;
+    if (!response.ok) {
+      throw new Error(data.message || "Failed to send reset email");
     }
 
-    setIsLoading(true);
+    setUserId(data.userId);
+    setShowOTPForm(true);
+  } catch (err) {
+    setError(err.message);
+  } finally {
+    setIsLoading(false);
+  }
+};
 
-    try {
-      const response = await fetch(
-        "http://localhost:5001/user/password-reset-complete",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            userId,
-            otp,
-            newPassword,
-          }),
-        }
-      );
+const handleResetSubmit = async (e) => {
+  e.preventDefault();
+  setError("");
 
-      const data = await response.json();
+  if (newPassword.length < 6) {
+    setError("Password must be at least 6 characters");
+    return;
+  }
 
-      if (!response.ok) {
-        throw new Error(data.message || "Password reset failed");
+  if (newPassword !== confirmPassword) {
+    setError("Passwords do not match");
+    return;
+  }
+
+  setIsLoading(true);
+
+  try {
+    const response = await fetch(
+      `${import.meta.env.VITE_API_BASE_URL}/user/password-reset-complete`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userId,
+          otp,
+          newPassword,
+        }),
       }
+    );
 
-      // Redirect to signin page after successful password reset
-      navigate("/signin");
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Password reset failed");
     }
-  };
+
+    alert("Password reset successful! Please sign in with your new password.");
+    navigate("/signin");
+  } catch (err) {
+    setError(err.message);
+  } finally {
+    setIsLoading(false);
+  }
+};
+
+// ... existing code ...
 
   return (
     <Section className="pt-[5rem] ">
@@ -102,7 +111,7 @@ const ResetPassword = () => {
             <h1 className="text-4xl font-bold mb-4">Reset Password</h1>
             {!showOTPForm ? (
               <p className="text-n-4 text-center">
-                Enter your email address and we'll send you instructions to
+                Enter your email address and we'll send you an OTP to
                 reset your password
               </p>
             ) : (
@@ -130,7 +139,7 @@ const ResetPassword = () => {
               </div>
 
               <Button className="w-full" disabled={isLoading}>
-                {isLoading ? "Sending..." : "Send Reset Link"}
+                {isLoading ? "Sending..." : "Send OTP"}
               </Button>
             </form>
           ) : (
@@ -147,7 +156,7 @@ const ResetPassword = () => {
 
                 <input
                   type="password"
-                  placeholder="New Password"
+                  placeholder="New Password (min 6 characters)"
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
                   className="w-full px-4 py-3 bg-n-8/80 rounded-lg border border-n-6 focus:outline-none focus:border-primary-1"
