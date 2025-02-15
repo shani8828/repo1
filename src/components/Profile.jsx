@@ -13,7 +13,6 @@ const Profile = () => {
 	const [error, setError] = useState("");
 	const [withAccommodation, setWithAccommodation] = useState(false);
 
-	// Dummy registered events data
 	const registeredEvents = [
 		{
 			id: 1,
@@ -41,6 +40,7 @@ const Profile = () => {
 	useEffect(() => {
 		const fetchUserData = async () => {
 			const token = localStorage.getItem("token");
+			// If no token is found, user is not logged in so redirect to signin
 			if (!token) {
 				navigate("/signin");
 				return;
@@ -73,9 +73,9 @@ const Profile = () => {
 		return (
 			<Section className="pt-[5rem] -mt-[5.25rem] ">
 				<div className="container relative z-2 min-h-[25rem] flex flex-col items-center justify-center text-center lg:mt-10">
-					<h2 className="h2 mb-4">Redirecting...</h2>
+					<h2 className="h2 mb-4">Loading Profile...</h2>
 					<p className="body-2 mb-8 text-500">
-						You will be redicted to the Informations page in a moment.
+						Please wait while we fetch your profile information.
 					</p>
 					<Link
 						to="/"
