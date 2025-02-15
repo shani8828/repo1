@@ -202,7 +202,7 @@ const Profile = () => {
 						</div>
 
 						<div className="flex items-center justify-end">
-							<div className="flex items-center gap-2">
+							<div className="md:flex items-center gap-2">
 								{!userData?.paymentStatus && (
 									<Button href="/payment">
 										Proceed to Payment
