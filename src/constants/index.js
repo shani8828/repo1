@@ -240,7 +240,7 @@ export const competitions = [
 		photoUrl: '/assets/competitions-card-images/strategy-sutram-image.png', // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
-		driveLink: null,
+		driveLink: "https://drive.google.com/drive/folders/1RIPRneHp9AEahMOTw2k17axCdG68LwZ1",
 	},
 	{
 		id: "3",
@@ -253,7 +253,7 @@ export const competitions = [
 		photoUrl: '/assets/competitions-card-images/Operheimer-image.png', // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/BhyAT7Jjhs5Ii1dHIYockk", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
-		driveLink: null,
+		driveLink: "https://drive.google.com/drive/folders/1uoUXqBbytjQH3c6jlCVlcGtD8HVzdPBz",
 	},
 	{
 		id: "4",
@@ -263,7 +263,7 @@ export const competitions = [
 		path: "/Stratathon",
 		pathToWhatsApp: "/Stratathon/Whatsapp",
 		pathToPS: "/Stratathon/PS",
-		photoUrl: '/assets/competitions-card-images/Stratathon-image.png', // Added photo URL
+		photoUrl: '/assets/competitions-card-images/stratathon-image.png', // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/CqPOcfhnfRy5cdpxU0fJBU", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
 		driveLink: null,
