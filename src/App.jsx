@@ -19,72 +19,87 @@ import Redirect from "./components/Redirect";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
 import Workshops from "./components/Workshops";
-import Rules from "./components/Rules";
+import Payment from "./components/Payment";
 import { competitions } from "./constants";
 import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
-  return (
-    <AuthProvider>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <Header className="fixed top-0 left-0 w-full z-50" />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/workshops" element={<Workshops />} />
-          <Route path="/competitions" element={<Competitions />} />
+	return (
+		<AuthProvider>
+			<div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+				<Header className="fixed top-0 left-0 w-full z-50" />
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/gallery" element={<Gallery />} />
+					<Route path="/workshops" element={<Workshops />} />
+					<Route path="/competitions" element={<Competitions />} />
 
-          {competitions.map((event) => {
-            return (
-              <Route
-                key={event.id}
-                path={event.path}
-                element={<Redirect href={event.unstopLink} delay={1000} />}
-              />
-            );
-          })}
+					{competitions.map((event) => {
+						return (
+							<Route
+								key={event.id}
+								path={event.path}
+								element={
+									<Redirect
+										href={event.unstopLink}
+										delay={1000}
+									/>
+								}
+							/>
+						);
+					})}
 
-          {competitions.map((event) => {
-            return event.whatsAppLink ? (
-              <Route
-                key={event.id}
-                path={event.pathToWhatsApp}
-                element={<Redirect href={event.whatsAppLink} delay={1000} />}
-              />
-            ) : (
-              <></>
-            );
-          })}
+					{competitions.map((event) => {
+						return event.whatsAppLink ? (
+							<Route
+								key={event.id}
+								path={event.pathToWhatsApp}
+								element={
+									<Redirect
+										href={event.whatsAppLink}
+										delay={1000}
+									/>
+								}
+							/>
+						) : (
+							<></>
+						);
+					})}
 
-          {competitions.map((event) => {
-            return event.driveLink ? (
-              <Route
-                key={event.id}
-                path={event.pathToPS}
-                element={<Redirect href={event.driveLink} delay={1000} />}
-              />
-            ) : (
-              <></>
-            );
-          })}
+					{competitions.map((event) => {
+						return event.driveLink ? (
+							<Route
+								key={event.id}
+								path={event.pathToPS}
+								element={
+									<Redirect
+										href={event.driveLink}
+										delay={1000}
+									/>
+								}
+							/>
+						) : (
+							<></>
+						);
+					})}
 
-          <Route path="/guest-lectures" element={<GuestLecture />} />
-          <Route path="/sponsors" element={<Spons />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/query-us" element={<QueryUs />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/register" element={<SignUp />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/reset-password" element={<ResetPassword />} />
-          <Route path="/payment" element={<Rules/>} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </div>
-      <ButtonGradient />
-    </AuthProvider>
-  );
+					<Route path="/guest-lectures" element={<GuestLecture />} />
+					<Route path="/sponsors" element={<Spons />} />
+					<Route path="/team" element={<Team />} />
+					<Route path="/query-us" element={<QueryUs />} />
+					<Route path="/profile" element={<Profile />} />
+					<Route path="/register" element={<SignUp />} />
+					<Route path="/signin" element={<SignIn />} />
+					<Route path="/reset-password" element={<ResetPassword />} />
+					<Route path="/payment" element={<Payment />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+				<Footer />
+			</div>
+			<ButtonGradient />
+		</AuthProvider>
+	);
 };
 
 export default App;
