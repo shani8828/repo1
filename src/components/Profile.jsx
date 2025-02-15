@@ -13,7 +13,6 @@ const Profile = () => {
 	const [error, setError] = useState("");
 	const [withAccommodation, setWithAccommodation] = useState(false);
 
-	// Dummy registered events data
 	const registeredEvents = [
 		{
 			id: 1,

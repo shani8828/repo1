@@ -152,7 +152,7 @@ const Header = () => {
             ) : (
               <>
                 <Link
-                  to="/signup"
+                  to="/register"
                   onClick={handleClick}
                   className="block relative font-code text-2xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-5 md:py-6 lg:text-sm lg:font-semibold text-n-1/50 lg:leading-5 lg:hover:text-n-1"
                 >
