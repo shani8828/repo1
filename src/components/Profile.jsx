@@ -118,7 +118,7 @@ const Profile = () => {
 							<div>
 								<p className="text-n-4">Gender</p>
 								<p className="font-medium">
-									{userData?.gender}
+									{userData?.gender.toUpperCase()}
 								</p>
 							</div>
 							<div>
