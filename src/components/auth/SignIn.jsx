@@ -112,7 +112,7 @@ const SignIn = () => {
 						</Button>
 
 						<p className="text-center text-n-4">
-							Don't have an account?{" "}
+							Not yet registered ?{" "}
 							<a
 								href="/register"
 								className="text-primary-1 hover:text-primary-2"
