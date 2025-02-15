@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../Section";
 import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
@@ -29,6 +29,13 @@ const SignUp = () => {
 		campusAmbassadorId: caID || "",
 		isFromIITKGP: false,
 	});
+
+	const { isAuthenticated } = useAuth();
+	useEffect(() => {
+		if (isAuthenticated) {
+			navigate("/profile");
+		}
+	}, [isAuthenticated]);
 
 	const handleChange = (e) => {
 		const value =

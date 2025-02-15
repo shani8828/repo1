@@ -74,7 +74,7 @@ const Payment = () => {
 						</div>
 					)}
 					<div className="rounded-lg overflow-hidden relative  w-full p-4 pt-0 gap-4 flex flex-col mb-8">
-						<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
 							{benefitsForParticipants.map((items) => (
 								<div className="flex gap-3 p-3 items-start rounded-md bg-white/10 backdrop-blur-md">
 									<img

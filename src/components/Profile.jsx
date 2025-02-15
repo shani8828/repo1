@@ -85,8 +85,8 @@ const Profile = () => {
 					)}
 					{/* Basic Info Section */}
 					<div className="bg-n-6/80 rounded-t-2xl p-6 mb-1">
-						<h2 className="text-3xl font-bold mb-4">
-							Basic Information
+						<h2 className="text-3xl font-bold mb-4 text-center">
+							Participant Information
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div>
@@ -104,10 +104,22 @@ const Profile = () => {
 								<p className="font-medium">{userData?.phone}</p>
 							</div>
 							<div>
+								<p className="text-n-4">Age</p>
+								<p className="font-medium">{userData?.age}</p>
+							</div>
+							<div>
 								<p className="text-n-4">College</p>
 								<p className="font-medium">
 									{userData?.college}
 								</p>
+							</div>
+							<div>
+								<p className="text-n-4">City</p>
+								<p className="font-medium">{userData?.city}</p>
+							</div>
+							<div>
+								<p className="text-n-4">State</p>
+								<p className="font-medium">{userData?.state}</p>
 							</div>
 							<div>
 								<p className="text-n-4">Year of Study</p>
@@ -124,6 +136,19 @@ const Profile = () => {
 							<div>
 								<p className="text-n-4">OPID</p>
 								<p className="font-medium">{userData?.OPID}</p>
+								<button
+									className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
+									onClick={() => {
+										if (userData?.OPID) {
+											navigator.clipboard.writeText(
+												userData.OPID
+											);
+											alert("OPID copied to clipboard!");
+										}
+									}}
+								>
+									Copy OPID
+								</button>
 							</div>
 							{userData?.caID && (
 								<div>
@@ -176,7 +201,6 @@ const Profile = () => {
 							)}
 						</div>
 
-						
 						<div className="flex items-center justify-end">
 							<div className="flex items-center gap-2">
 								{!userData?.paymentStatus && (

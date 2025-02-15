@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../Section";
 import { BackgroundCircles } from "../design/Hero";
 import { Gradient } from "../design/Services";
@@ -8,13 +8,19 @@ import { useAuth } from "../../context/AuthContext";
 
 const SignIn = () => {
 	const navigate = useNavigate();
-	const { login } = useAuth();
+	const { login, isAuthenticated } = useAuth();
 	const [error, setError] = useState("");
 	const [isLoading, setIsLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		email: "",
 		password: "",
 	});
+
+	useEffect(() => {
+		if (isAuthenticated) {
+			navigate("/profile");
+		}
+	}, [isAuthenticated]);
 
 	const handleChange = (e) => {
 		setFormData({
@@ -67,12 +73,16 @@ const SignIn = () => {
 
 				<div className="max-w-[440px] mx-auto bg-n-6/80 rounded-2xl p-4">
 					<div className="flex flex-col items-center mb-10">
-						<h1 className="text-4xl font-bold mb-4">Welcome Back</h1>
+						<h1 className="text-4xl font-bold mb-4">
+							Welcome Back
+						</h1>
 						<p className="text-n-4">Sign in to your account</p>
 					</div>
 
 					{error && (
-						<div className="text-red-500 text-center mb-4">{error}</div>
+						<div className="text-red-500 text-center mb-4">
+							{error}
+						</div>
 					)}
 
 					<form onSubmit={handleSubmit} className="space-y-6">
