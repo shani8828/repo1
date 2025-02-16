@@ -52,15 +52,8 @@ const Header = () => {
 			}`}
 		>
 			<div className="flex items-center justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-				<Link
-					className="flex items-center gap-1 w-[15rem] xl:mr-8"
-					to="/"
-				>
-					<img
-						src={logo}
-						alt="Optima"
-						className="w-[200px] md:w-[230px]"
-					/>
+				<Link className="flex items-center gap-1 w-[15rem] xl:mr-8" to="/">
+					<img src={logo} alt="Optima" className="w-[200px] md:w-[230px]" />
 				</Link>
 				<nav
 					className={`${
@@ -86,12 +79,12 @@ const Header = () => {
 								}}
 								className={`flex relative font-code text-xl uppercase transition-colors px-3 xl:pl-4  py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold
                   ${
-						location.pathname === "/competitions" ||
-						location.pathname === "/workshops" ||
-						location.pathname === "/guest-lectures"
-							? "text-color-1" // Apply purple color for active page
-							: "text-n-1/50"
-					}
+										location.pathname === "/competitions" ||
+										location.pathname === "/workshops" ||
+										location.pathname === "/guest-lectures"
+											? "text-color-1" // Apply purple color for active page
+											: "text-n-1/50"
+									}
                 lg:leading-5 lg:hover:text-n-1 `}
 							>
 								Events{" "}
@@ -111,10 +104,10 @@ const Header = () => {
 											onClick={handleClickdropdown}
 											className={`flex items-start gap-1 hover:text-color-1 mb-1 font-code uppercase text-lg transition-colors pl-3 lg:ml-3 py-2 md:py-4 lg:text-sm lg:font-semibold
                         ${
-							location.pathname === item.url
-								? "text-color-1"
-								: "text-n-1/50"
-						}
+													location.pathname === item.url
+														? "text-color-1"
+														: "text-n-1/50"
+												}
                       lg:leading-5 lg:hover:text-n-1`}
 										>
 											<div className="">→</div>
@@ -141,35 +134,27 @@ const Header = () => {
 							</Link>
 						))}
 						{isAuthenticated ? (
-							<>
+							<div className="flex">
 								<Link
 									to="/profile"
 									onClick={handleClick}
-									className={`block relative font-code text-2xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-5 md:py-6 lg:text-sm lg:font-semibold ${
-										location.pathname === "/profile"
-											? "text-color-1"
-											: "text-n-1/50"
-									} lg:leading-5 lg:hover:text-n-1`}
+									className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 lg:leading-5 lg:hover:text-n-1`}
 								>
 									Profile
 								</Link>
 								<button
 									onClick={handleLogout}
-									className="block relative font-code text-2xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-5 md:py-6 lg:text-sm lg:font-semibold text-n-1/50 lg:leading-5 lg:hover:text-n-1"
+									className="block relative font-code text-xl uppercase transition-colors text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-n-1"
 								>
 									Logout
 								</button>
-							</>
+							</div>
 						) : (
 							<>
 								<Link
 									to="/register"
 									onClick={handleClick}
-									className={`block relative font-code text-2xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-5 md:py-6 lg:text-sm lg:font-semibold ${
-										location.pathname === "/register"
-											? "text-color-1"
-											: "text-n-1/50"
-									} lg:leading-5 lg:hover:text-n-1`}
+									className={`block relative font-code text-xl uppercase transition-colors hover:text-color-1 px-3 xl:px-4 py-4 lg:py-6 lg:-mr-0.25 lg:text-sm lg:font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 lg:leading-5 lg:hover:text-n-1`}
 								>
 									Register
 								</Link>

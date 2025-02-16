@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Section from "./Section";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Gradient } from "./design/Services";
 import { BackgroundCircles } from "./design/Hero";
 import Loading from "./design/Loading";
+import { PiNoteFill } from "react-icons/pi";
+import { TbWorldQuestion } from "react-icons/tb";
+import { TbHandFingerLeft } from "react-icons/tb";
 
 const Profile = () => {
 	const navigate = useNavigate();
@@ -79,9 +82,7 @@ const Profile = () => {
 			<div className="container relative z-2">
 				<div className="max-w-[1000px] mx-auto">
 					{error && (
-						<div className="text-red-500 text-center mb-4">
-							{error}
-						</div>
+						<div className="text-red-500 text-center mb-4">{error}</div>
 					)}
 					{/* Basic Info Section */}
 					<div className="bg-n-6/80 rounded-t-2xl p-6 mb-1">
@@ -91,9 +92,7 @@ const Profile = () => {
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div>
 								<p className="text-n-4">Full Name</p>
-								<p className="font-medium">
-									{userData?.fullName}
-								</p>
+								<p className="font-medium">{userData?.fullName}</p>
 							</div>
 							<div>
 								<p className="text-n-4">Email</p>
@@ -109,9 +108,7 @@ const Profile = () => {
 							</div>
 							<div>
 								<p className="text-n-4">College</p>
-								<p className="font-medium">
-									{userData?.college}
-								</p>
+								<p className="font-medium">{userData?.college}</p>
 							</div>
 							<div>
 								<p className="text-n-4">City</p>
@@ -123,93 +120,100 @@ const Profile = () => {
 							</div>
 							<div>
 								<p className="text-n-4">Year of Study</p>
-								<p className="font-medium">
-									{userData?.yearOfStudy}
-								</p>
+								<p className="font-medium">{userData?.yearOfStudy}</p>
 							</div>
 							<div>
 								<p className="text-n-4">Gender</p>
-								<p className="font-medium">
-									{userData?.gender.toUpperCase()}
-								</p>
+								<p className="font-medium">{userData?.gender.toUpperCase()}</p>
 							</div>
 							<div>
-								<p className="text-n-4">OPID</p>
-								<p className="font-medium">{userData?.OPID}</p>
-								<button
-									className="px-2 py-1 bg-blue-500 text-white rounded hover:bg-blue-600"
-									onClick={() => {
-										if (userData?.OPID) {
-											navigator.clipboard.writeText(
-												userData.OPID
-											);
-											alert("OPID copied to clipboard!");
-										}
-									}}
-								>
-									Copy OPID
-								</button>
+								<p className="text-n-4">My OP ID</p>
+								<div className="flex items-center gap-2">
+									<button
+										className="px-2 py-1 bg-purple-500 text-white rounded hover:bg-purple-600"
+										onClick={() => {
+											if (userData?.OPID) {
+												navigator.clipboard.writeText(userData.OPID);
+												alert("OPID copied to clipboard!");
+											}
+										}}
+									>
+										{userData?.OPID}
+									</button>
+									<div className="flex items-center gap-[3px] font-medium text-gray-500">
+										<TbHandFingerLeft size={18}/>
+										<p> click to copy</p>
+									</div>
+								</div>
 							</div>
 							{userData?.caID && (
 								<div>
-									<p className="text-n-4">CA ID</p>
-									<p className="font-medium">
-										{userData?.caID}
-									</p>
+									<p className="text-n-4">Referal CA ID</p>
+									<p className="font-medium">{userData?.caID}</p>
 								</div>
 							)}
 						</div>
 					</div>
 					{/* Payment Status Section */}
 					<div className="bg-n-6/80 rounded-b-2xl p-6 mb-6">
-						<h2 className="text-2xl font-bold mb-4">
-							Payment Status
-						</h2>
+						<h2 className="text-2xl font-bold mb-4">Payment Status</h2>
 						<div className="mb-4">
 							{userData?.paymentStatus ? (
 								<>
 									<p className="text-n-4">Status</p>
-									<p className="font-medium text-green-500">
-										Paid
-									</p>
-									<p className="font-medium text-n-4">
-										Payment Amount:
-									</p>
+									<p className="font-medium text-green-500">Paid</p>
+									<p className="font-medium text-n-4">Payment Amount:</p>
 									<p className="font-medium text-green-500">
 										₹{userData?.paymentAmount}
 									</p>
 								</>
 							) : (
-								<div className="flex justify-between">
-									<div>
+								<div className="md:flex justify-between">
+									<div className="mb-2">
 										<p className="text-n-4">Status</p>
 
-										<p className="font-medium text-yellow-500">
-											Incomplete
-										</p>
+										<p className="font-medium text-yellow-500">Incomplete</p>
 									</div>
 									<div>
 										<p className="font-medium text-n-4">
-											Please proceed to payment to
-											complete the registration.
+											Please proceed to payment to complete the registration.
 											<br />
-											If payment has been made, please
-											wait for the changes to reflect.
+											If payment has been made, please wait for the changes to
+											reflect.
 										</p>
 									</div>
 								</div>
 							)}
 						</div>
 
-						<div className="flex items-center justify-end">
-							<div className="md:flex items-center gap-2">
+						<div className="flex items-center justify-center md:justify-end">
+							<div className="md:flex items-center gap-4">
 								{!userData?.paymentStatus && (
-									<Button href="/payment">
+									<Button href="/payment" className={"mb-2"}>
 										Proceed to Payment
 									</Button>
 								)}
-								<Button href="/rules">Rules</Button>
-								<Button href="/query-us">Contact Us</Button>
+								<div className="flex gap-4 items-center justify-center">
+									<Link 
+										to="/rules"
+										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors">
+										<PiNoteFill className="text-xl" />
+										<div className="text-lg font-semibold">
+											Rules
+										</div>
+									</Link>
+									<Link 
+										to="/query-us"
+										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors">
+										<TbWorldQuestion className="text-xl" />
+										<div className="text-lg font-semibold">
+											Contact Us
+										</div>
+									</Link>
+								</div>
+
+								{/* <Button href="/rules" className={'mb-2'}>Rules</Button>
+								<Button href="/query-us" className={'mb-2'}>Contact Us</Button> */}
 							</div>
 						</div>
 					</div>
