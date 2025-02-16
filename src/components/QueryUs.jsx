@@ -17,6 +17,8 @@ import {
 import { submitQuery } from "../utils/api"; // ✅ Import API function
 
 const QueryUs = () => {
+  document.title = "Contact | Optima 2025";
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");

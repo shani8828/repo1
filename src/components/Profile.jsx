@@ -11,6 +11,7 @@ import { TbHandFingerLeft } from "react-icons/tb";
 import { useAuth } from "../context/AuthContext";
 
 const Profile = () => {
+	document.title = "Profile | Optima 2025";
 	const navigate = useNavigate();
 	const [userData, setUserData] = useState(null);
 	const [loading, setLoading] = useState(true);
