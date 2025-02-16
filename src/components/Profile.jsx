@@ -8,6 +8,7 @@ import Loading from "./design/Loading";
 import { PiNoteFill } from "react-icons/pi";
 import { TbWorldQuestion } from "react-icons/tb";
 import { TbHandFingerLeft } from "react-icons/tb";
+import { useAuth } from "../context/AuthContext";
 
 const Profile = () => {
 	const navigate = useNavigate();
@@ -16,29 +17,31 @@ const Profile = () => {
 	const [error, setError] = useState("");
 	const [withAccommodation, setWithAccommodation] = useState(false);
 
-	const registeredEvents = [
-		{
-			id: 1,
-			name: "Roborace",
-			image: "/images/competitions/roborace.jpg",
-			date: "2024-04-15",
-			status: "Registered",
-		},
-		{
-			id: 2,
-			name: "Robosoccer",
-			image: "/images/competitions/robosoccer.jpg",
-			date: "2024-04-16",
-			status: "Registered",
-		},
-		{
-			id: 3,
-			name: "Drone Workshop",
-			image: "/images/workshops/drone.jpg",
-			date: "2024-04-14",
-			status: "Registered",
-		},
-	];
+	const { logout } = useAuth();
+
+	// const registeredEvents = [
+	// 	{
+	// 		id: 1,
+	// 		name: "Roborace",
+	// 		image: "/images/competitions/roborace.jpg",
+	// 		date: "2024-04-15",
+	// 		status: "Registered",
+	// 	},
+	// 	{
+	// 		id: 2,
+	// 		name: "Robosoccer",
+	// 		image: "/images/competitions/robosoccer.jpg",
+	// 		date: "2024-04-16",
+	// 		status: "Registered",
+	// 	},
+	// 	{
+	// 		id: 3,
+	// 		name: "Drone Workshop",
+	// 		image: "/images/workshops/drone.jpg",
+	// 		date: "2024-04-14",
+	// 		status: "Registered",
+	// 	},
+	// ];
 
 	const fetchUserData = async () => {
 		const token = localStorage.getItem("token");
@@ -57,6 +60,10 @@ const Profile = () => {
 			);
 
 			if (!response.ok) {
+				if (response.status === 401) {
+					logout();
+					navigate("/signin");
+				}
 				throw new Error("Failed to fetch user data");
 			}
 
@@ -82,7 +89,9 @@ const Profile = () => {
 			<div className="container relative z-2">
 				<div className="max-w-[1000px] mx-auto">
 					{error && (
-						<div className="text-red-500 text-center mb-4">{error}</div>
+						<div className="text-red-500 text-center mb-4">
+							{error}
+						</div>
 					)}
 					{/* Basic Info Section */}
 					<div className="bg-n-6/80 rounded-t-2xl p-6 mb-1">
@@ -92,7 +101,9 @@ const Profile = () => {
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 							<div>
 								<p className="text-n-4">Full Name</p>
-								<p className="font-medium">{userData?.fullName}</p>
+								<p className="font-medium">
+									{userData?.fullName}
+								</p>
 							</div>
 							<div>
 								<p className="text-n-4">Email</p>
@@ -108,7 +119,9 @@ const Profile = () => {
 							</div>
 							<div>
 								<p className="text-n-4">College</p>
-								<p className="font-medium">{userData?.college}</p>
+								<p className="font-medium">
+									{userData?.college}
+								</p>
 							</div>
 							<div>
 								<p className="text-n-4">City</p>
@@ -120,11 +133,15 @@ const Profile = () => {
 							</div>
 							<div>
 								<p className="text-n-4">Year of Study</p>
-								<p className="font-medium">{userData?.yearOfStudy}</p>
+								<p className="font-medium">
+									{userData?.yearOfStudy}
+								</p>
 							</div>
 							<div>
 								<p className="text-n-4">Gender</p>
-								<p className="font-medium">{userData?.gender.toUpperCase()}</p>
+								<p className="font-medium">
+									{userData?.gender.toUpperCase()}
+								</p>
 							</div>
 							<div>
 								<p className="text-n-4">My OP ID</p>
@@ -133,15 +150,19 @@ const Profile = () => {
 										className="px-2 py-1 bg-purple-500 text-white rounded hover:bg-purple-600"
 										onClick={() => {
 											if (userData?.OPID) {
-												navigator.clipboard.writeText(userData.OPID);
-												alert("OPID copied to clipboard!");
+												navigator.clipboard.writeText(
+													userData.OPID
+												);
+												alert(
+													"OPID copied to clipboard!"
+												);
 											}
 										}}
 									>
 										{userData?.OPID}
 									</button>
 									<div className="flex items-center gap-[3px] font-medium text-gray-500">
-										<TbHandFingerLeft size={18}/>
+										<TbHandFingerLeft size={18} />
 										<p> click to copy</p>
 									</div>
 								</div>
@@ -149,20 +170,28 @@ const Profile = () => {
 							{userData?.caID && (
 								<div>
 									<p className="text-n-4">Referal CA ID</p>
-									<p className="font-medium">{userData?.caID}</p>
+									<p className="font-medium">
+										{userData?.caID}
+									</p>
 								</div>
 							)}
 						</div>
 					</div>
 					{/* Payment Status Section */}
 					<div className="bg-n-6/80 rounded-b-2xl p-6 mb-6">
-						<h2 className="text-2xl font-bold mb-4">Payment Status</h2>
+						<h2 className="text-2xl font-bold mb-4">
+							Payment Status
+						</h2>
 						<div className="mb-4">
 							{userData?.paymentStatus ? (
 								<>
 									<p className="text-n-4">Status</p>
-									<p className="font-medium text-green-500">Paid</p>
-									<p className="font-medium text-n-4">Payment Amount:</p>
+									<p className="font-medium text-green-500">
+										Paid
+									</p>
+									<p className="font-medium text-n-4">
+										Payment Amount:
+									</p>
 									<p className="font-medium text-green-500">
 										₹{userData?.paymentAmount}
 									</p>
@@ -172,14 +201,17 @@ const Profile = () => {
 									<div className="mb-2">
 										<p className="text-n-4">Status</p>
 
-										<p className="font-medium text-yellow-500">Incomplete</p>
+										<p className="font-medium text-yellow-500">
+											Incomplete
+										</p>
 									</div>
 									<div>
 										<p className="font-medium text-n-4">
-											Please proceed to payment to complete the registration.
+											Please proceed to payment to
+											complete the registration.
 											<br />
-											If payment has been made, please wait for the changes to
-											reflect.
+											If payment has been made, please
+											wait for the changes to reflect.
 										</p>
 									</div>
 								</div>
@@ -194,17 +226,19 @@ const Profile = () => {
 									</Button>
 								)}
 								<div className="flex gap-4 items-center justify-center">
-									<Link 
+									<Link
 										to="/rules"
-										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors">
+										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors"
+									>
 										<PiNoteFill className="text-xl" />
 										<div className="text-lg font-semibold">
 											Rules
 										</div>
 									</Link>
-									<Link 
+									<Link
 										to="/query-us"
-										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors">
+										className="flex items-center gap-[3px] text-purple-400 hover:text-purple-200 transition-colors"
+									>
 										<TbWorldQuestion className="text-xl" />
 										<div className="text-lg font-semibold">
 											Contact Us

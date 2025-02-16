@@ -17,6 +17,7 @@ const Payment = () => {
 	document.title = "Payment | Optima 2025";
 
 	const navigate = useNavigate();
+	const [userData, setUserData] = useState(null);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState("");
 
@@ -37,6 +38,10 @@ const Payment = () => {
 			);
 
 			if (!response.ok) {
+				if (response.status === 401) {
+					logout();
+					navigate("/signin");
+				}
 				throw new Error("Failed to fetch user data");
 			}
 
@@ -44,6 +49,7 @@ const Payment = () => {
 			if (data.paymentStatus) {
 				navigate("/profile");
 			}
+			setUserData(data);
 		} catch (err) {
 			setError(err.message);
 		} finally {
@@ -112,7 +118,22 @@ const Payment = () => {
 				<div className="mb-6 w-full">
 					<div className="rounded-lg bg-none overflow-hidden relative flex items-center justify-center mb-8 w-full h-full pb-4">
 						<a
-							href="https://docs.google.com/forms/d/e/1FAIpQLSdzfCEholwyzqmtr3PrZbUI3sVF2wXmvFVFkR_3esQPus-nSg/viewform?usp=sharing"
+							href={
+								"https://docs.google.com/forms/d/e/1FAIpQLSdzfCEholwyzqmtr3PrZbUI3sVF2wXmvFVFkR_3esQPus-nSg/viewform?usp=pp_url&entry.457358849=" +
+								userData?.fullName +
+								"&entry.1494407877=" +
+								userData?.email +
+								"&entry.1954823963=" +
+								userData?.phone +
+								"&entry.878903541=" +
+								userData?.college +
+								"&entry.1033247168=" +
+								userData?.city +
+								"&entry.848564609=" +
+								userData?.OPID +
+								"&entry.1961204696=" +
+								userData?.caID
+							}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
