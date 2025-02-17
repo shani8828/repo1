@@ -39,21 +39,26 @@ const SPONSORS_DATA = {
         size: "sm",
         sponsors: ["spons-25/Unstop.png"],
       },
+      titleMediaPartner: {
+        name: "Title Media Partner",
+        size: "sm",
+        sponsors: ["spons-25/the-times-of-india.jpg"],
+      },
       mediaPartner: {
         name: "Media Partners",
         size: "sm",
         sponsors: ["spons-25/CampusVarta.png", "spons-25/InsightSuccess.png"],
       
       },
-      outreachPartner: {
-        name: "Blogger Outreach Partner",
-        size: "sm",
-        sponsors: ["spons-25/BlogAdda.png"],
-      },
       youthMediaPartner: {
         name: "Youth Media Partner",
         size: "sm",
         sponsors: ["spons-25/YouthIncorporated.png"],
+      },
+      outreachPartner: {
+        name: "Blogger Outreach Partner",
+        size: "sm",
+        sponsors: ["spons-25/BlogAdda.png"],
       },
     },
   },
@@ -140,6 +145,7 @@ const imgToUrl = {
   "spons-25/Hire3x.png": "https://hire3x.com/",
   "spons-25/Adani_Ai_Sirius_Digitech.jpeg": "https://www.linkedin.com/company/sirius-digitech/",
   "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
+  "spons-25/the-times-of-india.jpg": "https://timesofindia.indiatimes.com/",
   "spons-23/OPTYM.jpg": "https://www.optym.com/",
   "spons-23/AirIndia.png": "https://www.airindia.in/",
   "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
