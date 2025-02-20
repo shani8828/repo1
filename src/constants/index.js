@@ -281,4 +281,17 @@ export const competitions = [
 		unstopLink: "https://unstop.com/quiz/ai-odyssey-optima-2025-iit-kharagpur-1398376", // Add your Unstop link here
 		driveLink: null,
 	},
+	{
+		id: "6",
+		title: "Datavantage",
+		subTitle: "by Blue Yonder", // New subtitle added
+		text: "Data Case Challenge",
+		path: "/Datavantage",
+		pathToWhatsApp: "/Datavantage/Whatsapp",
+		pathToPS: "/Datavantage/PS",
+		photoUrl: '/assets/competitions-card-images/Datavantage.png', // Added photo URL
+		whatsAppLink: null, // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
+		driveLink: null,
+	},
 ];
