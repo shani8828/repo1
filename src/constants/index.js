@@ -290,8 +290,8 @@ export const competitions = [
 		pathToWhatsApp: "/Datavantage/Whatsapp",
 		pathToPS: "/Datavantage/PS",
 		photoUrl: '/assets/competitions-card-images/Datavantage.png', // Added photo URL
-		whatsAppLink: null, // Add your WhatsApp link here
+		whatsAppLink: "https://chat.whatsapp.com/Cb0puzEHLmxKDkQIBGpUf5", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
-		driveLink: null,
+		driveLink: "https://drive.google.com/drive/folders/1dT1kMcrzR_7vyiyZO26QIa_36RfGp6Yh",
 	},
 ];
