@@ -212,7 +212,7 @@ const Profile = () => {
 											complete the registration.
 											<br />
 											If payment has been made, please
-											wait for the changes to reflect.
+											wait! Changes will be reflected within 48 hours.
 										</p>
 									</div>
 								</div>
