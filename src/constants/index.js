@@ -285,7 +285,7 @@ export const competitions = [
 		id: "6",
 		title: "Datavantage",
 		subTitle: "by Blue Yonder", // New subtitle added
-		text: "Data Case Challenge",
+		text: "The Data Analytics Case Challenge",
 		path: "/Datavantage",
 		pathToWhatsApp: "/Datavantage/Whatsapp",
 		pathToPS: "/Datavantage/PS",

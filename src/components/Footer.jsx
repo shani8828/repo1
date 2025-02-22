@@ -10,6 +10,7 @@ import {
 	faLinkedin,
 	faSquareFacebook,
 	faSquareInstagram,
+	faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import "../components/OptimaCss/Footer.css";
 import { Link } from "react-router-dom";
@@ -217,6 +218,22 @@ const Footer = () => {
 										target="_blank"
 									>
 										<FontAwesomeIcon icon={faLinkedin} />
+									</a>
+								</div>
+								<div className="optima-footer-in">
+									<a
+										className="optima-footer-normal"
+										href="https://youtube.com/@optima.iitkgp?si=awtEARkQ8C7UUDxi"
+										target="_blank"
+									>
+										<FontAwesomeIcon icon={faYoutube} />
+									</a>
+									<a
+										className="optima-footer-hovered"
+										href="https://youtube.com/@optima.iitkgp?si=awtEARkQ8C7UUDxi"
+										target="_blank"
+									>
+										<FontAwesomeIcon icon={faYoutube} />
 									</a>
 								</div>
 							</div>
