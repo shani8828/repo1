@@ -13,6 +13,7 @@ import {
   faLinkedin,
   faSquareFacebook,
   faSquareInstagram,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { submitQuery } from "../utils/api"; // ✅ Import API function
 
@@ -111,25 +112,32 @@ const QueryUs = () => {
               <h1 className="mb-3">Get connected with us:</h1>
               <div className="flex flex-row justify-center gap-10 min-w-full items-start text-4xl">
                 <a
-                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110"
                   href="https://www.facebook.com/optima.iitkharagpur"
                   target="_blank"
                 >
                   <FontAwesomeIcon icon={faSquareFacebook} />
                 </a>
                 <a
-                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110"
                   href="https://www.instagram.com/optima.iitkgp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   target="_blank"
                 >
                   <FontAwesomeIcon icon={faSquareInstagram} />
                 </a>
                 <a
-                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
+                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110"
                   href="https://www.linkedin.com/company/optima-iitkgp/"
                   target="_blank"
                 >
                   <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a
+                  className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110"
+                  href="https://youtube.com/@optima.iitkgp?si=awtEARkQ8C7UUDxi"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
                 </a>
               </div>
             </div>

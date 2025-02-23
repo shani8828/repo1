@@ -294,17 +294,17 @@ export const competitions = [
 		unstopLink: "https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
 		driveLink: "https://drive.google.com/drive/folders/1dT1kMcrzR_7vyiyZO26QIa_36RfGp6Yh",
 	},
-	// {
-	// 	id: "7",
-	// 	title: "Code Ops",
-	// 	subTitle: "by Delhivery", // New subtitle added
-	// 	text: "The Code Quest Showdown",
-	// 	path: "/Code-Ops",
-	// 	pathToWhatsApp: "/Code-Ops/Whatsapp",
-	// 	pathToPS: "/Code-Ops/PS",
-	// 	photoUrl: '/assets/competitions-card-images/Code-Ops.png', // Added photo URL
-	// 	whatsAppLink: "https://chat.whatsapp.com/Lt2IOSfwaxQHfQeCVlhZrh", // Add your WhatsApp link here
-	// 	unstopLink: "https://unstop.com/competitions/networsify-optima-2025-iit-kharagpur-1397806", // Add your Unstop link here
-	// 	driveLink: "https://drive.google.com/drive/folders/1XuCBYehSIg6IjLEsoEgK2kiuIUOT4qMW",
-	// },
+	{
+		id: "7",
+		title: "Code Ops",
+		subTitle: "by Delhivery", // New subtitle added
+		text: "The Operations Optimization Challenge",
+		path: "/Code-Ops",
+		pathToWhatsApp: "/Code-Ops/Whatsapp",
+		pathToPS: "/Code-Ops/PS",
+		photoUrl: '/assets/competitions-card-images/Code-Ops.png', // Added photo URL
+		whatsAppLink: "https://chat.whatsapp.com/Lt2IOSfwaxQHfQeCVlhZrh", // Add your WhatsApp link here
+		unstopLink: "https://unstop.com/hackathons/the-code-quest-showdown-optima-2025-iit-kharagpur-1409476", // Add your Unstop link here
+		driveLink: null,
+	},
 ];
