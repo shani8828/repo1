@@ -34,7 +34,7 @@ const SPONSORS_DATA = {
         size: "md",
         sponsors: ["spons-25/blue_yonder.png"],
       },
-      majorSponsors: {
+      silverSponsors: {
         name: "Silver Sponsor",
         size: "md",
         sponsors: ["spons-25/IEM.png"],
