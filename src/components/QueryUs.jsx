@@ -110,7 +110,7 @@ const QueryUs = () => {
                 </a>
               </div>
               <h1 className="mb-3">Get connected with us:</h1>
-              <div className="flex flex-row justify-center gap-10 min-w-full items-start text-4xl">
+              <div className="flex flex-row justify-center gap-5 md:gap-8 min-w-full items-start text-4xl">
                 <a
                   className="hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110"
                   href="https://www.facebook.com/optima.iitkharagpur"
