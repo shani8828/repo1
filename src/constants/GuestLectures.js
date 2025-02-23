@@ -10,6 +10,6 @@ export const guestLectures = [
     linkedin: "https://www.linkedin.com/in/dr-rajesh-kumar-0b86a38/",
     companyUrl: "https://www.philips.co.in/",
     date: null,
-    mode: "Online Mode",
+    mode: "Mode: Online",
   },
 ];

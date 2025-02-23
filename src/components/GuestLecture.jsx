@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const GuestLecture = () => {
 	document.title = "Guest Lectures | Optima 2025";
-	const text = "More-Stars-Are-About-to-Shine!";
+	const text = "Many-More-Stars-Are-On-Their-Way!";
 	const chars = text.split("");
 	return (
 		<Section id="guestLecture">
