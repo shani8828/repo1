@@ -34,6 +34,11 @@ const SPONSORS_DATA = {
         size: "md",
         sponsors: ["spons-25/blue_yonder.png"],
       },
+      majorSponsors: {
+        name: "Silver Sponsor",
+        size: "md",
+        sponsors: ["spons-25/IEM.png"],
+      },
       poweredBy: {
         name: "Powered By",
         size: "sm",
@@ -146,6 +151,7 @@ const imgToUrl = {
   "spons-25/Adani_Ai_Sirius_Digitech.jpeg": "https://www.linkedin.com/company/sirius-digitech/",
   "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
   "spons-25/the-times-of-india.jpg": "https://timesofindia.indiatimes.com/",
+  "spons-25/IEM.png": "http://www.iem.edu.in/",
   "spons-23/OPTYM.jpg": "https://www.optym.com/",
   "spons-23/AirIndia.png": "https://www.airindia.in/",
   "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
