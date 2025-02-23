@@ -299,9 +299,9 @@ export const competitions = [
 		title: "Code Ops",
 		subTitle: "by Delhivery", // New subtitle added
 		text: "The Operations Optimization Challenge",
-		path: "/Code-Ops",
-		pathToWhatsApp: "/Code-Ops/Whatsapp",
-		pathToPS: "/Code-Ops/PS",
+		path: "/Codeops",
+		pathToWhatsApp: "/Codeops/Whatsapp",
+		pathToPS: "/Codeops/PS",
 		photoUrl: '/assets/competitions-card-images/Code-Ops.png', // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/Lt2IOSfwaxQHfQeCVlhZrh", // Add your WhatsApp link here
 		unstopLink: "https://unstop.com/hackathons/the-code-quest-showdown-optima-2025-iit-kharagpur-1409476", // Add your Unstop link here
