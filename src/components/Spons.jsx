@@ -60,6 +60,11 @@ const SPONSORS_DATA = {
         size: "sm",
         sponsors: ["spons-25/YouthIncorporated.png"],
       },
+      eventPartner: {
+        name: "Event Partners",
+        size: "sm",
+        sponsors: ["spons-25/Delhivery_Logo.png", "spons-25/LiveAi.png"],
+      },
       outreachPartner: {
         name: "Blogger Outreach Partner",
         size: "sm",
@@ -152,6 +157,8 @@ const imgToUrl = {
   "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
   "spons-25/the-times-of-india.jpg": "https://timesofindia.indiatimes.com/",
   "spons-25/IEM.png": "http://www.iem.edu.in/",
+  "spons-25/Delhivery_Logo.png": "https://www.delhivery.com/",
+  "spons-25/LiveAi.png": "https://www.liveai.eu/",
   "spons-23/OPTYM.jpg": "https://www.optym.com/",
   "spons-23/AirIndia.png": "https://www.airindia.in/",
   "spons-23/FlexSim.jpg": "https://www.flexsim.com/",
