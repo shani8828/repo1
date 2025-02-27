@@ -51,6 +51,10 @@ const GuestLecture = () => {
 									{lecture.designation}
 									{lecture.company && `, ${lecture.company}`}
 								</p>
+								<p className="text-gray-400 lg:text-lg mb-2">
+									Topic of Discussion :{" "}
+									<span className="text-purple-300">{lecture.topic}</span>
+								</p>
 								<p className="text-gray-400 lg:text-lg mb-2">{lecture.desc}</p>
 								<div className="flex mb-4 lg:mb-6">
 									{lecture.date && (
