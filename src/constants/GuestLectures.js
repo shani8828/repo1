@@ -1,7 +1,11 @@
 import img1 from "../assets/GuestLectures/Rajesh-Kumar.jpg";
 import img2 from "../assets/GuestLectures/Arvind-Kumar.jpeg";
 import img3 from "../assets/GuestLectures/Nitish_kumar.jpg";
-import img4 from "../assets/GuestLectures/ani_pic.png";
+import img4 from "../assets/GuestLectures/Anindita_Desarkar.jpg";
+import img5 from "../assets/GuestLectures/Diptiman_Dasgupta.png";
+import img6 from "../assets/GuestLectures/Suman_Das.png";
+import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.png";
+
 
 export const guestLectures = [
   {
@@ -49,6 +53,42 @@ export const guestLectures = [
     desc: "Dr. Anindita Desarkar (Director - LTIMindtree), An IT Professional having 20 years' experience, working predominantly on Analytics and Machine Learning domain; expert areas include Generative AI, NLP, Predictive Maintenance and AI based Optimization. A dedicated researcher, PhD on “Machine Learning & Analytics” from Jadavpur University having 22+ publications in various SCOPUS indexed journals and conferences. Filed 5 patents in Optimization and AI domain.",
     linkedin: "https://www.linkedin.com/in/anindita-desarkar-phd-b9a127218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     companyUrl: "https://www.ltimindtree.com/",
+    date: null,
+    mode: null,
+  },
+  {
+    imgUrl: img5,
+    name: "Diptiman Dasgupta",
+    designation: "Associate Director & Executive IT Architect",
+    company: "IBM",
+    topic: null,
+    desc: "Diptiman Dasgupta (DD) is an IBM Associate Director & Executive IT Architect with 28+ years of Industry & Research experiences in diverse field of IT in different IT giants like IBM, Cognizant, PwC etc. Last 22 years he is with IBM and played a pivotal role in driving new tech areas & complex projects in the area of Blockchain, Sustainability, Cloud etc. He has spent most of his career in Architecture track and was Architect Profession Leader in IBM for quite long time. He has done his B.E in Electrical Engg. & ME in Computer Sc. & Information Tech and he has multiple publications in many international journals of repute as well as many patents to his credit.",
+    linkedin: "https://www.linkedin.com/in/diptimandasgupta/",
+    companyUrl: null,
+    date: null,
+    mode: null,
+  },
+  {
+    imgUrl: img6,
+    name: "Suman Das",
+    designation: "Digital Transformation Leader",
+    company: "IBM",
+    topic: null,
+    desc: "An IIM Calcutta & XLRI (Jamshedpur) Alumni, Suman Das is a Digital Transformation Leader in IBM with around 24 years of Industry experience. He specializes in Delivery Management, Strategy Consulting, Product development, Method Development, AI Governance, Customer Relationship management and in technology domains of  Blockchain & Hybrid Cloud. A patent holder, he has multiple awards, certifications & journal publications to his credit. He enjoys mentoring & teaching and has taken numerous technology and management sessions across many universities, industry bodies and institutes like PMI, IIT & IIM as part of Industry-Academia partnership. He is also a certified Independent Director from Indian Institute of Corporate Affairs (Under the Aegis of Ministry of Corporate Affairs, Govt. of India) & certified in ESG (Environment, Sustainability and Governance).",
+    linkedin: "https://www.linkedin.com/in/suman-das-841b4532/",
+    companyUrl: null,
+    date: null,
+    mode: null,
+  },
+  {
+    imgUrl: img7,
+    name: "Saptaswa Sarkar",
+    designation: "Product Manager & Senior Architect",
+    company: "Airasia",
+    topic: null,
+    desc: "Saptaswa Sarkar is currently with Airasia Barhad as Product Manager and Senior Solution Architect. He is having 20 + years of experience in IT industry in various roles, specifically in Technology areas. He worked in multiple domains like Travel and Transport Industry, Telecom, Life Science, Airlines Industry etc. in variety of technologies and frameworks including as latest as Blockchain. During this many years of journey, he was primarily engaged in Software Designing, Development, Testing, Automation etc. and also in architecting solution for new application as per Client's requirements. He is avid photographer and loves cooking and singing.",
+    linkedin: "https://www.linkedin.com/in/saptaswasarkar/",
+    companyUrl: "https://www.airasia.com/en/gb",
     date: null,
     mode: null,
   },
