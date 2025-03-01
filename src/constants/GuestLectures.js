@@ -103,7 +103,7 @@ export const guestLectures = [
     imgUrl: img7,
     name: "Saptaswa Sarkar",
     designation: "Product Manager & Senior Architect",
-    company: "Airasia",
+    company: "AirAsia",
     topic: null,
     desc: "Saptaswa Sarkar is currently with Airasia Barhad as Product Manager and Senior Solution Architect. He is having 20 + years of experience in IT industry in various roles, specifically in Technology areas. He worked in multiple domains like Travel and Transport Industry, Telecom, Life Science, Airlines Industry etc. in variety of technologies and frameworks including as latest as Blockchain. During this many years of journey, he was primarily engaged in Software Designing, Development, Testing, Automation etc. and also in architecting solution for new application as per Client's requirements. He is avid photographer and loves cooking and singing.",
     linkedin: "https://www.linkedin.com/in/saptaswasarkar/",
