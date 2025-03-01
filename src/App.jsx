@@ -21,6 +21,7 @@ import Team from "./components/Team";
 import Workshops from "./components/Workshops";
 import Payment from "./components/Payment";
 import { competitions } from "./constants";
+import { guestLectures } from "./constants/GuestLectures";
 import { AuthProvider } from "./context/AuthContext";
 import Rules from "./components/Rules";
 
@@ -86,6 +87,22 @@ const App = () => {
 					})}
 
 					<Route path="/guest-lectures" element={<GuestLecture />} />
+					{guestLectures.map((event) => {
+						return (
+							<Route
+								key={event.id}
+								path={event.path}
+								element={
+									<Redirect
+										href={event.onlineMeetLink}
+										delay={1000}
+									/>
+								}
+							/>
+						);
+					})}
+
+
 					<Route path="/sponsors" element={<Spons />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/query-us" element={<QueryUs />} />
