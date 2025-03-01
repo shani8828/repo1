@@ -21,7 +21,7 @@ export const guestLectures = [
     path: "/Rajesh-Kumar",
     onlineMeetLink: "https://teams.microsoft.com/l/message/19:fbdChIuFG8N2khxBz_jJ3VfHyHexNBZe_Wnan9hmc2M1@thread.tacv2/1740659840142?tenantId=71dbb522-5704-4537-9f25-6ad2dcd4278d&groupId=77bb36ab-8845-492b-b417-976cf0b53a24&parentMessageId=1740659840142&teamName=Optima%202025%20%7C%20IIT%20Kharagpur&channelName=General&createdTime=1740659840142",
     date: "05:00pm | 1st March",
-    mode: "Venue: MS Teams(online)",
+    mode: "MS Teams(online)",
   },
   {
     id: "1",

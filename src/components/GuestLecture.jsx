@@ -9,6 +9,8 @@ import ClipPath from "../assets/svg/ClipPath";
 import { guestLectures } from "../constants/GuestLectures.js";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { motion } from "framer-motion";
+import { MdOutlineLocationOn } from "react-icons/md";
+import { LuAlarmClock } from "react-icons/lu";
 
 const GuestLecture = () => {
 	document.title = "Guest Lectures | Optima 2025";
@@ -54,16 +56,28 @@ const GuestLecture = () => {
 									</p>
 								)}
 								<LectureDescription desc={lecture.desc} />
-								<div className="md:flex mb-4 lg:mb-6">
+								<div className="md:flex mb-4 lg:mb-6 md:gap-2">
 									{lecture.date && (
-										<p className="text-lg lg:text-2xl text-gray-300">
-											{lecture.date},
-										</p>
+										<div className="flex items-center">
+											<LuAlarmClock
+												size={27}
+												className="text-purple-400 -ml-1"
+											/>
+											<p className="text-lg lg:text-2xl text-gray-300 ml-1">
+												{lecture.date},
+											</p>
+										</div>
 									)}
 									{lecture.mode && (
-										<p className="text-lg lg:text-2xl text-gray-300">
-											{lecture.mode}
-										</p>
+										<div className="flex items-center">
+											<MdOutlineLocationOn
+												size={27}
+												className="text-purple-400 -ml-1.5"
+											/>
+											<p className="text-lg lg:text-2xl text-gray-300">
+												{lecture.mode}
+											</p>
+										</div>
 									)}
 								</div>
 								<div className="flex flex-wrap gap-4">
