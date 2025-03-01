@@ -9,11 +9,11 @@ export const workshops = [
 	},
 	{
 		id: "1",
-		title: "Masterclass on Enhancing Solver Performance: Techniques & Best Practices",
+		title: "Fine-Tuning MIP Solvers for Improved Performance",
 		company: "DecisionOpt",
 		companyLink: "https://decisionopt.com/",
-		animationlink: "https://lottie.host/976f4859-6b31-43b4-947b-3bba28497902/fchHElhQhB.lottie",
-		text: "The Masterclass on Enhancing Solver Performance explores techniques like preprocessing, constraint tightening, and heuristic methods to optimize solver efficiency. It covers model refinements, parameter tuning, and parallel computing, equipping participants with best practices to improve solution speed and accuracy in complex problems.",
+		animationlink: "https://lottie.host/f90364e1-5258-4277-bbd9-2149efea314a/5DC81IxoWS.lottie",
+		text: "This workshop focuses on addressing scalability challenges in commercial Mixed Integer Programming (MIP) solvers. Participants will learn to analyze solver node logs, identify performance bottlenecks, and leverage solver features to enhance efficiency. Practical examples will be provided to reinforce concepts. System requirements include a laptop with internet, Python, and an activated Gurobi academic license. Dr. Alok Patel, founder of DecisionOpt and expert in optimization and AI, will lead the session.",
 	},
 	
 ];
