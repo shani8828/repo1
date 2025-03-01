@@ -54,14 +54,11 @@ const GuestLecture = () => {
 									</p>
 								)}
 								<LectureDescription desc={lecture.desc} />
-								<div className="flex mb-4 lg:mb-6">
+								<div className="md:flex mb-4 lg:mb-6">
 									{lecture.date && (
 										<p className="text-lg lg:text-2xl text-gray-300">
-											{lecture.date}
+											{lecture.date},
 										</p>
-									)}
-									{lecture.mode && lecture.date && (
-										<p className="text-lg lg:text-2xl text-gray-300 mx-2">,</p>
 									)}
 									{lecture.mode && (
 										<p className="text-lg lg:text-2xl text-gray-300">

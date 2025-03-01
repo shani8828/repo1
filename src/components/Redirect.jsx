@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { heroBackground } from "../assets";
 import { BackgroundCircles } from "./design/Hero";
 
-export default function Redirect({ href, delay }) {
+export default function Redirect({ href, delay, place }) {
 	//   const navigate = useNavigate();
 
 	//   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Redirect({ href, delay }) {
 			<div className="container relative z-2 min-h-[25rem] flex flex-col items-center justify-center text-center lg:mt-10">
 				<h2 className="h2 mb-4">Redirecting...</h2>
 				<p className="body-2 mb-8 text-500">
-					You will be redicted to the competition page in a moment.
+					You will be redicted to the {place} page in a moment.
 				</p>
 				<Link
 					to="/"

@@ -46,6 +46,7 @@ const App = () => {
 									<Redirect
 										href={event.unstopLink}
 										delay={1000}
+										place={event.title}
 									/>
 								}
 							/>
@@ -61,6 +62,7 @@ const App = () => {
 									<Redirect
 										href={event.whatsAppLink}
 										delay={1000}
+										place={"WhatsApp"}
 									/>
 								}
 							/>
@@ -78,6 +80,7 @@ const App = () => {
 									<Redirect
 										href={event.driveLink}
 										delay={1000}
+										place={"Google Drive"}
 									/>
 								}
 							/>
@@ -96,6 +99,7 @@ const App = () => {
 									<Redirect
 										href={event.onlineMeetLink}
 										delay={1000}
+										place={"Guest Lecture"}
 									/>
 								}
 							/>
