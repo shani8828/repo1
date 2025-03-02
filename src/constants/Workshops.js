@@ -15,5 +15,12 @@ export const workshops = [
 		animationlink: "https://lottie.host/f90364e1-5258-4277-bbd9-2149efea314a/5DC81IxoWS.lottie",
 		text: "This workshop focuses on addressing scalability challenges in commercial Mixed Integer Programming (MIP) solvers. Participants will learn to analyze solver node logs, identify performance bottlenecks, and leverage solver features to enhance efficiency. Practical examples will be provided to reinforce concepts. System requirements include a laptop with internet, Python, and an activated Gurobi academic license. Dr. Alok Patel, founder of DecisionOpt and expert in optimization and AI, will lead the session.",
 	},
-	
+	{
+		id: "2",
+		title: "Tech-Powered Growth – Innovations Driving Business Success",
+		company: "Hire3x",
+		companyLink: "https://hire3x.com/",
+		animationlink: "https://lottie.host/246abe3b-a59c-4d00-9730-2b71e579802b/q8Xd7cbjya.lottie",
+		text: "Discover how groundbreaking technologies are reshaping industries and unlocking new business opportunities. Join Yasharth Singh, Co-Founder & COO @ Hire3x, as he explores cutting-edge innovations and their real-world impact. This interactive session bridges the gap between tech advancements and business strategy, helping entrepreneurs, leaders, and tech enthusiasts stay ahead in a rapidly evolving landscape.",
+	},
 ];
