@@ -47,7 +47,7 @@ const SPONSORS_DATA = {
       eventPartner: {
         name: "Event Partners",
         size: "sm",
-        sponsors: ["spons-25/Delhivery_Logo.png", "spons-25/LiveAi.png", "spons-25/kgts.jpeg", "spons-25/decisionOpt.jpg"],
+        sponsors: ["spons-25/Delhivery_Logo.png", "spons-25/LiveAi.png", "spons-25/kgts.jpeg", "spons-25/decisionOptNew.webp"],
       },
       titleMediaPartner: {
         name: "Title Media Partner",
