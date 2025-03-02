@@ -45,10 +45,10 @@ import {
 	OptiSim,
 	unstop,
 } from "../assets";
-import img0 from "../assets/Workshops/img0.jpeg"
-import img1 from "../assets/Workshops/img1.jpg"
-import img2 from "../assets/Workshops/img2.png"
-import img3 from "../assets/Workshops/img3.png"
+import img0 from "../assets/Workshops/img0.jpeg";
+import img1 from "../assets/Workshops/img1.jpg";
+import img2 from "../assets/Workshops/img2.png";
+import img3 from "../assets/Workshops/img3.png";
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
@@ -156,11 +156,12 @@ export const competitions = [
 		path: "/Innovate-X",
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
-		photoUrl: '/assets/competitions-card-images/innovate-x-image.png',
+		photoUrl: "/assets/competitions-card-images/innovate-x-image.png",
 		whatsAppLink: "https://chat.whatsapp.com/F07PevjevGMDJ4fEsoWT0b", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
-		driveLink: "https://drive.google.com/drive/folders/1r1oEfz0F3Um4q1VaSLAjr9vTiLOaN-RK?usp=drive_link",
+		driveLink:
+			"https://drive.google.com/drive/folders/1r1oEfz0F3Um4q1VaSLAjr9vTiLOaN-RK?usp=drive_link",
 	},
 	{
 		id: "1",
@@ -170,9 +171,10 @@ export const competitions = [
 		path: "/HackTank",
 		pathToWhatsApp: "/HackTank/Whatsapp",
 		pathToPS: "/HackTank/PS",
-		photoUrl: '/assets/competitions-card-images/hacktank-image.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/hacktank-image.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/HKtYpDh6O521EbZgzFOxrD", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
+		unstopLink:
+			"https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
 		driveLink: null,
 	},
 	{
@@ -183,10 +185,12 @@ export const competitions = [
 		path: "/Strategy-Sutram",
 		pathToWhatsApp: "/Strategy-Sutram/Whatsapp",
 		pathToPS: "/Strategy-Sutram/PS",
-		photoUrl: '/assets/competitions-card-images/strategy-sutram-image.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/strategy-sutram-image.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
-		driveLink: "https://drive.google.com/drive/folders/1RIPRneHp9AEahMOTw2k17axCdG68LwZ1",
+		unstopLink:
+			"https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
+		driveLink:
+			"https://drive.google.com/drive/folders/1RIPRneHp9AEahMOTw2k17axCdG68LwZ1",
 	},
 	{
 		id: "3",
@@ -196,22 +200,25 @@ export const competitions = [
 		path: "/Operheimer",
 		pathToWhatsApp: "/Operheimer/Whatsapp",
 		pathToPS: "/Operheimer/PS",
-		photoUrl: '/assets/competitions-card-images/Operheimer-image.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Operheimer-image.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/BhyAT7Jjhs5Ii1dHIYockk", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
-		driveLink: "https://drive.google.com/drive/folders/1uoUXqBbytjQH3c6jlCVlcGtD8HVzdPBz",
+		unstopLink:
+			"https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
+		driveLink:
+			"https://drive.google.com/drive/folders/1uoUXqBbytjQH3c6jlCVlcGtD8HVzdPBz",
 	},
 	{
 		id: "4",
 		title: "Stratathon",
-		subTitle: "by KGTS (KGPian Game Theory Society)", // New subtitle added
+		subTitle: "by KGTS (The KGPian Game Theory Society)", // New subtitle added
 		text: "A Game Theory Challenge",
 		path: "/Stratathon",
 		pathToWhatsApp: "/Stratathon/Whatsapp",
 		pathToPS: "/Stratathon/PS",
-		photoUrl: '/assets/competitions-card-images/stratathon-image.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/stratathon-image.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/CqPOcfhnfRy5cdpxU0fJBU", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
+		unstopLink:
+			"https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
 		driveLink: null,
 	},
 	{
@@ -222,9 +229,10 @@ export const competitions = [
 		path: "/Ai-Odyssey",
 		pathToWhatsApp: "/Ai-Odyssey/Whatsapp",
 		pathToPS: "/Ai-Odyssey/PS",
-		photoUrl: '/assets/competitions-card-images/Ai-Odyssey-image.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Ai-Odyssey-image.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/G5DlPfVRNvfFzLKH9bwTRs", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/quiz/ai-odyssey-optima-2025-iit-kharagpur-1398376", // Add your Unstop link here
+		unstopLink:
+			"https://unstop.com/quiz/ai-odyssey-optima-2025-iit-kharagpur-1398376", // Add your Unstop link here
 		driveLink: null,
 	},
 	{
@@ -235,10 +243,12 @@ export const competitions = [
 		path: "/Datavantage",
 		pathToWhatsApp: "/Datavantage/Whatsapp",
 		pathToPS: "/Datavantage/PS",
-		photoUrl: '/assets/competitions-card-images/Datavantage.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Datavantage.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/Cb0puzEHLmxKDkQIBGpUf5", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
-		driveLink: "https://drive.google.com/drive/folders/1dT1kMcrzR_7vyiyZO26QIa_36RfGp6Yh",
+		unstopLink:
+			"https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
+		driveLink:
+			"https://drive.google.com/drive/folders/1dT1kMcrzR_7vyiyZO26QIa_36RfGp6Yh",
 	},
 	{
 		id: "7",
@@ -248,9 +258,10 @@ export const competitions = [
 		path: "/Codeops",
 		pathToWhatsApp: "/Codeops/Whatsapp",
 		pathToPS: "/Codeops/PS",
-		photoUrl: '/assets/competitions-card-images/Code-Ops.png', // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Code-Ops.png", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/Lt2IOSfwaxQHfQeCVlhZrh", // Add your WhatsApp link here
-		unstopLink: "https://unstop.com/hackathons/the-code-quest-showdown-optima-2025-iit-kharagpur-1409476", // Add your Unstop link here
+		unstopLink:
+			"https://unstop.com/hackathons/the-code-quest-showdown-optima-2025-iit-kharagpur-1409476", // Add your Unstop link here
 		driveLink: null,
 	},
 ];
