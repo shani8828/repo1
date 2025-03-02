@@ -56,7 +56,7 @@ export const CoreHeads = [
       facebook:
         "https://www.facebook.com/profile.php?id=100087744332005&mibextid=ZbWKwL",
       linkedin: "http://www.linkedin.com/in/sanchay-baranwal",
-      mail: "mailto:baranwalsanchay01@gmail.com",
+      mail: "mailto:sanchay.baranwal.iitkgp@gmail.com",
     },
   },
 
