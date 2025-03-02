@@ -44,6 +44,11 @@ const SPONSORS_DATA = {
         size: "sm",
         sponsors: ["spons-25/Unstop.png"],
       },
+      eventPartner: {
+        name: "Event Partners",
+        size: "sm",
+        sponsors: ["spons-25/Delhivery_Logo.png", "spons-25/LiveAi.png", "spons-25/kgts.jpeg", "spons-25/decisionOpt.jpg"],
+      },
       titleMediaPartner: {
         name: "Title Media Partner",
         size: "sm",
@@ -59,11 +64,6 @@ const SPONSORS_DATA = {
         name: "Youth Media Partner",
         size: "sm",
         sponsors: ["spons-25/YouthIncorporated.png"],
-      },
-      eventPartner: {
-        name: "Event Partners",
-        size: "sm",
-        sponsors: ["spons-25/Delhivery_Logo.png", "spons-25/LiveAi.png", "spons-25/kgts.jpeg", "spons-25/decisionOpt.jpg"],
       },
       outreachPartner: {
         name: "Blogger Outreach Partner",
