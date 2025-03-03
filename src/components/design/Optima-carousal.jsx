@@ -6,10 +6,10 @@ import { Gradient } from "./Hero";
 const CarouselComponent = () => {
   // Array of image URLs (you can replace these with your own images)
   const images = [
-    "/homepagePhotos/a.png",
-    "/homepagePhotos/b.png",
-    "/homepagePhotos/c.png",
-    "/homepagePhotos/d.png",
+    "/homepagePhotos/a.webp",
+    "/homepagePhotos/b.webp",
+    "/homepagePhotos/c.webp",
+    "/homepagePhotos/d.webp",
   ];
 
   // State to track the current image index
