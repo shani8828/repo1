@@ -6,6 +6,7 @@ import img5 from "../assets/GuestLectures/Diptiman_Dasgupta.png";
 import img6 from "../assets/GuestLectures/Suman_Das.png";
 import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.png";
 import img8 from "../assets/GuestLectures/Pallavi-Gupta-Bhowmick.webp";
+import img9 from "../assets/GuestLectures/Papli-Banerjee.webp";
 
 
 export const guestLectures = [
@@ -125,6 +126,21 @@ export const guestLectures = [
     linkedin: "https://www.linkedin.com/in/pallavibhowmick?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/",
     path: "/Pallavi-Gupta",
     companyUrl: "https://www.accenture.com/us-en/about/consulting-index",
+    onlineMeetLink: null,
+    date: null,
+    mode: null,
+  },
+  {
+    id: "8",
+    imgUrl: img9,
+    name: "Papli Banerjee",
+    designation: "Director Business Analytics & GM India office",
+    company: null,
+    topic: null,
+    desc: "As the Director of Business Analytics at Amplify Analytix, she leads a multi-skilled team using data science to drive strategic decisions. With over 20 years of experience in sales, marketing, and business transformation, she has built high-performing analytics teams that deliver measurable impact. Her expertise includes shaping analytics roadmaps, defining data strategies, and optimizing customer retention models. She specializes in data quality, NPS survey analysis, and stakeholder collaboration, ensuring businesses extract meaningful insights. She also works closely with product quality teams to enhance customer experience and market competitiveness. Passionate about data-driven decision-making, she empowers business leaders to unlock analytics' full potential. Outside work, she enjoys time with her teenage daughter, valuing adaptability in both life and analytics.",
+    linkedin: "https://www.linkedin.com/in/papli-banerjee?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    path: "/Papli-Banerjee",
+    companyUrl: null,
     onlineMeetLink: null,
     date: null,
     mode: null,
