@@ -1,10 +1,10 @@
-import img1 from "../assets/GuestLectures/Rajesh-Kumar.jpg";
-import img2 from "../assets/GuestLectures/Arvind-Kumar.jpeg";
-import img3 from "../assets/GuestLectures/Nitish_kumar.jpg";
-import img4 from "../assets/GuestLectures/Anindita_Desarkar.jpg";
-import img5 from "../assets/GuestLectures/Diptiman_Dasgupta.png";
-import img6 from "../assets/GuestLectures/Suman_Das.png";
-import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.png";
+import img1 from "../assets/GuestLectures/Rajesh-Kumar.webp";
+import img2 from "../assets/GuestLectures/Arvind-Kumar.webp";
+import img3 from "../assets/GuestLectures/Nitish_kumar.webp";
+import img4 from "../assets/GuestLectures/Anindita_Desarkar.webp";
+import img5 from "../assets/GuestLectures/Diptiman_Dasgupta.webp";
+import img6 from "../assets/GuestLectures/Suman_Das.webp";
+import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.webp";
 import img8 from "../assets/GuestLectures/Pallavi-Gupta-Bhowmick.webp";
 import img9 from "../assets/GuestLectures/Papli-Banerjee.webp";
 
