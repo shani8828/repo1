@@ -1,5 +1,5 @@
-import exec1 from "../assets/Team/saharsh.webp";
-import exec2 from "../assets/Team/shashwat.webp";
+import exec1 from "../assets/Team/Saharsh.webp";
+import exec2 from "../assets/Team/Shashwat.webp";
 import core9 from "../assets/Team/Mayank.webp";
 import core8 from "../assets/Team/Manasvi.webp";
 import core7 from "../assets/Team/Debdulal.webp";
