@@ -1,14 +1,14 @@
 import exec1 from "../assets/Team/saharsh.jpeg";
 import exec2 from "../assets/Team/shashwat.jpeg";
-import core9 from "../assets/Team/Mayank.jpg";
-import core8 from "../assets/Team/Manasvi.jpeg";
-import core7 from "../assets/Team/Debdulal.jpeg";
-import core6 from "../assets/Team/Suranjan.jpeg";
-import core5 from "../assets/Team/Nishant.jpeg";
-import core4 from "../assets/Team/Swetank.jpg";
-import core3 from "../assets/Team/Shreya.jpeg";
-import core2 from "../assets/Team/Sumanta.jpg";
-import core1 from "../assets/Team/Sanchay.jpeg";
+import core9 from "../assets/Team/Mayank.webp";
+import core8 from "../assets/Team/Manasvi.webp";
+import core7 from "../assets/Team/Debdulal.webp";
+import core6 from "../assets/Team/Suranjan.webp";
+import core5 from "../assets/Team/Nishant.webp";
+import core4 from "../assets/Team/Swetank.webp";
+import core3 from "../assets/Team/Shreya.webp";
+import core2 from "../assets/Team/Sumanta.webp";
+import core1 from "../assets/Team/Sanchay.webp";
 
 export const Executives = [
   {
