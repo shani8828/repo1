@@ -24,6 +24,11 @@ const SPONSORS_DATA = {
         size: "md",
         sponsors: ["spons-25/Adani_Ai_Sirius_Digitech.jpeg"],
       },
+      inAssociationWith: {
+        name: "In Association With",
+        size: "md",
+        sponsors: ["spons-25/GAIL.webp"],
+      },
       strategicPartners: {
         name: "Strategic Sponsor",
         size: "md",
@@ -154,6 +159,7 @@ const imgToUrl = {
   "spons-25/YouthIncorporated.png": "https://youthincmag.com/",
   "spons-25/Hire3x.png": "https://hire3x.com/",
   "spons-25/Adani_Ai_Sirius_Digitech.jpeg": "https://www.linkedin.com/company/sirius-digitech/",
+  "spons-25/GAIL.webp": "https://gailonline.com/",
   "spons-25/blue_yonder.png": "https://www.blueyonder.com/",
   "spons-25/the-times-of-india.jpg": "https://timesofindia.indiatimes.com/",
   "spons-25/IEM.png": "http://www.iem.edu.in/",
