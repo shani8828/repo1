@@ -5,6 +5,7 @@ import img4 from "../assets/GuestLectures/Anindita_Desarkar.jpg";
 import img5 from "../assets/GuestLectures/Diptiman_Dasgupta.png";
 import img6 from "../assets/GuestLectures/Suman_Das.png";
 import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.png";
+import img8 from "../assets/GuestLectures/Pallavi-Gupta.jpg";
 
 
 export const guestLectures = [
@@ -109,6 +110,21 @@ export const guestLectures = [
     linkedin: "https://www.linkedin.com/in/saptaswasarkar/",
     path: "/Saptaswa-Sarkar",
     companyUrl: "https://www.airasia.com/en/gb",
+    onlineMeetLink: null,
+    date: null,
+    mode: null,
+  },
+  {
+    id: "7",
+    imgUrl: img8,
+    name: "Pallavi Gupta Bhowmick",
+    designation: "Managing Director, Accenture Strategy and Consulting",
+    company: null,
+    topic: null,
+    desc: "With over 20 years of experience in both services and product organizations, Pallavi has led global programs and talent across five continents. Her career includes extensive leadership roles at GE, HP, Adobe, Unilever, and Accenture, where she transitioned from practice leadership to C-level advisory. Pallavi is an expert in driving AI-powered transformations and helping organizations navigate the intersection of technology and business strategy. Passionate about building diverse, high-performing teams, she fosters innovation and delivers measurable impact. A strong advocate for Diversity, Equity, and Inclusion, Pallavi works to create workplaces where authenticity and inclusive leadership thrive.",
+    linkedin: "https://www.linkedin.com/in/pallavibhowmick?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/",
+    path: "/Pallavi-Gupta",
+    companyUrl: null,
     onlineMeetLink: null,
     date: null,
     mode: null,
