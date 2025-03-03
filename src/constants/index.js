@@ -156,7 +156,7 @@ export const competitions = [
 		path: "/Innovate-X",
 		pathToWhatsApp: "/Innovate-X/Whatsapp",
 		pathToPS: "/Innovate-X/PS",
-		photoUrl: "/assets/competitions-card-images/innovate-x-image.png",
+		photoUrl: "/assets/competitions-card-images/innovate-x-image.webp",
 		whatsAppLink: "https://chat.whatsapp.com/F07PevjevGMDJ4fEsoWT0b", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/p/innovate-x-optima-2025-iit-kharagpur-1390456", // Add your Unstop link here
@@ -171,7 +171,7 @@ export const competitions = [
 		path: "/HackTank",
 		pathToWhatsApp: "/HackTank/Whatsapp",
 		pathToPS: "/HackTank/PS",
-		photoUrl: "/assets/competitions-card-images/hacktank-image.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/hacktank-image.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/HKtYpDh6O521EbZgzFOxrD", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/hackathons/hacktank-the-biztech-hackathon-iit-kharagpur-1392094", // Add your Unstop link here
@@ -185,7 +185,7 @@ export const competitions = [
 		path: "/Strategy-Sutram",
 		pathToWhatsApp: "/Strategy-Sutram/Whatsapp",
 		pathToPS: "/Strategy-Sutram/PS",
-		photoUrl: "/assets/competitions-card-images/strategy-sutram-image.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/strategy-sutram-image.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/JqrdmYEwQSnBp1svSQsYEb", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/competitions/strategy-sutram-the-business-case-challenge-optima-2025-iit-kharagpur-1392906", // Add your Unstop link here
@@ -200,7 +200,7 @@ export const competitions = [
 		path: "/Operheimer",
 		pathToWhatsApp: "/Operheimer/Whatsapp",
 		pathToPS: "/Operheimer/PS",
-		photoUrl: "/assets/competitions-card-images/Operheimer-image.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Operheimer-image.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/BhyAT7Jjhs5Ii1dHIYockk", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/o/vR3lqzb?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
@@ -215,7 +215,7 @@ export const competitions = [
 		path: "/Stratathon",
 		pathToWhatsApp: "/Stratathon/Whatsapp",
 		pathToPS: "/Stratathon/PS",
-		photoUrl: "/assets/competitions-card-images/stratathon-image.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/stratathon-image.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/CqPOcfhnfRy5cdpxU0fJBU", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/o/9JndqwE?lb=J6hM3PSC&utm_medium=Share&utm_source=shortUrl", // Add your Unstop link here
@@ -229,7 +229,7 @@ export const competitions = [
 		path: "/Ai-Odyssey",
 		pathToWhatsApp: "/Ai-Odyssey/Whatsapp",
 		pathToPS: "/Ai-Odyssey/PS",
-		photoUrl: "/assets/competitions-card-images/Ai-Odyssey-image.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Ai-Odyssey-image.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/G5DlPfVRNvfFzLKH9bwTRs", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/quiz/ai-odyssey-optima-2025-iit-kharagpur-1398376", // Add your Unstop link here
@@ -243,7 +243,7 @@ export const competitions = [
 		path: "/Datavantage",
 		pathToWhatsApp: "/Datavantage/Whatsapp",
 		pathToPS: "/Datavantage/PS",
-		photoUrl: "/assets/competitions-card-images/Datavantage.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Datavantage.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/Cb0puzEHLmxKDkQIBGpUf5", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/competitions/datavantage-optima-2025-iit-kharagpur-1403662", // Add your Unstop link here
@@ -258,7 +258,7 @@ export const competitions = [
 		path: "/Codeops",
 		pathToWhatsApp: "/Codeops/Whatsapp",
 		pathToPS: "/Codeops/PS",
-		photoUrl: "/assets/competitions-card-images/Code-Ops.png", // Added photo URL
+		photoUrl: "/assets/competitions-card-images/Code-Ops.webp", // Added photo URL
 		whatsAppLink: "https://chat.whatsapp.com/Lt2IOSfwaxQHfQeCVlhZrh", // Add your WhatsApp link here
 		unstopLink:
 			"https://unstop.com/hackathons/the-code-quest-showdown-optima-2025-iit-kharagpur-1409476", // Add your Unstop link here
