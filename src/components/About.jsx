@@ -33,10 +33,10 @@ const About = () => {
 								<div className="mb-2 md:mb-5 lg:mb-8 -my-10 -mx-15 p-10">
 									<img
 										className="w-[80%] mx-auto bg-gray-300 rounded-xl"
-										src="/assets/optima.png"
+										src="/assets/optima.webp"
 										width={428}
 										height={326}
-										alt={"gdg"}
+										alt={"Optima's Logo"}
 									/>
 								</div>
 								<h4 className="h2 md:h4 mb-4">
@@ -82,7 +82,7 @@ const About = () => {
 								<div className="mb-2 md:mb-5 lg:mb-8 -my-10 -mx-15 p-10">
 									<img
 										className="w-[80%] mx-auto bg-gray-300 rounded-xl"
-										src="/assets/ise.png"
+										src="/assets/ise.webp"
 										width={628}
 										height={426}
 										alt={"gdg"}
