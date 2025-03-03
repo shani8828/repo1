@@ -1,7 +1,7 @@
 import Section from "./Section";
-import hod from "../assets/HodMessage/hod.jpg";
-import chair from "../assets/HodMessage/chairman.jpg";
-import cochair from "../assets/HodMessage/cochairman.jpg";
+import hod from "../assets/HodMessage/hod.webp";
+import chair from "../assets/HodMessage/chairman.webp";
+import cochair from "../assets/HodMessage/cochairman.webp";
 import { Gradient } from "./design/Services";
 import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
