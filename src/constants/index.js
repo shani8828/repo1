@@ -1,39 +1,39 @@
 import {
-	benefitIcon1,
-	benefitIcon2,
-	benefitIcon3,
-	benefitIcon4,
-	benefitImage2,
-	chromecast,
-	disc02,
-	discord,
-	discordBlack,
-	facebook,
-	figma,
-	file02,
-	framer,
-	homeSmile,
-	instagram,
-	notification2,
-	notification3,
-	notification4,
-	notion,
-	photoshop,
-	plusSquare,
-	protopie,
-	raindrop,
-	recording01,
-	recording03,
-	roadmap1,
-	roadmap2,
-	roadmap3,
-	roadmap4,
-	searchMd,
-	slack,
-	sliders04,
-	telegram,
-	twitter,
-	yourlogo,
+	// benefitIcon1,
+	// benefitIcon2,
+	// benefitIcon3,
+	// benefitIcon4,
+	// benefitImage2,
+	// chromecast,
+	// disc02,
+	// discord,
+	// discordBlack,
+	// facebook,
+	// figma,
+	// file02,
+	// framer,
+	// homeSmile,
+	// instagram,
+	// notification2,
+	// notification3,
+	// notification4,
+	// notion,
+	// photoshop,
+	// plusSquare,
+	// protopie,
+	// raindrop,
+	// recording01,
+	// recording03,
+	// roadmap1,
+	// roadmap2,
+	// roadmap3,
+	// roadmap4,
+	// searchMd,
+	// slack,
+	// sliders04,
+	// telegram,
+	// twitter,
+	// yourlogo,
 	// About_Home
 	Degrees,
 	CodeLand,
@@ -43,35 +43,35 @@ import {
 	NLP,
 	Operheimer,
 	OptiSim,
-	unstop,
+	// unstop,
 } from "../assets";
-import img0 from "../assets/Workshops/img0.jpeg";
-import img1 from "../assets/Workshops/img1.jpg";
-import img2 from "../assets/Workshops/img2.png";
-import img3 from "../assets/Workshops/img3.png";
+// import img0 from "../assets/Workshops/img0.jpeg";
+// import img1 from "../assets/Workshops/img1.jpg";
+// import img2 from "../assets/Workshops/img2.png";
+// import img3 from "../assets/Workshops/img3.png";
 
-export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
+// export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2];
+// export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+// export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const brainwaveServices = [
-	"Photo generating",
-	"Photo enhance",
-	"Seamless Integration",
-];
+// export const brainwaveServices = [
+// 	"Photo generating",
+// 	"Photo enhance",
+// 	"Seamless Integration",
+// ];
 
-export const brainwaveServicesIcons = [
-	recording03,
-	recording01,
-	disc02,
-	chromecast,
-	sliders04,
-];
+// export const brainwaveServicesIcons = [
+// 	recording03,
+// 	recording01,
+// 	disc02,
+// 	chromecast,
+// 	sliders04,
+// ];
 
-export const collabText =
-	"With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+// export const collabText =
+// 	"With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
 
 export const collabContent = [
 	{

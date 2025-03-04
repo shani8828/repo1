@@ -36,16 +36,15 @@ import protopie from "./collaboration/protopie.png";
 import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
-// import 
+// import
 import Degrees from "./About_Home/360Degrees.webp";
 import CodeLand from "./About_Home/CodeLand.webp";
-import FinanceFantasia from "./About_Home/FinanceFantasia.webp"
+import FinanceFantasia from "./About_Home/FinanceFantasia.webp";
 import Innovate from "./About_Home/Innovate-x.webp";
 import NetworSify from "./About_Home/NetworSify.webp";
 import NLP from "./About_Home/NLP.py2.webp";
 import Operheimer from "./About_Home/Operheimer.webp";
-import OptiSim from "./About_Home/OptiSim.webp"
-
+import OptiSim from "./About_Home/OptiSim.webp";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
@@ -68,26 +67,26 @@ import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
 
-import benefitCard1 from "./benefits/card-1.svg";
-import benefitCard2 from "./benefits/card-2.svg";
-import benefitCard3 from "./benefits/card-3.svg";
-import benefitCard4 from "./benefits/card-4.svg";
-import benefitCard5 from "./benefits/card-5.svg";
-import benefitCard6 from "./benefits/card-6.svg";
-import benefitIcon1 from "./benefits/icon-1.svg";
-import benefitIcon2 from "./benefits/icon-2.svg";
-import benefitIcon3 from "./benefits/icon-3.svg";
-import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitImage2 from "./benefits/image-2.png";
+// import benefitCard1 from "./benefits/card-1.svg";
+// import benefitCard2 from "./benefits/card-2.svg";
+// import benefitCard3 from "./benefits/card-3.svg";
+// import benefitCard4 from "./benefits/card-4.svg";
+// import benefitCard5 from "./benefits/card-5.svg";
+// import benefitCard6 from "./benefits/card-6.svg";
+// import benefitIcon1 from "./benefits/icon-1.svg";
+// import benefitIcon2 from "./benefits/icon-2.svg";
+// import benefitIcon3 from "./benefits/icon-3.svg";
+// import benefitIcon4 from "./benefits/icon-4.svg";
+// import benefitImage2 from "./benefits/image-2.png";
 
-import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
-import instagram from "./socials/instagram.svg";
-import telegram from "./socials/telegram.svg";
-import twitter from "./socials/twitter.svg";
+// import discordBlack from "./socials/discord.svg";
+// import facebook from "./socials/facebook.svg";
+// import instagram from "./socials/instagram.svg";
+// import telegram from "./socials/telegram.svg";
+// import twitter from "./socials/twitter.svg";
 
-//unstop 
-import unstop from "./socials/unstop-icon-800x800.png"
+//unstop
+// import unstop from "./socials/unstop-icon-800x800.png"
 
 export {
   Degrees,
@@ -98,7 +97,6 @@ export {
   NLP,
   Operheimer,
   OptiSim,
-  
   brainwave,
   check,
   check2,
@@ -151,21 +149,21 @@ export {
   notification2,
   notification3,
   notification4,
-  benefitCard1,
-  benefitCard2,
-  benefitCard3,
-  benefitCard4,
-  benefitCard5,
-  benefitCard6,
-  benefitIcon1,
-  benefitIcon2,
-  benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
-  discordBlack,
-  facebook,
-  instagram,
-  telegram,
-  twitter,
-  unstop,
+  // benefitCard1,
+  // benefitCard2,
+  // benefitCard3,
+  // benefitCard4,
+  // benefitCard5,
+  // benefitCard6,
+  // benefitIcon1,
+  // benefitIcon2,
+  // benefitIcon3,
+  // benefitIcon4,
+  // benefitImage2,
+  // discordBlack,
+  // facebook,
+  // instagram,
+  // telegram,
+  // twitter,
+  // unstop,
 };
