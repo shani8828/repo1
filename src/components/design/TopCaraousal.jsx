@@ -34,16 +34,16 @@ function TopCaraousal() {
 	};
 
 	const images = [
-		"/GalleryPhotos/day0-images/4.jpg",
-		"/GalleryPhotos/day0-images/6.jpg",
-		"/GalleryPhotos/day0-images/8.jpg",
-		"/GalleryPhotos/day0-images/9.jpg",
-		"/GalleryPhotos/day0-images/10.jpg",
-		"/GalleryPhotos/day0-images/11.jpg",
-		"/GalleryPhotos/day0-images/12.jpg",
-		"/GalleryPhotos/day0-images/13.jpg",
-		"/GalleryPhotos/day0-images/14.jpg",
-		"/GalleryPhotos/day0-images/IMG_2518.jpg",
+		"/GalleryPhotos/day0-images/4.webp",
+		"/GalleryPhotos/day0-images/6.webp",
+		"/GalleryPhotos/day0-images/8.webp",
+		"/GalleryPhotos/day0-images/9.webp",
+		"/GalleryPhotos/day0-images/10.webp",
+		"/GalleryPhotos/day0-images/11.webp",
+		"/GalleryPhotos/day0-images/12.webp",
+		"/GalleryPhotos/day0-images/13.webp",
+		"/GalleryPhotos/day0-images/14.webp",
+		"/GalleryPhotos/day0-images/IMG_2518.webp",
 	];
 
 	return (
