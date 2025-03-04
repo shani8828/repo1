@@ -4,20 +4,20 @@ import "../OptimaCss/Gallery.css";
 const guestLectures = [
 	{
 		id: 1,
-		image: "/GalleryPhotos/guest-lecture-images/g1.jpg",
+		image: "/GalleryPhotos/guest-lecture-images/g1.webp",
 		title: "Deeptak Chatterjee",
 		description: "Head of Application Development & Innovation, Tata Steel",
 	},
 	{
 		id: 2,
-		image: "/GalleryPhotos/guest-lecture-images/g2.jpg",
+		image: "/GalleryPhotos/guest-lecture-images/g2.webp",
 		title: "Dr. Amit Kumar Das",
 		description:
 			"Head of Operations Technology, Air India Digital and Tech",
 	},
 	{
 		id: 3,
-		image: "/GalleryPhotos/guest-lecture-images/g3.jpg",
+		image: "/GalleryPhotos/guest-lecture-images/g3.webp",
 		title: "Bala Srinivasan",
 		description: "Director, Operations Reasearch & Data Science at Sabre",
 	},
