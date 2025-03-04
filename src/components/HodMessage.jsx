@@ -94,18 +94,18 @@ const HodMessage = () => {
                   alt="hod"
                   className="rounded-3xl w-40 lg:w-48"
                 />
-                <h1>Prof. Mamata Jenamani</h1>
+                <h1>Prof. Abhishek Sharma</h1>
                 <div className="gap-5 flex">
                   <a
                     className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
-                    href="mailto:mj@iem.iitkgp.ac.in"
+                    href="mailto:abhishek@iem.iitkgp.ac.in"
                     target="_blank"
                   >
                     <FaEnvelope />
                   </a>
                   <a
                     className="text-3xl hover:text-purple-500 transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:shadow-white"
-                    href="https://www.linkedin.com/in/mamata-jenamani-6a93b894/"
+                    href="https://www.linkedin.com/in/abhishek-sharma-44797884/?originalSubdomain=in"
                     target="_blank"
                   >
                     <FaLinkedin />
