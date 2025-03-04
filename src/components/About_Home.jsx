@@ -45,7 +45,7 @@ const About_home = () => {
 						<div className="flex items-center justify-center w-[6rem] sm:w-[8rem] md:w-60 aspect-square border border-gray-300 rounded-full">
 							<div className="w-[3rem] sm:w-[4rem] md:w-[6rem] aspect-square bg-gray-100 flex items-center justify-center rounded-full">
 								<img
-									src="/logo-optima.png"
+									src="/logo-optima.webp"
 									width={70}
 									height={70}
 									alt="logo-optima"

@@ -337,7 +337,7 @@ const Spons = () => {
           title="Our Esteemed Sponsors"
         />
         <BackgroundCircles />
-        <div className="flex flex-col md:flex-row w-36 md:w-72 mx-auto md:w-auto md:justify-center gap-4 mb-8">
+        <div className="flex flex-col md:flex-row w-36  mx-auto md:w-auto md:justify-center gap-4 mb-8">
           <SelectButton
             active={activeTab === "2025"}
             onClick={() => setActiveTab("2025")}
