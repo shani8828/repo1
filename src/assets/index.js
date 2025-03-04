@@ -37,14 +37,14 @@ import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
 // import 
-import Degrees from "./About_Home/360Degrees.png";
-import CodeLand from "./About_Home/CodeLand.png";
-import FinanceFantasia from "./About_Home/FinanceFantasia.png"
-import Innovate from "./About_Home/Innovate-x.png";
-import NetworSify from "./About_Home/NetworSify.png";
-import NLP from "./About_Home/NLP.py2.png";
-import Operheimer from "./About_Home/Operheimer.png";
-import OptiSim from "./About_Home/OptiSim.png"
+import Degrees from "./About_Home/360Degrees.webp";
+import CodeLand from "./About_Home/CodeLand.webp";
+import FinanceFantasia from "./About_Home/FinanceFantasia.webp"
+import Innovate from "./About_Home/Innovate-x.webp";
+import NetworSify from "./About_Home/NetworSify.webp";
+import NLP from "./About_Home/NLP.py2.webp";
+import Operheimer from "./About_Home/Operheimer.webp";
+import OptiSim from "./About_Home/OptiSim.webp"
 
 
 import service1 from "./services/service-1.png";
