@@ -5,14 +5,14 @@ import CollageGallery from "./CollageGallery";
 
 const GallerySlot2 = () => {
   const images = [
-    "/GalleryPhotos/competitions/c1.jpg",
-    "/GalleryPhotos/competitions/c2.jpg",
-    "/GalleryPhotos/competitions/c3.jpg",
-    "/GalleryPhotos/competitions/c4.jpg",
-    "/GalleryPhotos/competitions/c5.jpg",
-    "/GalleryPhotos/competitions/c6.jpg",
-    "/GalleryPhotos/competitions/c7.jpg",
-    "/GalleryPhotos/competitions/c8.jpg",
+    "/GalleryPhotos/competitions/c1.webp",
+    "/GalleryPhotos/competitions/c2.webp",
+    "/GalleryPhotos/competitions/c3.webp",
+    "/GalleryPhotos/competitions/c4.webp",
+    "/GalleryPhotos/competitions/c5.webp",
+    "/GalleryPhotos/competitions/c6.webp",
+    "/GalleryPhotos/competitions/c7.webp",
+    "/GalleryPhotos/competitions/c8.webp",
   ];
 
   return (
