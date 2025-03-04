@@ -4,11 +4,11 @@ import CollageGallery from "./CollageGallery";
 
 const GallerySlot1 = () => {
   const images = [
-    "/GalleryPhotos/workshops/w5.jpg",
-    "/GalleryPhotos/workshops/w3.jpg",
-    "/GalleryPhotos/workshops/w4.jpg",
-    "/GalleryPhotos/workshops/w1.jpg",
-    "/GalleryPhotos/workshops/w2.jpg",
+    "/GalleryPhotos/workshops/w5.webp",
+    "/GalleryPhotos/workshops/w3.webp",
+    "/GalleryPhotos/workshops/w4.webp",
+    "/GalleryPhotos/workshops/w1.webp",
+    "/GalleryPhotos/workshops/w2.webp",
   ];
 
   return (
