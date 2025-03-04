@@ -7,6 +7,7 @@ import img6 from "../assets/GuestLectures/Suman_Das.webp";
 import img7 from "../assets/GuestLectures/Saptaswa_Sarkar.webp";
 import img8 from "../assets/GuestLectures/Pallavi-Gupta-Bhowmick.webp";
 import img9 from "../assets/GuestLectures/Papli-Banerjee.webp";
+import img10 from "../assets/GuestLectures/Deepa-Duraisamy.webp";
 
 
 export const guestLectures = [
@@ -140,6 +141,21 @@ export const guestLectures = [
     desc: "As the Director of Business Analytics at Amplify Analytix, she leads a multi-skilled team using data science to drive strategic decisions. With over 20 years of experience in sales, marketing, and business transformation, she has built high-performing analytics teams that deliver measurable impact. Her expertise includes shaping analytics roadmaps, defining data strategies, and optimizing customer retention models. She specializes in data quality, NPS survey analysis, and stakeholder collaboration, ensuring businesses extract meaningful insights. She also works closely with product quality teams to enhance customer experience and market competitiveness. Passionate about data-driven decision-making, she empowers business leaders to unlock analytics' full potential. Outside work, she enjoys time with her teenage daughter, valuing adaptability in both life and analytics.",
     linkedin: "https://www.linkedin.com/in/papli-banerjee?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     path: "/Papli-Banerjee",
+    companyUrl: null,
+    onlineMeetLink: null,
+    date: null,
+    mode: null,
+  },
+  {
+    id: "9",
+    imgUrl: img10,
+    name: "Deepa Duraisamy",
+    designation: "Head of Data, Edelweiss Life Insurance",
+    company: null,
+    topic: null,
+    desc: "Deepa Duraisamy is an accomplished data professional with over 2 decades of industry experience across domains of banking, insurance and FMCG. In her role as Head of Data at Edelweiss Life Insurance she, along with her team, takes on and delivers initiatives that significantly improve customer experience, enable business growth and streamline operations. She has a track record of running large delivery programs, globally executed at scale, across data management and analytics. As a change agent she believes in fostering a collaborative, tech enabled environment, managing stakeholder relationships and employee engagement.",
+    linkedin: "https://www.linkedin.com/in/deepa-duraisamy/",
+    path: "/Deepa-Duraisamy",
     companyUrl: null,
     onlineMeetLink: null,
     date: null,
