@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BackgroundCircles } from "./design/Hero.jsx";
+import { BackgroundCircles, Gradient } from "./design/Hero.jsx";
 import { useRef } from "react";
 ("use client");
 import "../components/OptimaCss/Timeline.css";
@@ -8,6 +8,7 @@ import Day1 from "./Day1.jsx";
 import Day2 from "./Day2.jsx";
 import Heading from "./Heading";
 import Section from "./Section";
+import { GradientLight } from "./design/Benefits.jsx";
 
 const Team = () => {
   document.title = "Timeline | Optima 2025";
@@ -66,6 +67,7 @@ const Team = () => {
         </div>
         {day == 0 ? <Day0 /> : day == 1 ? <Day1 /> : <Day2 />}
       </div>
+      <GradientLight/>
     </Section>
   );
 };
