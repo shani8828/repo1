@@ -9,7 +9,7 @@ const Day1 = () => {
       {/* <div className="flex justify-center">
         <ComingSoon />
       </div> */}
-       {timelineDataDay1.map((event) => (
+      {timelineDataDay1.map((event) => (
         <div
           key={event.id}
           className={`tl-container ${event.position}-container`}
