@@ -31,12 +31,12 @@ const GuestLecture = () => {
           <h1 className="text-3xl md:text-4xl text-center py-2 px-3 bg-gradient-to-r from-orange-500 to-red-300 bg-clip-text text-transparent font-semibold rounded-full w-full">
             Opening Ceremony Guests
           </h1>
-		  <h2 className="text-2xl md:text-3xl text-center text-n-2">16:30, Mar07, Netaji Auditorium</h2>
+		  <h2 className="text-2xl md:text-3xl text-center text-n-2">04:30 PM, 7th March, Netaji Auditorium</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-10">
             {guests.map((guest) => (
               <div className="flex flex-col items-center justify-center gap-3 bg-conic-gradient p-0.25 rounded-lg">
                 <div className="border border-n-11 p-6 flex flex-col items-center justify-center bg-n-8 rounded-lg gap-4 w-full h-full">
-                  <h1 className="text-xl md:text-2xl text-center font-semibold underline">
+                  <h1 className="text-xl md:text-2xl text-center font-semibold  bg-gradient-to-r from-orange-500 to-red-300 bg-clip-text text-transparent">
                     {guest.title}
                   </h1>
                   <img
@@ -56,7 +56,7 @@ const GuestLecture = () => {
             ))}
           </div>
 		  <h1 className="text-3xl md:text-4xl text-center py-2 px-3 bg-gradient-to-r from-orange-500 to-red-300 bg-clip-text text-transparent font-semibold rounded-full w-full">
-            Fest Guests
+            Our Other Honourable Guests
           </h1>
           {guestLectures.map((lecture, index) => (
             <div
