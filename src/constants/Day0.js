@@ -12,7 +12,7 @@ const timelineDataDay0 = [
 	  id: 2,
 	  title: "HackTank Mixer",
 	  time: "08:00 PM",
-	  location: "Dept. of Industrial & Systems Engg.",
+	  location: "In front of Dept. of Industrial & Systems Engg.",
 	  link: "https://maps.app.goo.gl/USTHoae3Dnx4t4Nj9",
 	  image: null,
 	  position: "right",
