@@ -34,7 +34,7 @@
 .tl-container img {
   align-items: center;
   max-width: 60px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: absolute;
   right: -30px;
   top: 32px;

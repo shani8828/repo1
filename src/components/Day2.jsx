@@ -1,17 +1,24 @@
 import React from "react";
 import "../components/OptimaCss/Timeline.css";
-import timelineDataDay2 from "../constants/Day0.js";
+import timelineDataDay2 from "../constants/Day2.js";
+import ComingSoon from "./design/ComingSoon";
 
 const Day2 = () => {
   return (
     <div className="tl tl-day0">
-      {timelineDataDay2.map((event) => (
-        <div key={event.id} className={`tl-container ${event.position}-container`}>
+      <div className="flex justify-center">
+        <ComingSoon />
+      </div>
+      {/* {timelineDataDay2.map((event) => (
+        <div
+          key={event.id}
+          className={`tl-container ${event.position}-container`}
+        >
           {event.image ? (
             <img
               src={event.image}
               alt={event.title}
-              className="rounded-full border border-orange-700 bg-white backdrop-blur-lg"
+              // className="rounded-full border border-orange-700 bg-none backdrop-blur-lg"
             />
           ) : (
             <img
@@ -36,7 +43,7 @@ const Day2 = () => {
             <span className={`${event.position}-container-arrow`}></span>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
