@@ -45,6 +45,7 @@ const GuestLecture = () => {
                     className="w-60 rounded-lg"
                   />
                   <h2 className="text-lg md:text-xl">{guest.name}</h2>
+                  <p className="text-sm md:text-lg text-neutral-400">{guest.designation}</p>
                   <a
                     href={guest.linkedin}
                     className="px-6 py-3 bg-transparent border-2 border-purple-600 text-purple-300 hover:bg-purple-600 hover:text-white rounded-lg font-medium flex items-center justify-center transform hover:-translate-y-1 transition-all duration-200"
