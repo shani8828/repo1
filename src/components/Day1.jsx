@@ -6,10 +6,10 @@ import ComingSoon from "./design/ComingSoon";
 const Day1 = () => {
   return (
     <div className="tl tl-day0">
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <ComingSoon />
-      </div>
-      {/* {timelineDataDay1.map((event) => (
+      </div> */}
+       {timelineDataDay1.map((event) => (
         <div
           key={event.id}
           className={`tl-container ${event.position}-container`}
@@ -22,7 +22,7 @@ const Day1 = () => {
             />
           ) : (
             <img
-              src={"Untitled design1.png"}
+              src={"src/assets/Timeline/Untitled design.png"}
               alt={event.title}
               className="rounded-full border border-gray-300 bg-white backdrop-blur-lg"
             />
@@ -43,7 +43,7 @@ const Day1 = () => {
             <span className={`${event.position}-container-arrow`}></span>
           </div>
         </div>
-      ))} */}
+      ))}
     </div>
   );
 };

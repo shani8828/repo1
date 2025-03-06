@@ -2,10 +2,10 @@ const timelineDataDay1 = [
 	{
 	  id: 1,
 	  title: "Innovate-X, Slot-I",
-	  time: "09:30 AM",
+	  time: "09:00 AM",
 	  location: "Seminar Room, Dept. of Industrial & Systems Engg.",
 	  link: "https://maps.app.goo.gl/USTHoae3Dnx4t4Nj9",
-	  image: null,
+	  image: "src/assets/Timeline/Innovate-X.png",
 	  position: "left",
 	},
 	{
@@ -14,7 +14,7 @@ const timelineDataDay1 = [
 	  time: "10:00 AM",
 	  location: "NR-311, Nalanda Classroom Complex",
 	  link: "https://maps.app.goo.gl/4E9RiAob3fenRGjj9",
-	  image: null,
+	  image: "src/assets/Timeline/DecisionOpt-WS.png",
 	  position: "right",
 	},
 	{
@@ -23,7 +23,7 @@ const timelineDataDay1 = [
 	  time: "11:30 AM",
 	  location: "ORDS Lab, Dept. of Industrial & Systems Engg.",
 	  link: "https://maps.app.goo.gl/USTHoae3Dnx4t4Nj9",
-	  image: null,
+	  image: "src/assets/Timeline/CodeOps.png",
 	  position: "left",
 	},
 	{
