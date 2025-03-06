@@ -18,6 +18,7 @@ import QueryUs from "./components/QueryUs";
 import Redirect from "./components/Redirect";
 import Spons from "./components/Spons";
 import Team from "./components/Team";
+import Timeline from "./components/Timeline"
 import Workshops from "./components/Workshops";
 import Payment from "./components/Payment";
 import { competitions } from "./constants";
@@ -34,6 +35,7 @@ const App = () => {
 					<Route path="/" element={<Homepage />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/gallery" element={<Gallery />} />
+					<Route path="/timeline" element={<Timeline />}/>
 					<Route path="/workshops" element={<Workshops />} />
 					<Route path="/competitions" element={<Competitions />} />
 

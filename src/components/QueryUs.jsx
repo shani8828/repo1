@@ -62,7 +62,7 @@ const QueryUs = () => {
         />
         <BackgroundCircles />
         <div className="rounded-lg p-0.25 bg-conic-gradient">
-          <div className="relative rounded-lg overflow-hidden bg-n-8 min-h-96 flex flex-col md:flex-row lg:flex-row  ">
+          <div className="relative rounded-lg overflow-hidden bg-n-8 min-h-96 flex flex-col md:flex-row lg:flex-row">
             <div className=" flex flex-col justify-center items-start md:w-1/2 lg:w-1/2 p-4 md:p-8 text-lg lg:text-xl">
               <a
                 href="https://maps.app.goo.gl/7t9fs2Z4KE2Dqjnb6"
