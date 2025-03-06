@@ -1,7 +1,7 @@
 const timelineDataDay0 = [
 	{
 	  id: 1,
-	  title: "Inauguration Ceremony",
+	  title: "Opening Ceremony",
 	  time: "04:30 PM",
 	  location: "Netaji Auditorium",
 	  link: "https://maps.app.goo.gl/czHQcdhZBnsAUXBd6",
